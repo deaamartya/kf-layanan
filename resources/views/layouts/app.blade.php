@@ -317,16 +317,16 @@
     <!-- Header -->
     <div class="header d-print-none">
         <div class="header-container">
-            <div class="header-left">
+            <div class="header-left justify-content-center">
                 <div class="navigation-toggler">
                     <a href="#" data-action="navigation-toggler">
                         <i data-feather="menu"></i>
                     </a>
                 </div>
 
-                <div class="header-logo">
+                <div class="header-logo" style="background-color: white;padding: 2px 5px;margin: 15px 0;border-radius: 10px;">
                     <a href="{{ url('/') }}">
-                        <img class="logo" src="{{ asset('assets/gogi/assets/media/image/logo.png') }}" alt="logo" height="80">
+                        <img class="logo" src="{{ asset('assets/gogi/assets/media/image/logo.png') }}" alt="logo" height="40">
                     </a>
                 </div>
             </div>
@@ -549,7 +549,7 @@
     <!-- Content wrapper -->
     <div class="content-wrapper">
         <!-- begin::navigation -->
-        <div class="navigation">
+        <div class="navigation mt-5">
             <div class="navigation-header">
                 <span>Navigation</span>
                 <a href="#">
@@ -572,7 +572,7 @@
         <!-- end::navigation -->
 
         <!-- Content body -->
-        <div class="content-body">
+        <div class="content-body mt-5">
             <!-- Content -->
             <div class="content @yield('parentClassName')">
                 @yield('content')

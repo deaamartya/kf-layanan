@@ -46,6 +46,11 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapWebRoutes();
 
+        // Perawat
+        Route::middleware('web')
+            ->namespace($this->namespace)
+            ->group(base_path('routes/perawat.php'));
+
         //
     }
 

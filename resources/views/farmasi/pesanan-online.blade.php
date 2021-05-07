@@ -44,6 +44,9 @@
 
     <script>
         $(document).ready(function(){
+            const menu = document.getElementById("online");
+            menu.classList.add("active");
+
             // Datatable
             const pesananTable = document.getElementById("pesanan-table");
             $(pesananTable).DataTable({

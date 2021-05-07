@@ -1,11 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 // Route Farmasi
 Route::get('walkin', 'FarmasiController@walkin')->name('walkin');
 Route::get('pesanan-online', 'FarmasiController@online')->name('pesanan-online');
-
+Route::get('farmasi/walkin-reset', 'FarmasiController@walkinReset');
+Route::get('farmasi/walkin-pesan', 'FarmasiController@walkinPesan');
 
 // Route Pasien
 

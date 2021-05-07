@@ -11,26 +11,55 @@
         <div class="judul-tabel mb-3">
             <h5>Pesanan Online</h5>
         </div>
-
-        <div class="card">
-            <div class="card-body">
-                <div class="table-responsive">
-                    <table id="pesanan-table" class="table table-bordered table-responsive-stack">
-                        <thead class="thead-dark">
-                            <th scope="col"></th>
-                            <th scope="col"></th>
-                            <th scope="col"></th>
-                        </thead>
-                        <tbody>
-                            
-                            <tr>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            
-                        </tbody>
-                    </table>
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-warning btn-rounded btn-uppercase">Reset</button>
+                <button class="btn btn-secondary btn-rounded btn-uppercase">Pesanan Online</button>
+                <button class="btn btn-secondary btn-rounded btn-uppercase">Konfirm Ambil</button>
+                <button class="btn btn-secondary btn-rounded btn-uppercase">Konfirm Selesai</button>
+                <button class="btn btn-secondary btn-rounded btn-uppercase">Antar Selesai</button>
+            </div>
+        </div></br>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div style="margin-top: 15px; margin-left: 15px">
+                        <h4>Tabel Pesanan Online</h4>
+                    </div><hr>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table id="pesanan-table" class="table table-bordered table-responsive-stack">
+                                <thead class="thead-dark">
+                                    <th scope="col">Nama Pasien</th>
+                                    <th scope="col">Status</th>
+                                </thead>
+                                <tbody>
+                                    @foreach(Session::get('online') as $online)
+                                    <tr>
+                                        <td>{{$online['NAMA_PASIEN']}}</td>
+                                        @if($online['STATUS'] == "-1")
+                                        <td class="text-danger">TOLAK</td>
+                                        @elseif($online['STATUS'] == "0")
+                                        <td>TUNGGU KONFIRMASI PX</td>
+                                        @elseif($online['STATUS'] == "2")
+                                        <td>OK AMBIL</td>
+                                        @elseif($online['STATUS'] == "3")
+                                        <td>OK KIRIM</td>
+                                        @elseif($online['STATUS'] == "4")
+                                        <td>READY AMBIL</td>
+                                        @elseif($online['STATUS'] == "5")
+                                        <td>READY KIRIM</td>
+                                        @elseif($online['STATUS'] == "6")
+                                        <td>ANTAR</td>
+                                        @elseif($online['STATUS'] == "7")
+                                        <td>DELIVERED</td>
+                                        @endif
+                                    </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

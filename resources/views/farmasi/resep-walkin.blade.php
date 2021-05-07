@@ -14,7 +14,7 @@
         <div class="col-md-12">
             <div class="form-row">
                 <div class="col-md-12 mb-3">
-                    <div class="input-group" style="float: right; width: 20%">
+                    <div class="input-group" width: 20%">
                         <input type="text" class="form-control" placeholder="ID Resep"  required="">
 
                         <div class="input-group-append">

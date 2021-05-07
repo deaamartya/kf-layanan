@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 // Route Farmasi
-Route::view('resep-walkin', 'farmasi.resep-walkin')->name('walkin');
-Route::view('pesanan-online', 'farmasi.pesanan-online')->name('pesanan-online');
+Route::get('resep-walkin', 'FarmasiController@walkin')->name('walkin');
+Route::get('pesanan-online', 'FarmasiController@online')->name('pesanan-online');
 
 
 

@@ -1,6 +1,16 @@
 @extends('farmasi.layouts.app')
 @section('head')
     <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/dataTable/datatables.min.css') }}">
+    <style>
+        toastr.options = {
+            timeOut: 3000,
+            progressBar: true,
+            showMethod: "slideDown",
+            hideMethod: "slideUp",
+            showDuration: 200,
+            hideDuration: 200
+        };
+    </style>
 @endsection
 
 @section('content')

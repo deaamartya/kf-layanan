@@ -35,7 +35,8 @@
                                 </thead>
                                 <tbody>
                                     @foreach(Session::get('online') as $online)
-                                    <tr>
+                                    
+                                    <tr style="cursor: pointer" class="select" id="{{$online['ID_PESANAN']}}">
                                         <td>{{$online['NAMA_PASIEN']}}</td>
                                         @if($online['STATUS'] == "-1")
                                         <td class="text-danger">TOLAK</td>
@@ -57,6 +58,7 @@
                                         <td>DELIVERED</td>
                                         @endif
                                     </tr>
+                                    
                                     @endforeach
                                 </tbody>
                             </table>
@@ -84,6 +86,14 @@
                 "columnDefs": [
                     { "type": "any-number", "targets": 0 }
                 ],
+            });
+
+            // Select Pesanan
+            $('.select').on('click', function(){
+                $id = $(this).attr('id');
+                setTimeout(function(){ 
+                    window.location.replace("{{ url('farmasi/pesanan/"+$id+"') }}");
+                }, 1000);
             });
         });
     </script>

@@ -7,11 +7,11 @@ use Illuminate\Support\Facades\Session;
 
 class FarmasiController extends Controller
 {
-    public function walkin(Request $request)
+    public function data()
     {
         $online = [
             [
-                'ID_RESEP' => 'R00001',
+                'ID_PESANAN' => 'P00001',
                 'NAMA_PASIEN' => 'Dimas',
                 'STATUS' => '0',
                 'ISI_RESEP' => [
@@ -26,7 +26,7 @@ class FarmasiController extends Controller
                 ]
             ],
             [
-                'ID_RESEP' => 'R00002',
+                'ID_PESANAN' => 'P00002',
                 'NAMA_PASIEN' => 'Ihsan',
                 'STATUS' => '0',
                 'ISI_RESEP' => [
@@ -46,7 +46,7 @@ class FarmasiController extends Controller
                 ]
             ],
             [
-                'ID_RESEP' => 'R00003',
+                'ID_PESANAN' => 'P00003',
                 'NAMA_PASIEN' => 'Almahdi',
                 'STATUS' => '0',
                 'ISI_RESEP' => [
@@ -66,7 +66,7 @@ class FarmasiController extends Controller
                 ]
             ],
             [
-                'ID_RESEP' => 'R00004',
+                'ID_PESANAN' => 'P00004',
                 'NAMA_PASIEN' => 'Sultan',
                 'STATUS' => '0',
                 'ISI_RESEP' => [
@@ -81,6 +81,13 @@ class FarmasiController extends Controller
                 ]
             ],
         ];
+
+        return $online;
+    }
+
+    public function walkin(Request $request)
+    {
+        $online = data();
 
         Session::put('online', $online);
 
@@ -91,7 +98,7 @@ class FarmasiController extends Controller
     {
         $online = [
             [
-                'ID_RESEP' => 'R00001',
+                'ID_PESANAN' => 'P00001',
                 'NAMA_PASIEN' => 'Dimas',
                 'STATUS' => '0',
                 'ISI_RESEP' => [
@@ -106,7 +113,7 @@ class FarmasiController extends Controller
                 ]
             ],
             [
-                'ID_RESEP' => 'R00002',
+                'ID_PESANAN' => 'P00002',
                 'NAMA_PASIEN' => 'Ihsan',
                 'STATUS' => '0',
                 'ISI_RESEP' => [
@@ -126,7 +133,7 @@ class FarmasiController extends Controller
                 ]
             ],
             [
-                'ID_RESEP' => 'R00003',
+                'ID_PESANAN' => 'P00003',
                 'NAMA_PASIEN' => 'Almahdi',
                 'STATUS' => '0',
                 'ISI_RESEP' => [
@@ -146,7 +153,7 @@ class FarmasiController extends Controller
                 ]
             ],
             [
-                'ID_RESEP' => 'R00004',
+                'ID_PESANAN' => 'P00004',
                 'NAMA_PASIEN' => 'Sultan',
                 'STATUS' => '0',
                 'ISI_RESEP' => [
@@ -164,6 +171,11 @@ class FarmasiController extends Controller
 
         Session::put('online', $online);
 
-        return view('farmasi.kirim');
+        return view('farmasi.pesanan-online');
+    }
+
+    public function checkStatus()
+    {
+
     }
 }

@@ -164,6 +164,6 @@ class FarmasiController extends Controller
 
         Session::put('online', $online);
 
-        return view('farmasi.pesanan-online');
+        return view('farmasi.kirim');
     }
 }

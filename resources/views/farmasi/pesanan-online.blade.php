@@ -40,6 +40,8 @@
                                         @if($online['STATUS'] == "-1")
                                         <td class="text-danger">TOLAK</td>
                                         @elseif($online['STATUS'] == "0")
+                                        <td>MENUNGGU KONFIRMASI</td>
+                                        @elseif($online['STATUS'] == "1")
                                         <td>TUNGGU KONFIRMASI PX</td>
                                         @elseif($online['STATUS'] == "2")
                                         <td>OK AMBIL</td>
@@ -65,7 +67,6 @@
         </div>
     </div>
 </div>
-
 @endsection
 
 @section('script')

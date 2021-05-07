@@ -46,7 +46,7 @@
                                     <div class="d-flex mb-3">
                                         <figure class="mr-3">
                                             <img width="100" class="rounded-pill"
-                                                 src="{{ url('assets/media/image/user/women_avatar1.jpg') }}" alt="...">
+                                                 src="{{ asset('assets/gogi/assets/media/image/user/women_avatar1.jpg') }}" alt="...">
                                         </figure>
                                         <div>
                                             <p>Roxana Roussell</p>

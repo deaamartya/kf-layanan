@@ -2,10 +2,10 @@
 
 @section('head')
     <!-- Quill editor -->
-    <link href="{{ url('vendors/quill/quill.snow.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('assets/gogi/vendors/quill/quill.snow.css') }}" rel="stylesheet" type="text/css">
 
     <!-- Tagsinput -->
-    <link rel="stylesheet" href="{{ url('vendors/tagsinput/bootstrap-tagsinput.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/tagsinput/bootstrap-tagsinput.css') }}" type="text/css">
 @endsection
 
 @section('parentClassName', 'web-app')
@@ -159,7 +159,7 @@
                             </div>
                             <div class="d-none d-sm-block">
                                 <figure class="avatar avatar-sm mr-3">
-                                    <img src="{{ url('assets/media/image/user/man_avatar5.jpg') }}"
+                                    <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar5.jpg') }}"
                                          class="rounded-circle" alt="image">
                                 </figure>
                             </div>
@@ -321,7 +321,7 @@
                             </div>
                             <div class="d-none d-sm-block">
                                 <figure class="avatar avatar-sm mr-3">
-                                    <img src="{{ url('assets/media/image/user/women_avatar3.jpg') }}"
+                                    <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar3.jpg') }}"
                                          class="rounded-circle" alt="image">
                                 </figure>
                             </div>
@@ -649,7 +649,7 @@
                             <div class="d-flex align-items-center mb-3">
                                 <div class="d-flex align-items-center">
                                     <figure class="avatar avatar-sm mr-3">
-                                        <img src="{{ url('assets/media/image/user/women_avatar5.jpg') }}"
+                                        <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar5.jpg') }}"
                                              class="rounded-circle"
                                              alt="image">
                                     </figure>
@@ -787,13 +787,13 @@
 @section('script')
 
     <!-- Tagsinput -->
-    <script src="{{ url('vendors/tagsinput/bootstrap-tagsinput.js') }}"></script>
-    <script src="{{ url('assets/js/examples/tagsinput.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/tagsinput/bootstrap-tagsinput.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/tagsinput.js') }}"></script>
 
     <!-- quill -->
-    <script src="{{ url('vendors/quill/quill.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/quill/quill.js') }}"></script>
 
     <!-- Mail example -->
-    <script src="{{ url('assets/js/examples/mail.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/mail.js') }}"></script>
 
 @endsection

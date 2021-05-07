@@ -2,10 +2,10 @@
 
 @section('head')
     <!-- Morsis -->
-    <link rel="stylesheet" href="{{ url('vendors/charts/morsis/morris.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/charts/morsis/morris.css') }}" type="text/css">
 
     <!-- Prism -->
-    <link rel="stylesheet" href="{{ url('vendors/prism/prism.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/prism/prism.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -94,10 +94,10 @@
 
 @section('script')
     <!-- Morsis -->
-    <script src="{{ url('vendors/charts/morsis/raphael-2.1.4.min.js') }}"></script>
-    <script src="{{ url('vendors/charts/morsis/morris.min.js') }}"></script>
-    <script src="{{ url('assets/js/examples/charts/morsis.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/charts/morsis/raphael-2.1.4.min.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/charts/morsis/morris.min.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/charts/morsis.js') }}"></script>
 
     <!-- Prism -->
-    <script src="{{ url('vendors/prism/prism.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/prism/prism.js') }}"></script>
 @endsection

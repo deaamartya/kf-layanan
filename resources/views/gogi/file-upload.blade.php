@@ -2,10 +2,10 @@
 
 @section('head')
     <!-- Dropzone -->
-    <link rel="stylesheet" href="{{ url('vendors/dropzone/dropzone.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/dropzone/dropzone.css') }}" type="text/css">
 
     <!-- Prism -->
-    <link rel="stylesheet" href="{{ url('vendors/prism/prism.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/prism/prism.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -73,8 +73,8 @@
 
 @section('script')
     <!-- Dropzone -->
-    <script src="{{ url('vendors/dropzone/dropzone.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/dropzone/dropzone.js') }}"></script>
 
     <!-- Prism -->
-    <script src="{{ url('vendors/prism/prism.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/prism/prism.js') }}"></script>
 @endsection

@@ -9,7 +9,7 @@
         <div class="form-group d-flex align-items-center">
             <div class="mr-3">
                 <figure class="mb-4 avatar avatar-sm">
-                    <img src="{{ url('assets/media/image/user/women_avatar1.jpg') }}" class="rounded-circle" alt="avatar">
+                    <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar1.jpg') }}" class="rounded-circle" alt="avatar">
                 </figure>
             </div>
             <input type="password" class="form-control" placeholder="Password" required autofocus>

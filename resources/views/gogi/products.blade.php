@@ -2,7 +2,7 @@
 
 @section('head')
     <!-- Range slider -->
-    <link rel="stylesheet" href="{{ url('vendors/range-slider/css/ion.rangeSlider.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/range-slider/css/ion.rangeSlider.min.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -202,7 +202,7 @@
                                     </div>
                                     <div class="my-3">
                                         <a href="#" title="Vase">
-                                            <img src="{{ url('assets/media/image/products/product1.png') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/products/product1.png') }}"
                                                  class="img-fluid rounded" alt="Vase">
                                         </a>
                                     </div>
@@ -251,7 +251,7 @@
                                     </div>
                                     <div class="my-3">
                                         <a href="#" title="Glasses">
-                                            <img src="{{ url('assets/media/image/products/product2.png') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/products/product2.png') }}"
                                                  class="img-fluid rounded" alt="Glasses">
                                         </a>
                                     </div>
@@ -302,7 +302,7 @@
                                     </div>
                                     <div class="my-3">
                                         <a href="#" title="Plate">
-                                            <img src="{{ url('assets/media/image/products/product3.png') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/products/product3.png') }}"
                                                  class="img-fluid rounded" alt="Plate">
                                         </a>
                                     </div>
@@ -351,7 +351,7 @@
                                     </div>
                                     <div class="my-3">
                                         <a href="#" title="Armchair">
-                                            <img src="{{ url('assets/media/image/products/product5.png') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/products/product5.png') }}"
                                                  class="img-fluid rounded" alt="Armchair">
                                         </a>
                                     </div>
@@ -402,7 +402,7 @@
                                     </div>
                                     <div class="my-3">
                                         <a href="#" title="Flowerpot">
-                                            <img src="{{ url('assets/media/image/products/product6.png') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/products/product6.png') }}"
                                                  class="img-fluid rounded" alt="Flowerpot">
                                         </a>
                                     </div>
@@ -451,7 +451,7 @@
                                     </div>
                                     <div class="my-3">
                                         <a href="#" title="Wall Clock">
-                                            <img src="{{ url('assets/media/image/products/product7.png') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/products/product7.png') }}"
                                                  class="img-fluid rounded" alt="Wall Clock">
                                         </a>
                                     </div>
@@ -500,7 +500,7 @@
                                     </div>
                                     <div class="my-3">
                                         <a href="#" title="Desk">
-                                            <img src="{{ url('assets/media/image/products/product8.png') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/products/product8.png') }}"
                                                  class="img-fluid rounded" alt="Desk">
                                         </a>
                                     </div>
@@ -551,7 +551,7 @@
                                     </div>
                                     <div class="my-3">
                                         <a href="#" title="Night Light">
-                                            <img src="{{ url('assets/media/image/products/product9.png') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/products/product9.png') }}"
                                                  class="img-fluid rounded" alt="Night Light">
                                         </a>
                                     </div>
@@ -620,7 +620,7 @@
 
 @section('script')
     <!-- Range slider -->
-    <script src="{{ url('vendors/range-slider/js/ion.rangeSlider.min.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/range-slider/js/ion.rangeSlider.min.js') }}"></script>
 
-    <script src="{{ url('assets/js/examples/pages/product-list.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/pages/product-list.js') }}"></script>
 @endsection

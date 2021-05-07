@@ -2,16 +2,16 @@
 
 @section('head')
     <!-- quill -->
-    <link href="{{ url('vendors/quill/quill.snow.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('assets/gogi/vendors/quill/quill.snow.css') }}" rel="stylesheet" type="text/css">
 
     <!-- Clockpicker -->
-    <link rel="stylesheet" href="{{ url('vendors/clockpicker/bootstrap-clockpicker.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/clockpicker/bootstrap-clockpicker.min.css') }}" type="text/css">
 
     <!-- Datepicker -->
-    <link rel="stylesheet" href="{{ url('vendors/datepicker/daterangepicker.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/datepicker/daterangepicker.css') }}" type="text/css">
 
     <!-- Select2 -->
-    <link rel="stylesheet" href="{{ url('vendors/select2/css/select2.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/select2/css/select2.min.css') }}" type="text/css">
 @endsection
 
 @section('parentClassName', 'web-app')
@@ -162,31 +162,31 @@
                                             <div class="avatar-group">
                                                 <figure class="avatar avatar-sm" title="Lisle Essam"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/women_avatar2.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar2.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
                                                 <figure class="avatar avatar-sm" title="Baxie Roseblade"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/man_avatar5.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar5.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
                                                 <figure class="avatar avatar-sm" title="Mella Mixter"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/women_avatar1.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar1.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
                                                 <figure class="avatar avatar-sm" title="Jo Hugill"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/man_avatar1.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar1.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
                                                 <figure class="avatar avatar-sm" title="Cullie Philcott"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/women_avatar5.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar5.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
@@ -237,25 +237,25 @@
                                             <div class="avatar-group">
                                                 <figure class="avatar avatar-sm" title="Baxie Roseblade"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/man_avatar5.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar5.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
                                                 <figure class="avatar avatar-sm" title="Mella Mixter"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/women_avatar1.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar1.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
                                                 <figure class="avatar avatar-sm" title="Jo Hugill"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/man_avatar1.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar1.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
                                                 <figure class="avatar avatar-sm" title="Cullie Philcott"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/women_avatar5.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar5.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
@@ -315,31 +315,31 @@
                                                 </div>
                                                 <figure class="avatar avatar-sm" title="Lisle Essam"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/women_avatar2.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar2.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
                                                 <figure class="avatar avatar-sm" title="Baxie Roseblade"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/man_avatar5.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar5.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
                                                 <figure class="avatar avatar-sm" title="Mella Mixter"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/women_avatar1.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar1.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
                                                 <figure class="avatar avatar-sm" title="Jo Hugill"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/man_avatar1.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar1.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
                                                 <figure class="avatar avatar-sm" title="Cullie Philcott"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/women_avatar5.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar5.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
@@ -395,7 +395,7 @@
                                                 </div>
                                                 <figure class="avatar avatar-sm" title="Lisle Essam"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/women_avatar2.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar2.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
@@ -455,19 +455,19 @@
                                                 </div>
                                                 <figure class="avatar avatar-sm" title="Lisle Essam"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/women_avatar2.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar2.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
                                                 <figure class="avatar avatar-sm" title="Baxie Roseblade"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/man_avatar5.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar5.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
                                                 <figure class="avatar avatar-sm" title="Mella Mixter"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/women_avatar1.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar1.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
@@ -572,7 +572,7 @@
                                             <div class="avatar-group">
                                                 <figure class="avatar avatar-sm" title="Baxie Roseblade"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/man_avatar5.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar5.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
@@ -672,19 +672,19 @@
                                             <div class="avatar-group">
                                                 <figure class="avatar avatar-sm" title="Lisle Essam"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/women_avatar2.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar2.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
                                                 <figure class="avatar avatar-sm" title="Baxie Roseblade"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/man_avatar5.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar5.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
                                                 <figure class="avatar avatar-sm" title="Mella Mixter"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/women_avatar1.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar1.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
@@ -736,7 +736,7 @@
                                             <div class="avatar-group">
                                                 <figure class="avatar avatar-sm" title="Mella Mixter"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/women_avatar1.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar1.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
@@ -796,7 +796,7 @@
                                                 </div>
                                                 <figure class="avatar avatar-sm" title="Lisle Essam"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/women_avatar2.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar2.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
@@ -852,19 +852,19 @@
                                                 </div>
                                                 <figure class="avatar avatar-sm" title="Lisle Essam"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/women_avatar2.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar2.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
                                                 <figure class="avatar avatar-sm" title="Baxie Roseblade"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/man_avatar5.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar5.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
                                                 <figure class="avatar avatar-sm" title="Mella Mixter"
                                                         data-toggle="tooltip">
-                                                    <img src="{{ url('assets/media/image/user/women_avatar1.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar1.jpg') }}"
                                                          class="rounded-circle"
                                                          alt="image">
                                                 </figure>
@@ -938,19 +938,19 @@
                                         </div>
                                         <figure class="avatar avatar-sm" title="Lisle Essam"
                                                 data-toggle="tooltip">
-                                            <img src="{{ url('assets/media/image/user/women_avatar2.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar2.jpg') }}"
                                                  class="rounded-circle"
                                                  alt="image">
                                         </figure>
                                         <figure class="avatar avatar-sm" title="Baxie Roseblade"
                                                 data-toggle="tooltip">
-                                            <img src="{{ url('assets/media/image/user/man_avatar5.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar5.jpg') }}"
                                                  class="rounded-circle"
                                                  alt="image">
                                         </figure>
                                         <figure class="avatar avatar-sm" title="Mella Mixter"
                                                 data-toggle="tooltip">
-                                            <img src="{{ url('assets/media/image/user/women_avatar1.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar1.jpg') }}"
                                                  class="rounded-circle"
                                                  alt="image">
                                         </figure>
@@ -1063,14 +1063,14 @@
                             <div class="col-sm-9">
                                 <div class="avatar-group">
                                     <figure class="avatar avatar-sm">
-                                        <img src="{{ url('assets/media/image/user/women_avatar3.jpg') }}" class="rounded-circle"
+                                        <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar3.jpg') }}" class="rounded-circle"
                                              alt="image">
                                     </figure>
                                     <figure class="avatar avatar-sm">
                                         <span class="avatar-title bg-danger rounded-circle">S</span>
                                     </figure>
                                     <figure class="avatar avatar-sm">
-                                        <img src="{{ url('assets/media/image/user/women_avatar5.jpg') }}" class="rounded-circle"
+                                        <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar5.jpg') }}" class="rounded-circle"
                                              alt="image">
                                     </figure>
                                 </div>
@@ -1110,7 +1110,7 @@
                                             <li class="list-group-item d-flex align-items-center pl-0 pr-0">
                                                 <div class="mr-2">
                                                     <figure class="avatar avatar-sm">
-                                                        <img src="{{ url('assets/media/image/user/women_avatar3.jpg') }}"
+                                                        <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar3.jpg') }}"
                                                              class="rounded-circle" alt="image">
                                                     </figure>
                                                 </div>
@@ -1127,7 +1127,7 @@
                                             <li class="list-group-item d-flex align-items-center pl-0 pr-0">
                                                 <div class="mr-2">
                                                     <figure class="avatar avatar-sm">
-                                                        <img src="{{ url('assets/media/image/user/women_avatar2.jpg') }}"
+                                                        <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar2.jpg') }}"
                                                              class="rounded-circle" alt="image">
                                                     </figure>
                                                 </div>
@@ -1145,7 +1145,7 @@
                                             <li class="list-group-item d-flex align-items-center pl-0 pr-0">
                                                 <div class="mr-2">
                                                     <figure class="avatar avatar-sm">
-                                                        <img src="{{ url('assets/media/image/user/man_avatar2.jpg') }}"
+                                                        <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar2.jpg') }}"
                                                              class="rounded-circle" alt="image">
                                                     </figure>
                                                 </div>
@@ -1229,14 +1229,14 @@
                             <div class="col-sm-9">
                                 <div class="avatar-group">
                                     <figure class="avatar avatar-sm">
-                                        <img src="{{ url('assets/media/image/user/women_avatar3.jpg') }}" class="rounded-circle"
+                                        <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar3.jpg') }}" class="rounded-circle"
                                              alt="image">
                                     </figure>
                                     <figure class="avatar avatar-sm">
                                         <span class="avatar-title bg-danger rounded-circle">S</span>
                                     </figure>
                                     <figure class="avatar avatar-sm">
-                                        <img src="{{ url('assets/media/image/user/women_avatar5.jpg') }}" class="rounded-circle"
+                                        <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar5.jpg') }}" class="rounded-circle"
                                              alt="image">
                                     </figure>
                                 </div>
@@ -1276,7 +1276,7 @@
                                             <li class="list-group-item d-flex align-items-center pl-0 pr-0">
                                                 <div class="mr-2">
                                                     <figure class="avatar avatar-sm">
-                                                        <img src="{{ url('assets/media/image/user/women_avatar3.jpg') }}"
+                                                        <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar3.jpg') }}"
                                                              class="rounded-circle" alt="image">
                                                     </figure>
                                                 </div>
@@ -1293,7 +1293,7 @@
                                             <li class="list-group-item d-flex align-items-center pl-0 pr-0">
                                                 <div class="mr-2">
                                                     <figure class="avatar avatar-sm">
-                                                        <img src="{{ url('assets/media/image/user/women_avatar2.jpg') }}"
+                                                        <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar2.jpg') }}"
                                                              class="rounded-circle" alt="image">
                                                     </figure>
                                                 </div>
@@ -1311,7 +1311,7 @@
                                             <li class="list-group-item d-flex align-items-center pl-0 pr-0">
                                                 <div class="mr-2">
                                                     <figure class="avatar avatar-sm">
-                                                        <img src="{{ url('assets/media/image/user/man_avatar2.jpg') }}"
+                                                        <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar2.jpg') }}"
                                                              class="rounded-circle" alt="image">
                                                     </figure>
                                                 </div>
@@ -1353,24 +1353,24 @@
 
 @section('script')
     <!-- Tagsinput -->
-    <script src="{{ url('vendors/tagsinput/bootstrap-tagsinput.js') }}"></script>
-    <script src="{{ url('assets/js/examples/tagsinput.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/tagsinput/bootstrap-tagsinput.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/tagsinput.js') }}"></script>
 
     <!-- quill -->
-    <script src="{{ url('vendors/quill/quill.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/quill/quill.js') }}"></script>
 
     <!-- Clockpicker -->
-    <script src="{{ url('vendors/clockpicker/bootstrap-clockpicker.min.js') }}"></script>
-    <script src="{{ url('assets/js/examples/clockpicker.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/clockpicker/bootstrap-clockpicker.min.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/clockpicker.js') }}"></script>
 
     <!-- Select2 -->
-    <script src="{{ url('vendors/select2/js/select2.min.js') }}"></script>
-    <script src="{{ url('assets/js/examples/select2.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/select2/js/select2.min.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/select2.js') }}"></script>
 
     <!-- Datepicker -->
-    <script src="{{ url('vendors/datepicker/daterangepicker.js') }}"></script>
-    <script src="{{ url('assets/js/examples/datepicker.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/datepicker/daterangepicker.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/datepicker.js') }}"></script>
 
     <!-- Todo list example -->
-    <script src="{{ url('assets/js/examples/todo-list.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/todo-list.js') }}"></script>
 @endsection

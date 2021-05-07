@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="profile-container" style="background: url({{ url('assets/media/image/image1.jpg') }})">
+    <div class="profile-container" style="background: url({{ asset('assets/gogi/assets/media/image/image1.jpg') }})">
         <div class="d-flex align-items-center">
             <figure class="avatar avatar-lg mr-3">
-                <img src="{{ url('assets/media/image/user/man_avatar3.jpg') }}"
+                <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar3.jpg') }}"
                      class="rounded-circle" alt="...">
             </figure>
             <div>
@@ -47,7 +47,7 @@
                             <div class="d-flex mb-3">
                                 <div class="d-flex">
                                     <figure class="avatar mr-3">
-                                        <img src="{{ url('assets/media/image/user/man_avatar1.jpg') }}"
+                                        <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar1.jpg') }}"
                                              class="rounded-circle" alt="...">
                                     </figure>
                                     <div class="d-inline-block">
@@ -72,7 +72,7 @@
                             <a href="#">
                                 <div class="row no-gutters border card flex-row border-radius-1">
                                     <div class="col-xl-3 col-lg-12">
-                                        <img src="{{ url('assets/media/image/photo1.jpg') }}"
+                                        <img src="{{ asset('assets/gogi/assets/media/image/photo1.jpg') }}"
                                              class="img-fluid" alt="image/">
                                     </div>
                                     <div class="col-xl-9 col-lg-12 p-3">
@@ -104,7 +104,7 @@
                             <div class="d-flex mb-3">
                                 <div class="d-flex">
                                     <figure class="avatar mr-3">
-                                        <img src="{{ url('assets/media/image/user/man_avatar3.jpg') }}"
+                                        <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar3.jpg') }}"
                                              class="rounded-circle" alt="...">
                                     </figure>
                                     <div class="d-inline-block">
@@ -151,7 +151,7 @@
                                         <div class="d-flex align-items-center">
                                             <figure class="avatar avatar-sm mr-3">
                                                 <img
-                                                    src="{{ url('assets/media/image/user/man_avatar4.jpg') }}"
+                                                    src="{{ asset('assets/gogi/assets/media/image/user/man_avatar4.jpg') }}"
                                                     class="rounded-circle" alt="...">
                                             </figure>
                                             <div class="d-inline-block">
@@ -188,7 +188,7 @@
                                         <div class="d-flex align-items-center">
                                             <figure class="avatar avatar-sm mr-3">
                                                 <img
-                                                    src="{{ url('assets/media/image/user/man_avatar1.jpg') }}"
+                                                    src="{{ asset('assets/gogi/assets/media/image/user/man_avatar1.jpg') }}"
                                                     class="rounded-circle" alt="...">
                                             </figure>
                                             <div class="d-inline-block">
@@ -226,7 +226,7 @@
                                     <div>
                                         <figure class="avatar mr-3">
                                             <img
-                                                src="{{ url('assets/media/image/user/women_avatar1.jpg') }}"
+                                                src="{{ asset('assets/gogi/assets/media/image/user/women_avatar1.jpg') }}"
                                                 class="rounded-circle" alt="...">
                                         </figure>
                                     </div>
@@ -247,7 +247,7 @@
                             <div class="d-flex mb-3">
                                 <div class="d-flex">
                                     <figure class="avatar mr-3">
-                                        <img src="{{ url('assets/media/image/user/women_avatar2.jpg') }}"
+                                        <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar2.jpg') }}"
                                              class="rounded-circle" alt="...">
                                     </figure>
                                     <div class="d-inline-block">
@@ -271,12 +271,12 @@
                                 nobis omnis, tenetur? Dolor officiis omnis quo?</p>
                             <div class="row row-xs">
                                 <div class="col-6">
-                                    <img src="{{ url('assets/media/image/photo9.jpg') }}"
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo9.jpg') }}"
                                          class="w-100 border-radius-1"
                                          alt="image/">
                                 </div>
                                 <div class="col-6">
-                                    <img src="{{ url('assets/media/image/photo10.jpg') }}"
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo10.jpg') }}"
                                          class="w-100 border-radius-1"
                                          alt="image/">
                                 </div>
@@ -309,7 +309,7 @@
                                         <a href="#">
                                             <figure class="avatar avatar-sm mr-3 bring-forward">
                                                 <img
-                                                    src="{{ url('assets/media/image/user/man_avatar2.jpg') }}"
+                                                    src="{{ asset('assets/gogi/assets/media/image/user/man_avatar2.jpg') }}"
                                                     class="rounded-circle" alt="image/">
                                             </figure>
                                         </a>
@@ -326,7 +326,7 @@
                                                 <div class="row no-gutters border card flex-row border-radius-1">
                                                     <div class="col-xl-3 col-lg-12">
                                                         <img
-                                                            src="{{ url('assets/media/image/photo1.jpg') }}"
+                                                            src="{{ asset('assets/gogi/assets/media/image/photo1.jpg') }}"
                                                             class="w-100"
                                                             alt="image/">
                                                     </div>
@@ -406,21 +406,21 @@
                                             <div class="col-xl-3 col-lg-4 col-md-6">
                                                 <figure>
                                                     <img
-                                                        src="{{ url('assets/media/image/portfolio-five.jpg') }}"
+                                                        src="{{ asset('assets/gogi/assets/media/image/portfolio-five.jpg') }}"
                                                         class="w-100 border-radius-1" alt="image/">
                                                 </figure>
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-md-6">
                                                 <figure>
                                                     <img
-                                                        src="{{ url('assets/media/image/portfolio-one.jpg') }}"
+                                                        src="{{ asset('assets/gogi/assets/media/image/portfolio-one.jpg') }}"
                                                         class="w-100 border-radius-1" alt="image/">
                                                 </figure>
                                             </div>
                                             <div class="col-xl-3 col-lg-4 col-md-6">
                                                 <figure>
                                                     <img
-                                                        src="{{ url('assets/media/image/portfolio-three.jpg') }}"
+                                                        src="{{ asset('assets/gogi/assets/media/image/portfolio-three.jpg') }}"
                                                         class="w-100 border-radius-1" alt="image/">
                                                 </figure>
                                             </div>
@@ -470,7 +470,7 @@
                                                 <div>
                                                     <figure class="avatar mr-3">
                                                         <img
-                                                            src="{{ url('assets/media/image/user/women_avatar2.jpg') }}"
+                                                            src="{{ asset('assets/gogi/assets/media/image/user/women_avatar2.jpg') }}"
                                                             class="rounded-circle" alt="...">
                                                     </figure>
                                                 </div>
@@ -495,7 +495,7 @@
                                                 <div>
                                                     <figure class="avatar mr-3">
                                                         <img
-                                                            src="{{ url('assets/media/image/user/women_avatar1.jpg') }}"
+                                                            src="{{ asset('assets/gogi/assets/media/image/user/women_avatar1.jpg') }}"
                                                             class="rounded-circle" alt="...">
                                                     </figure>
                                                 </div>
@@ -520,7 +520,7 @@
                                                 <div>
                                                     <figure class="avatar mr-3">
                                                         <img
-                                                            src="{{ url('assets/media/image/user/women_avatar3.jpg') }}"
+                                                            src="{{ asset('assets/gogi/assets/media/image/user/women_avatar3.jpg') }}"
                                                             class="rounded-circle" alt="...">
                                                     </figure>
                                                 </div>
@@ -545,7 +545,7 @@
                                                 <div>
                                                     <figure class="avatar mr-3">
                                                         <img
-                                                            src="{{ url('assets/media/image/user/women_avatar4.jpg') }}"
+                                                            src="{{ asset('assets/gogi/assets/media/image/user/women_avatar4.jpg') }}"
                                                             class="rounded-circle" alt="...">
                                                     </figure>
                                                 </div>
@@ -570,7 +570,7 @@
                                                 <div>
                                                     <figure class="avatar mr-3">
                                                         <img
-                                                            src="{{ url('assets/media/image/user/man_avatar2.jpg') }}"
+                                                            src="{{ asset('assets/gogi/assets/media/image/user/man_avatar2.jpg') }}"
                                                             class="rounded-circle" alt="...">
                                                     </figure>
                                                 </div>
@@ -595,7 +595,7 @@
                                                 <div>
                                                     <figure class="avatar mr-3">
                                                         <img
-                                                            src="{{ url('assets/media/image/user/man_avatar5.jpg') }}"
+                                                            src="{{ asset('assets/gogi/assets/media/image/user/man_avatar5.jpg') }}"
                                                             class="rounded-circle" alt="...">
                                                     </figure>
                                                 </div>
@@ -719,7 +719,7 @@
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item d-flex align-items-center px-0">
                             <figure class="avatar avatar-state-success mr-3">
-                                <img src="{{ url('assets/media/image/user/women_avatar5.jpg') }}" class="rounded-circle" alt="image">
+                                <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar5.jpg') }}" class="rounded-circle" alt="image">
                             </figure>
                             <div>
                                 <h6 class="mb-0">Valentine Maton</h6>
@@ -728,7 +728,7 @@
                         </li>
                         <li class="list-group-item d-flex align-items-center px-0">
                             <figure class="avatar avatar-state-success mr-3">
-                                <img src="{{ url('assets/media/image/user/man_avatar1.jpg') }}" class="rounded-circle" alt="image">
+                                <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar1.jpg') }}" class="rounded-circle" alt="image">
                             </figure>
                             <div>
                                 <h6 class="mb-0">Holmes Cherryman</h6>
@@ -737,7 +737,7 @@
                         </li>
                         <li class="list-group-item d-flex align-items-center px-0">
                             <figure class="avatar avatar-state-success mr-3">
-                                <img src="{{ url('assets/media/image/user/women_avatar1.jpg') }}" class="rounded-circle" alt="image">
+                                <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar1.jpg') }}" class="rounded-circle" alt="image">
                             </figure>
                             <div>
                                 <h6 class="mb-0">Malanie Hanvey</h6>
@@ -746,7 +746,7 @@
                         </li>
                         <li class="list-group-item d-flex align-items-center px-0">
                             <figure class="avatar avatar-state-success mr-3">
-                                <img src="{{ url('assets/media/image/user/women_avatar2.jpg') }}" class="rounded-circle" alt="image">
+                                <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar2.jpg') }}" class="rounded-circle" alt="image">
                             </figure>
                             <div>
                                 <h6 class="mb-0">Kenneth Hune</h6>
@@ -765,19 +765,19 @@
                     <div class="d-flex align-items-center">
                         <div class="avatar-group mr-2">
                             <a href="#" class="avatar" data-toggle="tooltip" title="Valentine Maton">
-                                <img src="{{ url('assets/media/image/user/women_avatar1.jpg') }}" class="rounded-circle" alt="image">
+                                <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar1.jpg') }}" class="rounded-circle" alt="image">
                             </a>
                             <a href="#" class="avatar" data-toggle="tooltip" title="Holmes Cherryman">
-                                <img src="{{ url('assets/media/image/user/man_avatar1.jpg') }}" class="rounded-circle" alt="image">
+                                <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar1.jpg') }}" class="rounded-circle" alt="image">
                             </a>
                             <a href="#" class="avatar" data-toggle="tooltip" title="Malanie Hanvey">
-                                <img src="{{ url('assets/media/image/user/man_avatar2.jpg') }}" class="rounded-circle" alt="image">
+                                <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar2.jpg') }}" class="rounded-circle" alt="image">
                             </a>
                             <a href="#" class="avatar" data-toggle="tooltip" title="Kenneth Hune">
-                                <img src="{{ url('assets/media/image/user/women_avatar2.jpg') }}" class="rounded-circle" alt="image">
+                                <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar2.jpg') }}" class="rounded-circle" alt="image">
                             </a>
                             <a href="#" class="avatar" data-toggle="tooltip" title="Kenneth Hune">
-                                <img src="{{ url('assets/media/image/user/women_avatar3.jpg') }}" class="rounded-circle" alt="image">
+                                <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar3.jpg') }}" class="rounded-circle" alt="image">
                             </a>
                         </div>
                         <span>+5 friends</span>

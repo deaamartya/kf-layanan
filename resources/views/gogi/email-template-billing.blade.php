@@ -7,13 +7,13 @@
     <title>Gogi - Admin and Dashboard Template</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ url('assets/media/image/favicon.png') }}"/>
+    <link rel="shortcut icon" href="{{ asset('assets/gogi/assets/media/image/favicon.png') }}"/>
 
     <!-- Plugin styles -->
-    <link rel="stylesheet" href="{{ url('vendors/bundle.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/bundle.css') }}" type="text/css">
 
     <!-- App styles -->
-    <link rel="stylesheet" href="{{ url('assets/css/app.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/css/app.min.css') }}" type="text/css">
 </head>
 <body class="bg-white">
 
@@ -35,7 +35,7 @@
                                 align="center" valign="top">
                                 <table width="100%" cellpadding="0" cellspacing="0">
                                     <tr>
-                                        <td style="padding-bottom: 20px; "><a href="#"><img src="{{ url('assets/media/image/dark-logo.png') }}" alt="image"
+                                        <td style="padding-bottom: 20px; "><a href="#"><img src="{{ asset('assets/gogi/assets/media/image/dark-logo.png') }}" alt="image"
                                                                                             style="height: 30px; margin-left: auto; margin-right: auto; display:block;"></a>
                                         </td>
                                     </tr>
@@ -132,9 +132,9 @@
 </div>
 
 <!-- Plugin scripts -->
-<script src="{{ url('vendors/bundle.js') }}"></script>
+<script src="{{ asset('assets/gogi/vendors/bundle.js') }}"></script>
 
 <!-- App scripts -->
-<script src="{{ url('assets/js/app.min.js') }}"></script>
+<script src="{{ asset('assets/js/app.min.js') }}"></script>
 </body>
 </html>

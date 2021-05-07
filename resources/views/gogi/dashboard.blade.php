@@ -2,10 +2,10 @@
 
 @section('head')
     <!-- Daterangepicker -->
-    <link rel="stylesheet" href="{{ url('vendors/datepicker/daterangepicker.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/datepicker/daterangepicker.css') }}" type="text/css">
 
     <!-- DataTable -->
-    <link rel="stylesheet" href="{{ url('vendors/dataTable/datatables.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/dataTable/datatables.min.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -880,7 +880,7 @@
                     <div class="row my-3">
                         <div class="col-md-6 ml-auto mr-auto">
                             <figure>
-                                <img class="img-fluid" src="{{ url('assets/media/svg/upgrade.svg') }}" alt="upgrade">
+                                <img class="img-fluid" src="{{ asset('assets/gogi/assets/media/svg/upgrade.svg') }}" alt="upgrade">
                             </figure>
                         </div>
                     </div>
@@ -905,11 +905,11 @@
     <script src="{{ url('/vendors/charts/apex/apexcharts.min.js') }}"></script>
 
     <!-- Daterangepicker -->
-    <script src="{{ url('vendors/datepicker/daterangepicker.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/datepicker/daterangepicker.js') }}"></script>
 
     <!-- DataTable -->
-    <script src="{{ url('vendors/dataTable/datatables.min.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/dataTable/datatables.min.js') }}"></script>
 
     <!-- Dashboard scripts -->
-    <script src="{{ url('assets/js/examples/pages/dashboard.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/pages/dashboard.js') }}"></script>
 @endsection

@@ -2,10 +2,10 @@
 
 @section('head')
     <!-- Clockpicker -->
-    <link rel="stylesheet" href="{{ url('vendors/clockpicker/bootstrap-clockpicker.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/clockpicker/bootstrap-clockpicker.min.css') }}" type="text/css">
 
     <!-- Prism -->
-    <link rel="stylesheet" href="{{ url('vendors/prism/prism.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/prism/prism.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -167,9 +167,9 @@ $(document).on('click', '#check-minutes', function (e) {
 
 @section('script')
     <!-- Clockpicker -->
-    <script src="{{ url('vendors/clockpicker/bootstrap-clockpicker.min.js') }}"></script>
-    <script src="{{ url('assets/js/examples/clockpicker.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/clockpicker/bootstrap-clockpicker.min.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/clockpicker.js') }}"></script>
 
     <!-- Prism -->
-    <script src="{{ url('vendors/prism/prism.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/prism/prism.js') }}"></script>
 @endsection

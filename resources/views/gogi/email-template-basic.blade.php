@@ -7,13 +7,13 @@
     <title>Gogi - Admin and Dashboard Template</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ url('assets/media/image/favicon.png') }}"/>
+    <link rel="shortcut icon" href="{{ asset('assets/gogi/assets/media/image/favicon.png') }}"/>
 
     <!-- Plugin styles -->
-    <link rel="stylesheet" href="{{ url('vendors/bundle.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/bundle.css') }}" type="text/css">
 
     <!-- App styles -->
-    <link rel="stylesheet" href="{{ url('assets/css/app.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/css/app.min.css') }}" type="text/css">
 </head>
 <body class="bg-white">
 
@@ -32,7 +32,7 @@
                                 <meta itemprop="name" content="Confirm Email" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                                 <table width="100%" cellpadding="0" cellspacing="0" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                                     <tr>
-                                        <td><a href="#"><img src="{{ url('assets/media/image/dark-logo.png') }}" alt="image" style="margin-left: auto; margin-right: auto; display:block; margin-bottom: 20px; height: 30px;"></a></td>
+                                        <td><a href="#"><img src="{{ asset('assets/gogi/assets/media/image/dark-logo.png') }}" alt="image" style="margin-left: auto; margin-right: auto; display:block; margin-bottom: 20px; height: 30px;"></a></td>
                                     </tr>
                                     <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                                         <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; color: #5066e1; font-size: 24px; font-weight: 700; text-align: center; vertical-align: top; margin: 0; padding: 0 0 10px;"
@@ -63,9 +63,9 @@
 </div>
 
 <!-- Plugin scripts -->
-<script src="{{ url('vendors/bundle.js') }}"></script>
+<script src="{{ asset('assets/gogi/vendors/bundle.js') }}"></script>
 
 <!-- App scripts -->
-<script src="{{ url('assets/js/app.min.js') }}"></script>
+<script src="{{ asset('assets/js/app.min.js') }}"></script>
 </body>
 </html>

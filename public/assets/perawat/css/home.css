@@ -1,0 +1,27 @@
+#reset_session_btn {
+    border: 2px solid red;
+    background-color: #fff;
+    color: black;
+}
+
+#reset_session_btn:hover {
+    background-color: red;
+    color: white;
+}
+
+#antrian_saat_ini {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#antrian_saat_ini .nomor {
+    font-weight: bold;
+}
+
+.antrian_btn_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

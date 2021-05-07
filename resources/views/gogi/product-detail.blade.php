@@ -2,8 +2,8 @@
 
 @section('head')
     <!-- Slick css -->
-    <link rel="stylesheet" href="{{ url('vendors/slick/slick.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ url('vendors/slick/slick-theme.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/slick/slick.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/slick/slick-theme.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -46,34 +46,34 @@
                         <div class="col-md-6">
                             <div class="slider-for">
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/products/product1.png') }}"
+                                    <img src="{{ asset('assets/gogi/assets/media/image/products/product1.png') }}"
                                          class="img-fluid rounded"
                                          alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/products/product5.png') }}"
+                                    <img src="{{ asset('assets/gogi/assets/media/image/products/product5.png') }}"
                                          class="img-fluid rounded"
                                          alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/products/product6.png') }}"
+                                    <img src="{{ asset('assets/gogi/assets/media/image/products/product6.png') }}"
                                          class="img-fluid rounded"
                                          alt="image">
                                 </div>
                             </div>
                             <div class="slider-nav mt-4">
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/products/product1.png') }}"
+                                    <img src="{{ asset('assets/gogi/assets/media/image/products/product1.png') }}"
                                          class="img-fluid rounded"
                                          alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/products/product5.png') }}"
+                                    <img src="{{ asset('assets/gogi/assets/media/image/products/product5.png') }}"
                                          class="img-fluid rounded"
                                          alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/products/product6.png') }}"
+                                    <img src="{{ asset('assets/gogi/assets/media/image/products/product6.png') }}"
                                          class="img-fluid rounded"
                                          alt="image">
                                 </div>
@@ -180,7 +180,7 @@
                                     <li class="list-group-item d-flex px-0 py-4">
                                         <a href="#" class="flex-shrink-0">
                                             <figure class="avatar mr-3">
-                                                <img src="{{ url('assets/media/image/user/man_avatar1.jpg') }}"
+                                                <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar1.jpg') }}"
                                                      class="rounded-circle" alt="image">
                                             </figure>
                                         </a>
@@ -226,7 +226,7 @@
                                     <li class="list-group-item d-flex px-0 py-4">
                                         <a href="#" class="flex-shrink-0">
                                             <figure class="avatar mr-3">
-                                                <img src="{{ url('assets/media/image/user/man_avatar2.jpg') }}"
+                                                <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar2.jpg') }}"
                                                      class="rounded-circle" alt="image">
                                             </figure>
                                         </a>
@@ -272,7 +272,7 @@
                                     <li class="list-group-item d-flex px-0 py-4">
                                         <a href="#" class="flex-shrink-0">
                                             <figure class="avatar mr-3">
-                                                <img src="{{ url('assets/media/image/user/man_avatar3.jpg') }}"
+                                                <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar3.jpg') }}"
                                                      class="rounded-circle" alt="image">
                                             </figure>
                                         </a>
@@ -318,7 +318,7 @@
                                     <li class="list-group-item d-flex px-0 py-4">
                                         <a href="#" class="flex-shrink-0">
                                             <figure class="avatar mr-3">
-                                                <img src="{{ url('assets/media/image/user/man_avatar4.jpg') }}"
+                                                <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar4.jpg') }}"
                                                      class="rounded-circle" alt="image">
                                             </figure>
                                         </a>
@@ -436,7 +436,7 @@
 
 @section('script')
     <!-- Slick js -->
-    <script src="{{ url('vendors/slick/slick.min.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/slick/slick.min.js') }}"></script>
 
-    <script src="{{ url('assets/js/examples/pages/product-detail.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/pages/product-detail.js') }}"></script>
 @endsection

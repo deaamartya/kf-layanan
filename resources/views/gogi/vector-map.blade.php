@@ -2,10 +2,10 @@
 
 @section('head')
     <!-- Vector map -->
-    <link rel="stylesheet" href="{{ url('vendors/vmap/jqvmap.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/vmap/jqvmap.min.css') }}" type="text/css">
 
     <!-- Prism -->
-    <link rel="stylesheet" href="{{ url('vendors/prism/prism.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/prism/prism.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -57,12 +57,12 @@
 
 @section('script')
     <!-- Vector map -->
-    <script src="{{ url('vendors/vmap/jquery.vmap.min.js') }}"></script>
-    <script src="{{ url('vendors/vmap/maps/jquery.vmap.world.js') }}"></script>
-    <script src="{{ url('vendors/vmap/maps/jquery.vmap.canada.js') }}"></script>
-    <script src="{{ url('vendors/vmap/maps/jquery.vmap.usa.js') }}"></script>
-    <script src="{{ url('assets/js/examples/vmap.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/vmap/jquery.vmap.min.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/vmap/maps/jquery.vmap.world.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/vmap/maps/jquery.vmap.canada.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/vmap/maps/jquery.vmap.usa.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/vmap.js') }}"></script>
 
     <!-- Prism -->
-    <script src="{{ url('vendors/prism/prism.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/prism/prism.js') }}"></script>
 @endsection

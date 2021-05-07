@@ -2,7 +2,7 @@
 
 @section('head')
     <!-- Prism -->
-    <link rel="stylesheet" href="{{ url('vendors/prism/prism.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/prism/prism.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -193,8 +193,8 @@
 
 @section('script')
     <!-- Peity -->
-    <script src="{{ url('vendors/charts/peity/jquery.peity.min.js') }}"></script>
-    <script src="{{ url('assets/js/examples/charts/peity.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/charts/peity/jquery.peity.min.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/charts/peity.js') }}"></script>
 
     <div class="colors"> <!-- To use theme colors with Javascript -->
         <div class="bg-primary"></div>
@@ -212,5 +212,5 @@
     </div>
 
     <!-- Prism -->
-    <script src="{{ url('vendors/prism/prism.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/prism/prism.js') }}"></script>
 @endsection

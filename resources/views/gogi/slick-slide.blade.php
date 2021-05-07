@@ -2,11 +2,11 @@
 
 @section('head')
     <!-- Slick slide -->
-    <link rel="stylesheet" href="{{ url('vendors/slick/slick.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ url('vendors/slick/slick-theme.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/slick/slick.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/slick/slick-theme.css') }}" type="text/css">
 
     <!-- Prism -->
-    <link rel="stylesheet" href="{{ url('vendors/prism/prism.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/prism/prism.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -71,19 +71,19 @@
                                 <div class="col-md-6 offset-3">
                                     <div class="slick-single">
                                         <div>
-                                            <img src="{{ url('assets/media/image/photo1.jpg') }}" style="width: 100%"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/photo1.jpg') }}" style="width: 100%"
                                                  alt="image">
                                         </div>
                                         <div>
-                                            <img src="{{ url('assets/media/image/photo2.jpg') }}" style="width: 100%"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/photo2.jpg') }}" style="width: 100%"
                                                  alt="image">
                                         </div>
                                         <div>
-                                            <img src="{{ url('assets/media/image/photo3.jpg') }}" style="width: 100%"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/photo3.jpg') }}" style="width: 100%"
                                                  alt="image">
                                         </div>
                                         <div>
-                                            <img src="{{ url('assets/media/image/photo4.jpg') }}" style="width: 100%"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/photo4.jpg') }}" style="width: 100%"
                                                  alt="image">
                                         </div>
                                     </div>
@@ -99,16 +99,16 @@
                             <h6 class="card-title">Autoplay</h6>
                             <div class="slick-autoplay">
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo1.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo1.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo2.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo2.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo3.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo3.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo4.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo4.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                             </div>
                             <div data-label="CODE EXAMPLE" class="demo-code-preview">
@@ -128,16 +128,16 @@
                                 <div class="col-md-6 offset-3">
                                     <div class="slick-fade-effect">
                                         <div>
-                                            <img src="{{ url('assets/media/image/photo1.jpg') }}" class="img-fluid" alt="image">
+                                            <img src="{{ asset('assets/gogi/assets/media/image/photo1.jpg') }}" class="img-fluid" alt="image">
                                         </div>
                                         <div>
-                                            <img src="{{ url('assets/media/image/photo2.jpg') }}" class="img-fluid" alt="image">
+                                            <img src="{{ asset('assets/gogi/assets/media/image/photo2.jpg') }}" class="img-fluid" alt="image">
                                         </div>
                                         <div>
-                                            <img src="{{ url('assets/media/image/photo3.jpg') }}" class="img-fluid" alt="image">
+                                            <img src="{{ asset('assets/gogi/assets/media/image/photo3.jpg') }}" class="img-fluid" alt="image">
                                         </div>
                                         <div>
-                                            <img src="{{ url('assets/media/image/photo4.jpg') }}" class="img-fluid" alt="image">
+                                            <img src="{{ asset('assets/gogi/assets/media/image/photo4.jpg') }}" class="img-fluid" alt="image">
                                         </div>
                                     </div>
                                 </div>
@@ -160,22 +160,22 @@
                             <h6 class="card-title">Multiple Items</h6>
                             <div class="slick-multiple">
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo1.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo1.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo2.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo2.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo3.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo3.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo4.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo4.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo5.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo5.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo6.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo6.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                             </div>
                             <div data-label="CODE EXAMPLE" class="demo-code-preview">
@@ -192,22 +192,22 @@
                             <h6 class="card-title">Center Mode</h6>
                             <div class="slick-center-mode">
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo1.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo1.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo2.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo2.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo3.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo3.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo4.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo4.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo5.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo5.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo6.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo6.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                             </div>
                             <div data-label="CODE EXAMPLE" class="demo-code-preview">
@@ -246,69 +246,69 @@
                             <h6 class="card-title">Slider Syncing</h6>
                             <div class="slider-for">
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo1.jpg') }}" class="img-fluid" style="width:100%"
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo1.jpg') }}" class="img-fluid" style="width:100%"
                                          alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo2.jpg') }}" class="img-fluid" style="width:100%"
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo2.jpg') }}" class="img-fluid" style="width:100%"
                                          alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo3.jpg') }}" class="img-fluid" style="width:100%"
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo3.jpg') }}" class="img-fluid" style="width:100%"
                                          alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo4.jpg') }}" class="img-fluid" style="width:100%"
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo4.jpg') }}" class="img-fluid" style="width:100%"
                                          alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo5.jpg') }}" class="img-fluid" style="width:100%"
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo5.jpg') }}" class="img-fluid" style="width:100%"
                                          alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo6.jpg') }}" class="img-fluid" style="width:100%"
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo6.jpg') }}" class="img-fluid" style="width:100%"
                                          alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo7.jpg') }}" class="img-fluid" style="width:100%"
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo7.jpg') }}" class="img-fluid" style="width:100%"
                                          alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo8.jpg') }}" class="img-fluid" style="width:100%"
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo8.jpg') }}" class="img-fluid" style="width:100%"
                                          alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo9.jpg') }}" class="img-fluid" style="width:100%"
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo9.jpg') }}" class="img-fluid" style="width:100%"
                                          alt="image">
                                 </div>
                             </div>
                             <div class="slider-nav">
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo1.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo1.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo2.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo2.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo3.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo3.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo4.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo4.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo5.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo5.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo6.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo6.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo7.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo7.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo8.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo8.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                                 <div class="slick-slide-item">
-                                    <img src="{{ url('assets/media/image/photo9.jpg') }}" class="img-fluid" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/photo9.jpg') }}" class="img-fluid" alt="image">
                                 </div>
                             </div>
                             <div data-label="HTML" class="demo-code-preview">
@@ -350,9 +350,9 @@ $('.slider-nav').slick({
 
 @section('script')
     <!-- Slick slide -->
-    <script src="{{ url('vendors/slick/slick.min.js') }}"></script>
-    <script src="{{ url('assets/js/examples/slick.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/slick/slick.min.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/slick.js') }}"></script>
 
     <!-- Prism -->
-    <script src="{{ url('vendors/prism/prism.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/prism/prism.js') }}"></script>
 @endsection

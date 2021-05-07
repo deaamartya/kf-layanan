@@ -29,7 +29,7 @@
                                 <meta itemprop="name" content="Confirm Email" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                                 <table width="100%" cellpadding="0" cellspacing="0" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                                     <tr>
-                                        <td><a href="#"><img src="{{ url('assets/media/image/logo.png') }}" alt="image" style="margin-left: auto; margin-right: auto; display:block; margin-bottom: 10px; height: 30px;"></a></td>
+                                        <td><a href="#"><img src="{{ asset('assets/gogi/assets/media/image/logo.png') }}" alt="image" style="margin-left: auto; margin-right: auto; display:block; margin-bottom: 10px; height: 30px;"></a></td>
                                     </tr>
                                     <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                                         <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; color: #bc4677; font-size: 24px; font-weight: 700; text-align: center; vertical-align: top; margin: 0; padding: 10px 0"
@@ -65,7 +65,7 @@
                 <div class="content">
                     <table class="main" width="100%" cellpadding="0" cellspacing="0" style="border: 1px solid #e9e9e9;" bgcolor="#fff">
                         <tr>
-                            <td style="padding: 20px; border-radius: 0;" align="center" valign="top"><img src="{{ url('assets/media/image/notification-icon.png') }}" alt="image" style="margin-left: auto; margin-right: auto; display:block;width: 60px;"></td>
+                            <td style="padding: 20px; border-radius: 0;" align="center" valign="top"><img src="{{ asset('assets/gogi/assets/media/image/notification-icon.png') }}" alt="image" style="margin-left: auto; margin-right: auto; display:block;width: 60px;"></td>
                         </tr>
                         <tr>
                             <td style="color:#ffffff; background-color: #ffbb33; padding: 20px; border-radius: 0;" align="center" valign="top">Warning: You're approaching your limit. Please upgrade.</td>
@@ -112,7 +112,7 @@
                                 align="center" valign="top">
                                 <table width="100%" cellpadding="0" cellspacing="0">
                                     <tr>
-                                        <td style="padding-bottom: 20px; "><a href="#"><img src="{{ url('assets/media/image/logo.png') }}" alt="image"
+                                        <td style="padding-bottom: 20px; "><a href="#"><img src="{{ asset('assets/gogi/assets/media/image/logo.png') }}" alt="image"
                                                                                             style="height: 30px; margin-left: auto; margin-right: auto; display:block;"></a>
                                         </td>
                                     </tr>

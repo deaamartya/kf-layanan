@@ -2,10 +2,10 @@
 
 @section('head')
     <!-- Lightbox -->
-    <link rel="stylesheet" href="{{ url('vendors/lightbox/magnific-popup.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/lightbox/magnific-popup.css') }}" type="text/css">
 
     <!-- Prism -->
-    <link rel="stylesheet" href="{{ url('vendors/prism/prism.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/prism/prism.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -38,8 +38,8 @@
                             <h6 class="card-title">Basic</h6>
                             <div class="row">
                                 <div class="col-md-2">
-                                    <a class="image-popup" href="{{ url('assets/media/image/photo1.jpg') }}">
-                                        <img src="{{ url('assets/media/image/photo1.jpg') }}" class="img-fluid" alt="image">
+                                    <a class="image-popup" href="{{ asset('assets/gogi/assets/media/image/photo1.jpg') }}">
+                                        <img src="{{ asset('assets/gogi/assets/media/image/photo1.jpg') }}" class="img-fluid" alt="image">
                                     </a>
                                 </div>
                             </div>
@@ -76,33 +76,33 @@
                             <h6 class="card-title">Gallery Version</h6>
                             <div class="row">
                                 <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                                    <a class="image-popup-gallery-item" href="{{ url('assets/media/image/photo4.jpg') }}">
-                                        <img src="{{ url('assets/media/image/photo4.jpg') }}" class="img-fluid" alt="image">
+                                    <a class="image-popup-gallery-item" href="{{ asset('assets/gogi/assets/media/image/photo4.jpg') }}">
+                                        <img src="{{ asset('assets/gogi/assets/media/image/photo4.jpg') }}" class="img-fluid" alt="image">
                                     </a>
                                 </div>
                                 <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                                    <a class="image-popup-gallery-item" href="{{ url('assets/media/image/photo5.jpg') }}">
-                                        <img src="{{ url('assets/media/image/photo5.jpg') }}" class="img-fluid" alt="image">
+                                    <a class="image-popup-gallery-item" href="{{ asset('assets/gogi/assets/media/image/photo5.jpg') }}">
+                                        <img src="{{ asset('assets/gogi/assets/media/image/photo5.jpg') }}" class="img-fluid" alt="image">
                                     </a>
                                 </div>
                                 <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                                    <a class="image-popup-gallery-item" href="{{ url('assets/media/image/photo6.jpg') }}">
-                                        <img src="{{ url('assets/media/image/photo6.jpg') }}" class="img-fluid" alt="image">
+                                    <a class="image-popup-gallery-item" href="{{ asset('assets/gogi/assets/media/image/photo6.jpg') }}">
+                                        <img src="{{ asset('assets/gogi/assets/media/image/photo6.jpg') }}" class="img-fluid" alt="image">
                                     </a>
                                 </div>
                                 <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                                    <a class="image-popup-gallery-item" href="{{ url('assets/media/image/photo7.jpg') }}">
-                                        <img src="{{ url('assets/media/image/photo7.jpg') }}" class="img-fluid" alt="image">
+                                    <a class="image-popup-gallery-item" href="{{ asset('assets/gogi/assets/media/image/photo7.jpg') }}">
+                                        <img src="{{ asset('assets/gogi/assets/media/image/photo7.jpg') }}" class="img-fluid" alt="image">
                                     </a>
                                 </div>
                                 <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                                    <a class="image-popup-gallery-item" href="{{ url('assets/media/image/photo8.jpg') }}">
-                                        <img src="{{ url('assets/media/image/photo8.jpg') }}" class="img-fluid" alt="image">
+                                    <a class="image-popup-gallery-item" href="{{ asset('assets/gogi/assets/media/image/photo8.jpg') }}">
+                                        <img src="{{ asset('assets/gogi/assets/media/image/photo8.jpg') }}" class="img-fluid" alt="image">
                                     </a>
                                 </div>
                                 <div class="col-lg-2 col-md-4 col-sm-6 mb-4">
-                                    <a class="image-popup-gallery-item" href="{{ url('assets/media/image/photo9.jpg') }}">
-                                        <img src="{{ url('assets/media/image/photo9.jpg') }}" class="img-fluid" alt="image">
+                                    <a class="image-popup-gallery-item" href="{{ asset('assets/gogi/assets/media/image/photo9.jpg') }}">
+                                        <img src="{{ asset('assets/gogi/assets/media/image/photo9.jpg') }}" class="img-fluid" alt="image">
                                     </a>
                                 </div>
                             </div>
@@ -171,9 +171,9 @@ $('.image-popup-gallery-item').magnificPopup(magnificPopupGalleryConfig);</code>
 
 @section('script')
     <!-- Lightbox -->
-    <script src="{{ url('vendors/lightbox/jquery.magnific-popup.min.js') }}"></script>
-    <script src="{{ url('assets/js/examples/lightbox.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/lightbox/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/lightbox.js') }}"></script>
 
     <!-- Prism -->
-    <script src="{{ url('vendors/prism/prism.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/prism/prism.js') }}"></script>
 @endsection

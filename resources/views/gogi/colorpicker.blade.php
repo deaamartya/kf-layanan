@@ -2,10 +2,10 @@
 
 @section('head')
     <!-- Colorpicker -->
-    <link rel="stylesheet" href="{{ url('vendors/colorpicker/css/bootstrap-colorpicker.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/colorpicker/css/bootstrap-colorpicker.min.css') }}" type="text/css">
 
     <!-- Prism -->
-    <link rel="stylesheet" href="{{ url('vendors/prism/prism.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/prism/prism.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -250,9 +250,9 @@
 
 @section('script')
     <!-- Colorpicker -->
-    <script src="{{ url('vendors/colorpicker/js/bootstrap-colorpicker.min.js') }}"></script>
-    <script src="{{ url('assets/js/examples/colorpicker.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/colorpicker/js/bootstrap-colorpicker.min.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/colorpicker.js') }}"></script>
 
     <!-- Prism -->
-    <script src="{{ url('vendors/prism/prism.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/prism/prism.js') }}"></script>
 @endsection

@@ -7,7 +7,25 @@ Route::get('walkin', 'FarmasiController@walkin')->name('walkin');
 Route::get('pesanan-online', 'FarmasiController@online')->name('pesanan-online');
 
 
+// Route Pasien
 
+
+
+
+
+// Route Umum
+Route::view('list-spesialisasi','umum.list-spesialisasi');
+Route::view('list-dokter','umum.list-dokter');
+
+
+
+
+// Route Perawat
+
+
+
+
+// Route Dokter
 
 
 
@@ -17,11 +35,9 @@ Route::get('/', function () {
     return view('gogi.welcome');
 });
 
-Route::view('list-dokter','pasien.list-dokter');
+// Auth::routes();
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', function () {
     return view('gogi.dashboard');

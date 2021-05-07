@@ -2,10 +2,10 @@
 
 @section('head')
     <!-- Datepicker -->
-    <link rel="stylesheet" href="{{ url('vendors/datepicker/daterangepicker.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/datepicker/daterangepicker.css') }}">
 
     <!-- Prism -->
-    <link rel="stylesheet" href="{{ url('vendors/prism/prism.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/prism/prism.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -178,9 +178,9 @@ $('input.create-event-datepicker').daterangepicker({
 
 @section('script')
     <!-- Datepicker -->
-    <script src="{{ url('vendors/datepicker/daterangepicker.js') }}"></script>
-    <script src="{{ url('assets/js/examples/datepicker.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/datepicker/daterangepicker.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/datepicker.js') }}"></script>
 
     <!-- Prism -->
-    <script src="{{ url('vendors/prism/prism.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/prism/prism.js') }}"></script>
 @endsection

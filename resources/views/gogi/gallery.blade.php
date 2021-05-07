@@ -2,7 +2,7 @@
 
 @section('head')
     <!-- Magnific popup -->
-    <link rel="stylesheet" href="{{ url('vendors/lightbox/magnific-popup.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/lightbox/magnific-popup.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -39,9 +39,9 @@
         <div class="col-md-12">
             <div class="gallery-container row">
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 drawings mb-4">
-                    <a href="{{ url('assets/media/image/photo1.jpg') }}" class="image-popup-gallery-item">
+                    <a href="{{ asset('assets/gogi/assets/media/image/photo1.jpg') }}" class="image-popup-gallery-item">
                         <div class="image-hover">
-                            <img src="{{ url('assets/media/image/photo1.jpg') }}" class="rounded" alt="image">
+                            <img src="{{ asset('assets/gogi/assets/media/image/photo1.jpg') }}" class="rounded" alt="image">
                             <div class="image-hover-body rounded">
                                 <div>
                                     <h4 class="mb-2">Gallery Item Title</h4>
@@ -52,9 +52,9 @@
                     </a>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 webTemplates drawings ui mb-4">
-                    <a href="{{ url('assets/media/image/photo2.jpg') }}" class="image-popup-gallery-item">
+                    <a href="{{ asset('assets/gogi/assets/media/image/photo2.jpg') }}" class="image-popup-gallery-item">
                         <div class="image-hover">
-                            <img src="{{ url('assets/media/image/photo2.jpg') }}" class="rounded" alt="image">
+                            <img src="{{ asset('assets/gogi/assets/media/image/photo2.jpg') }}" class="rounded" alt="image">
                             <div class="image-hover-body rounded">
                                 <div>
                                     <h4 class="mb-2">Gallery Item Title</h4>
@@ -65,9 +65,9 @@
                     </a>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 logos mb-4">
-                    <a href="{{ url('assets/media/image/photo3.jpg') }}" class="image-popup-gallery-item">
+                    <a href="{{ asset('assets/gogi/assets/media/image/photo3.jpg') }}" class="image-popup-gallery-item">
                         <div class="image-hover">
-                            <img src="{{ url('assets/media/image/photo3.jpg') }}" class="rounded" alt="image">
+                            <img src="{{ asset('assets/gogi/assets/media/image/photo3.jpg') }}" class="rounded" alt="image">
                             <div class="image-hover-body rounded">
                                 <div>
                                     <h4 class="mb-2">Gallery Item Title</h4>
@@ -78,9 +78,9 @@
                     </a>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ui mb-4">
-                    <a href="{{ url('assets/media/image/photo4.jpg') }}" class="image-popup-gallery-item">
+                    <a href="{{ asset('assets/gogi/assets/media/image/photo4.jpg') }}" class="image-popup-gallery-item">
                         <div class="image-hover">
-                            <img src="{{ url('assets/media/image/photo4.jpg') }}" class="rounded" alt="image">
+                            <img src="{{ asset('assets/gogi/assets/media/image/photo4.jpg') }}" class="rounded" alt="image">
                             <div class="image-hover-body rounded">
                                 <div>
                                     <h4 class="mb-2">Gallery Item Title</h4>
@@ -91,9 +91,9 @@
                     </a>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 ui mb-4">
-                    <a href="{{ url('assets/media/image/photo5.jpg') }}" class="image-popup-gallery-item">
+                    <a href="{{ asset('assets/gogi/assets/media/image/photo5.jpg') }}" class="image-popup-gallery-item">
                         <div class="image-hover">
-                            <img src="{{ url('assets/media/image/photo5.jpg') }}" class="rounded" alt="image">
+                            <img src="{{ asset('assets/gogi/assets/media/image/photo5.jpg') }}" class="rounded" alt="image">
                             <div class="image-hover-body rounded">
                                 <div>
                                     <h4 class="mb-2">Gallery Item Title</h4>
@@ -104,9 +104,9 @@
                     </a>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 drawings mb-4">
-                    <a href="{{ url('assets/media/image/photo6.jpg') }}" class="image-popup-gallery-item">
+                    <a href="{{ asset('assets/gogi/assets/media/image/photo6.jpg') }}" class="image-popup-gallery-item">
                         <div class="image-hover">
-                            <img src="{{ url('assets/media/image/photo6.jpg') }}" class="rounded" alt="image">
+                            <img src="{{ asset('assets/gogi/assets/media/image/photo6.jpg') }}" class="rounded" alt="image">
                             <div class="image-hover-body rounded">
                                 <div>
                                     <h4 class="mb-2">Gallery Item Title</h4>
@@ -117,9 +117,9 @@
                     </a>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 logos mb-4">
-                    <a href="{{ url('assets/media/image/photo7.jpg') }}" class="image-popup-gallery-item">
+                    <a href="{{ asset('assets/gogi/assets/media/image/photo7.jpg') }}" class="image-popup-gallery-item">
                         <div class="image-hover">
-                            <img src="{{ url('assets/media/image/photo7.jpg') }}" class="rounded" alt="image">
+                            <img src="{{ asset('assets/gogi/assets/media/image/photo7.jpg') }}" class="rounded" alt="image">
                             <div class="image-hover-body rounded">
                                 <div>
                                     <h4 class="mb-2">Gallery Item Title</h4>
@@ -130,9 +130,9 @@
                     </a>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 webTemplates logos mb-4">
-                    <a href="{{ url('assets/media/image/photo8.jpg') }}" class="image-popup-gallery-item">
+                    <a href="{{ asset('assets/gogi/assets/media/image/photo8.jpg') }}" class="image-popup-gallery-item">
                         <div class="image-hover">
-                            <img src="{{ url('assets/media/image/photo8.jpg') }}" class="rounded" alt="image">
+                            <img src="{{ asset('assets/gogi/assets/media/image/photo8.jpg') }}" class="rounded" alt="image">
                             <div class="image-hover-body rounded">
                                 <div>
                                     <h4 class="mb-2">Gallery Item Title</h4>
@@ -143,9 +143,9 @@
                     </a>
                 </div>
                 <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 logos mb-4">
-                    <a href="{{ url('assets/media/image/photo9.jpg') }}" class="image-popup-gallery-item">
+                    <a href="{{ asset('assets/gogi/assets/media/image/photo9.jpg') }}" class="image-popup-gallery-item">
                         <div class="image-hover">
-                            <img src="{{ url('assets/media/image/photo9.jpg') }}" class="rounded" alt="image">
+                            <img src="{{ asset('assets/gogi/assets/media/image/photo9.jpg') }}" class="rounded" alt="image">
                             <div class="image-hover-body rounded">
                                 <div>
                                     <h4 class="mb-2">Gallery Item Title</h4>
@@ -163,10 +163,10 @@
 
 @section('script')
     <!-- Magnific popup -->
-    <script src="{{ url('vendors/lightbox/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/lightbox/jquery.magnific-popup.min.js') }}"></script>
 
     <!-- Isotope -->
-    <script src="{{ url('vendors/jquery.isotope.min.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/jquery.isotope.min.js') }}"></script>
 
-    <script src="{{ url('assets/js/examples/pages/gallery.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/pages/gallery.js') }}"></script>
 @endsection

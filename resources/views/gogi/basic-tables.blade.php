@@ -2,7 +2,7 @@
 
 @section('head')
     <!-- Prism -->
-    <link rel="stylesheet" href="{{ url('vendors/prism/prism.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/prism/prism.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -202,7 +202,7 @@
                                         <th scope="row">1</th>
                                         <th>
                                             <figure class="avatar avatar-sm">
-                                                <img src="{{ url('assets/media/image/user/women_avatar5.jpg') }}"
+                                                <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar5.jpg') }}"
                                                      class="rounded-circle" alt="image">
                                             </figure>
                                         </th>
@@ -227,7 +227,7 @@
                                         <th scope="row">3</th>
                                         <th>
                                             <figure class="avatar avatar-sm">
-                                                <img src="{{ url('assets/media/image/user/man_avatar5.jpg') }}"
+                                                <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar5.jpg') }}"
                                                      class="rounded-circle" alt="image">
                                             </figure>
                                         </th>
@@ -268,7 +268,7 @@
             &lt;th scope="row"&gt;1&lt;/th&gt;
             &lt;th&gt;
                 &lt;figure class="avatar avatar-sm"&gt;
-                    &lt;img src="{{ url('assets/media/image/user/women_avatar5.jpg') }}" class="rounded-circle" alt="image"&gt;
+                    &lt;img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar5.jpg') }}" class="rounded-circle" alt="image"&gt;
                 &lt;/figure&gt;
             &lt;/th&gt;
             &lt;td&gt;Jessie&lt;/td&gt;
@@ -292,7 +292,7 @@
             &lt;th scope="row"&gt;3&lt;/th&gt;
             &lt;th&gt;
                 &lt;figure class="avatar avatar-sm"&gt;
-                    &lt;img src="{{ url('assets/media/image/user/man_avatar5.jpg') }}" class="rounded-circle" alt="image"&gt;
+                    &lt;img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar5.jpg') }}" class="rounded-circle" alt="image"&gt;
                 &lt;/figure&gt;
             &lt;/th&gt;
             &lt;td&gt;Larry&lt;/td&gt;
@@ -337,7 +337,7 @@
                                         <th scope="row">1</th>
                                         <th>
                                             <figure class="avatar avatar-sm">
-                                                <img src="{{ url('assets/media/image/user/women_avatar5.jpg') }}"
+                                                <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar5.jpg') }}"
                                                      class="rounded-circle" alt="image">
                                             </figure>
                                         </th>
@@ -366,7 +366,7 @@
                                         <th scope="row">3</th>
                                         <th>
                                             <figure class="avatar avatar-sm">
-                                                <img src="{{ url('assets/media/image/user/man_avatar5.jpg') }}"
+                                                <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar5.jpg') }}"
                                                      class="rounded-circle" alt="image">
                                             </figure>
                                         </th>
@@ -396,7 +396,7 @@
             &lt;th scope="row"&gt;1&lt;/th&gt;
             &lt;th&gt;
                 &lt;figure class="avatar avatar-sm"&gt;
-                    &lt;img src="{{ url('assets/media/image/user/women_avatar5.jpg') }}" class="rounded-circle" alt="image"&gt;
+                    &lt;img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar5.jpg') }}" class="rounded-circle" alt="image"&gt;
                 &lt;/figure&gt;
             &lt;/th&gt;
             &lt;td&gt;Jessie&lt;/td&gt;
@@ -424,7 +424,7 @@
             &lt;th scope="row"&gt;3&lt;/th&gt;
             &lt;th&gt;
                 &lt;figure class="avatar avatar-sm"&gt;
-                    &lt;img src="{{ url('assets/media/image/user/man_avatar5.jpg') }}" class="rounded-circle" alt="image"&gt;
+                    &lt;img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar5.jpg') }}" class="rounded-circle" alt="image"&gt;
                 &lt;/figure&gt;
             &lt;/th&gt;
             &lt;td&gt;Larry&lt;/td&gt;
@@ -1277,5 +1277,5 @@
 
 @section('script')
     <!-- Prism -->
-    <script src="{{ url('vendors/prism/prism.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/prism/prism.js') }}"></script>
 @endsection

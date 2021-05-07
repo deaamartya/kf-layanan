@@ -7,20 +7,20 @@
     <title>Gogi - Admin and Dashboard Template</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ url('assets/media/image/favicon.png') }}"/>
+    <link rel="shortcut icon" href="{{ asset('assets/gogi/assets/media/image/favicon.png') }}"/>
 
     <!-- Plugin styles -->
-    <link rel="stylesheet" href="{{ url('vendors/bundle.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/bundle.css') }}" type="text/css">
 
     <!-- App styles -->
-    <link rel="stylesheet" href="{{ url('assets/css/app.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/css/app.min.css') }}" type="text/css">
 </head>
 <body class="bg-white h-100-vh pt-0">
 
 <div class="container h-100-vh">
     <div class="row align-items-md-center h-100-vh">
         <div class="col-lg-5 d-none d-lg-block">
-            <img class="img-fluid" src="{{ url('assets/media/svg/mean_at_work.svg') }}" alt="image">
+            <img class="img-fluid" src="{{ asset('assets/gogi/assets/media/svg/mean_at_work.svg') }}" alt="image">
         </div>
         <div class="col-lg-6 offset-lg-1 text-center text-lg-left">
             <h2 class="display-4">We will be back soon!</h2>
@@ -32,9 +32,9 @@
 </div>
 
 <!-- Plugin scripts -->
-<script src="{{ url('vendors/bundle.js') }}"></script>
+<script src="{{ asset('assets/gogi/vendors/bundle.js') }}"></script>
 
 <!-- App scripts -->
-<script src="{{ url('assets/js/app.min.js') }}"></script>
+<script src="{{ asset('assets/js/app.min.js') }}"></script>
 </body>
 </html>

@@ -2,7 +2,7 @@
 
 @section('head')
     <!-- Datatable -->
-    <link rel="stylesheet" href="{{ url('vendors/dataTable/datatables.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/dataTable/datatables.min.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -93,7 +93,7 @@
                                 <td>
                                     <a href="#">
                                         <figure class="avatar avatar-sm mr-2">
-                                            <img src="{{ url('assets/media/image/user/man_avatar3.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar3.jpg') }}"
                                                  class="rounded-circle" alt="avatar">
                                         </figure>
                                         Hillery Ovenell
@@ -127,7 +127,7 @@
                                 <td>
                                     <a href="#">
                                         <figure class="avatar avatar-sm mr-2">
-                                            <img src="{{ url('assets/media/image/user/man_avatar4.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar4.jpg') }}"
                                                  class="rounded-circle" alt="avatar">
                                         </figure>
                                         Roarke Woolford
@@ -161,7 +161,7 @@
                                 <td>
                                     <a href="#">
                                         <figure class="avatar avatar-sm mr-2">
-                                            <img src="{{ url('assets/media/image/user/man_avatar2.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar2.jpg') }}"
                                                  class="rounded-circle" alt="avatar">
                                         </figure>
                                         Woody Guerra
@@ -195,7 +195,7 @@
                                 <td>
                                     <a href="#">
                                         <figure class="avatar avatar-sm mr-2">
-                                            <img src="{{ url('assets/media/image/user/women_avatar2.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar2.jpg') }}"
                                                  class="rounded-circle" alt="avatar">
                                         </figure>
                                         Wainwright Taffe
@@ -229,7 +229,7 @@
                                 <td>
                                     <a href="#">
                                         <figure class="avatar avatar-sm mr-2">
-                                            <img src="{{ url('assets/media/image/user/women_avatar4.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar4.jpg') }}"
                                                  class="rounded-circle" alt="avatar">
                                         </figure>
                                         Steven Preuvost
@@ -263,7 +263,7 @@
                                 <td>
                                     <a href="#">
                                         <figure class="avatar avatar-sm mr-2">
-                                            <img src="{{ url('assets/media/image/user/man_avatar1.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar1.jpg') }}"
                                                  class="rounded-circle" alt="avatar">
                                         </figure>
                                         Aurlie Kimmel
@@ -297,7 +297,7 @@
                                 <td>
                                     <a href="#">
                                         <figure class="avatar avatar-sm mr-2">
-                                            <img src="{{ url('assets/media/image/user/women_avatar5.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar5.jpg') }}"
                                                  class="rounded-circle" alt="avatar">
                                         </figure>
                                         Mariann Pepperrall
@@ -331,7 +331,7 @@
                                 <td>
                                     <a href="#">
                                         <figure class="avatar avatar-sm mr-2">
-                                            <img src="{{ url('assets/media/image/user/man_avatar5.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar5.jpg') }}"
                                                  class="rounded-circle" alt="avatar">
                                         </figure>
                                         Erl Srutton
@@ -365,7 +365,7 @@
                                 <td>
                                     <a href="#">
                                         <figure class="avatar avatar-sm mr-2">
-                                            <img src="{{ url('assets/media/image/user/women_avatar1.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar1.jpg') }}"
                                                  class="rounded-circle" alt="avatar">
                                         </figure>
                                         Luce Meddings
@@ -399,7 +399,7 @@
                                 <td>
                                     <a href="#">
                                         <figure class="avatar avatar-sm mr-2">
-                                            <img src="{{ url('assets/media/image/user/man_avatar2.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar2.jpg') }}"
                                                  class="rounded-circle" alt="avatar">
                                         </figure>
                                         Osbourne Wiskar
@@ -433,7 +433,7 @@
                                 <td>
                                     <a href="#">
                                         <figure class="avatar avatar-sm mr-2">
-                                            <img src="{{ url('assets/media/image/user/women_avatar3.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar3.jpg') }}"
                                                  class="rounded-circle" alt="avatar">
                                         </figure>
                                         Jeannette Daintith
@@ -467,7 +467,7 @@
                                 <td>
                                     <a href="#">
                                         <figure class="avatar avatar-sm mr-2">
-                                            <img src="{{ url('assets/media/image/user/man_avatar1.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar1.jpg') }}"
                                                  class="rounded-circle" alt="avatar">
                                         </figure>
                                         Payton Espinola
@@ -507,7 +507,7 @@
 
 @section('script')
     <!-- Datatable -->
-    <script src="{{ url('vendors/dataTable/datatables.min.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/dataTable/datatables.min.js') }}"></script>
 
-    <script src="{{ url('assets/js/examples/pages/user-list.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/pages/user-list.js') }}"></script>
 @endsection

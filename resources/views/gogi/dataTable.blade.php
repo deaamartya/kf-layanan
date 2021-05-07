@@ -2,10 +2,10 @@
 
 @section('head')
     <!-- DataTable -->
-    <link rel="stylesheet" href="{{ url('vendors/dataTable/datatables.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/dataTable/datatables.min.css') }}" type="text/css">
 
     <!-- Prism -->
-    <link rel="stylesheet" href="{{ url('vendors/prism/prism.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/prism/prism.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -1094,9 +1094,9 @@
 
 @section('script')
     <!-- DataTable -->
-    <script src="{{ url('vendors/dataTable/datatables.min.js') }}"></script>
-    <script src="{{ url('assets/js/examples/datatable.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/dataTable/datatables.min.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/datatable.js') }}"></script>
 
     <!-- Prism -->
-    <script src="{{ url('vendors/prism/prism.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/prism/prism.js') }}"></script>
 @endsection

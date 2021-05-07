@@ -32,7 +32,7 @@
                                     <div>
                                         <a href="#">
                                             <figure class="avatar avatar-sm mr-3 bring-forward">
-                                                <img src="{{ url('assets/media/image/user/women_avatar4.jpg') }}"
+                                                <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar4.jpg') }}"
                                                      class="rounded-circle" alt="image">
                                             </figure>
                                         </a>
@@ -47,7 +47,7 @@
                                         <a href="#">
                                             <div class="row no-gutters border card flex-row border-radius-1">
                                                 <div class="col-xl-2 col-lg-12">
-                                                    <img src="{{ url('assets/media/image/photo6.jpg') }}" class="w-100"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/photo6.jpg') }}" class="w-100"
                                                          alt="image">
                                                 </div>
                                                 <div class="col-xl-10 col-lg-12 p-3">
@@ -120,19 +120,19 @@
                                         <div class="row row-xs">
                                             <div class="col-xl-2 col-lg-3 col-md-4 col-sx-6">
                                                 <figure>
-                                                    <img src="{{ url('assets/media/image/portfolio-five.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/portfolio-five.jpg') }}"
                                                          class="w-100 border-radius-1" alt="image">
                                                 </figure>
                                             </div>
                                             <div class="col-xl-2 col-lg-3 col-md-4 col-sx-6">
                                                 <figure>
-                                                    <img src="{{ url('assets/media/image/portfolio-one.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/portfolio-one.jpg') }}"
                                                          class="w-100 border-radius-1" alt="image">
                                                 </figure>
                                             </div>
                                             <div class="col-xl-2 col-lg-3 col-md-4 col-sx-6">
                                                 <figure>
-                                                    <img src="{{ url('assets/media/image/portfolio-three.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/portfolio-three.jpg') }}"
                                                          class="w-100 border-radius-1" alt="image">
                                                 </figure>
                                             </div>

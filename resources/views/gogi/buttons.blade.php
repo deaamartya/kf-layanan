@@ -2,7 +2,7 @@
 
 @section('head')
     <!-- Prism -->
-    <link rel="stylesheet" href="{{ url('vendors/prism/prism.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/prism/prism.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -494,7 +494,7 @@
                         </div>
                         <div class="col-lg-5 col-sm-6 mb-3">
                             <a href="#" class="btn btn-google-play">
-                                <img src="{{ url('assets/media/image/google_play_button.png') }}" alt="image">
+                                <img src="{{ asset('assets/gogi/assets/media/image/google_play_button.png') }}" alt="image">
                                 <span>
                             <span>Get in on</span>
                             <span>Google Play</span>
@@ -1190,5 +1190,5 @@
 
 @section('script')
     <!-- Prism -->
-    <script src="{{ url('vendors/prism/prism.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/prism/prism.js') }}"></script>
 @endsection

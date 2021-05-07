@@ -7,13 +7,13 @@
     <title>Gogi - Admin and Dashboard Template</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ url('assets/media/image/favicon.png') }}"/>
+    <link rel="shortcut icon" href="{{ asset('assets/gogi/assets/media/image/favicon.png') }}"/>
 
     <!-- Plugin styles -->
-    <link rel="stylesheet" href="{{ url('vendors/bundle.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/bundle.css') }}" type="text/css">
 
     <!-- App styles -->
-    <link rel="stylesheet" href="{{ url('assets/css/app.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/css/app.min.css') }}" type="text/css">
 </head>
 <body class="bg-white">
 
@@ -25,7 +25,7 @@
                 <div class="content" style="padding: 50px 0;">
                     <table class="main" width="100%" cellpadding="0" cellspacing="0" style="border: 1px solid #e9e9e9;" bgcolor="#fff">
                         <tr>
-                            <td style="padding: 20px; border-radius: 0;" align="center" valign="top"><img src="{{ url('assets/media/image/notification-icon.png') }}" alt="image" style="margin-left: auto; margin-right: auto; display:block;width: 60px;"></td>
+                            <td style="padding: 20px; border-radius: 0;" align="center" valign="top"><img src="{{ asset('assets/gogi/assets/media/image/notification-icon.png') }}" alt="image" style="margin-left: auto; margin-right: auto; display:block;width: 60px;"></td>
                         </tr>
                         <tr>
                             <td style="color:#ffffff; background-color: #212f56; padding: 20px; border-radius: 0;" align="center" valign="top">Warning: You're approaching your limit. Please upgrade.</td>
@@ -58,9 +58,9 @@
 </div>
 
 <!-- Plugin scripts -->
-<script src="{{ url('vendors/bundle.js') }}"></script>
+<script src="{{ asset('assets/gogi/vendors/bundle.js') }}"></script>
 
 <!-- App scripts -->
-<script src="{{ url('assets/js/app.min.js') }}"></script>
+<script src="{{ asset('assets/js/app.min.js') }}"></script>
 </body>
 </html>

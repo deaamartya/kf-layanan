@@ -8,16 +8,23 @@ Route::get('farmasi/walkin-reset', 'FarmasiController@walkinReset');
 Route::get('farmasi/walkin-pesan', 'FarmasiController@walkinPesan');
 
 // Route Pasien
-
-
-
-
-
+Route::view('pasien','pasien.home');
+Route::post('login',function(){
+    return redirect('pasien/pembayaran');
+});
+Route::view('pasien/pembayaran','pasien.pembayaran');
+// Route untuk simulasi
+Route::view('pasien/pembayaran-simulasi','pasien.pembayaran-simulasi');
+Route::view('pasien/pembayaran-umum','pasien.pembayaran-umum');
+Route::view('pasien/pembayaran-lainnya','pasien.pembayaran-lainnya');
+Route::view('pasien/detail-antrian','pasien.detail-antrian');
+Route::view('pasien/riwayat-layanan-dokter','pasien.riwayat-layanan-dokter');
+Route::view('pasien/resep-aktif','pasien.resep-aktif');
 // Route Umum
 Route::view('list-spesialisasi','umum.list-spesialisasi');
 Route::view('list-dokter','umum.list-dokter');
-
-
+Route::view('registrasi','auth.register');
+Route::view('login','auth.login');
 
 
 // Route Perawat
@@ -92,14 +99,6 @@ Route::get('users', function () {
 Route::get('settings', function () {
     return view('gogi.settings');
 })->name('settings');
-
-Route::get('login', function () {
-    return view('gogi.login');
-})->name('login');
-
-Route::get('register', function () {
-    return view('gogi.register');
-})->name('register');
 
 Route::get('recovery-password', function () {
     return view('gogi.recovery-password');

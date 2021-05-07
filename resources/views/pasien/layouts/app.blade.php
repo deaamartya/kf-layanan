@@ -25,7 +25,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body class="horizontal-navigation">
 <!-- Preloader -->
 <div class="preloader">
     <div class="preloader-icon"></div>
@@ -315,7 +315,7 @@
 <div class="layout-wrapper">
 
     <!-- Header -->
-    <div class="header d-print-none" style="padding-top: 15px;margin-bottom: 10px;">
+    <div class="header d-print-none">
         <div class="header-container">
             <div class="header-left justify-content-center">
                 <div class="navigation-toggler">
@@ -324,8 +324,8 @@
                     </a>
                 </div>
 
-                <div class="header-logo" style="background-color: white;padding: 7px;border-radius: 5px;vertical-align: middle;">
-                    <a href="{{ url('/') }}" style="height: auto">
+                <div class="header-logo" style="background-color: white;padding: 2px 5px;margin: 15px 0;border-radius: 10px;">
+                    <a href="{{ url('/') }}">
                         <img class="logo" src="{{ asset('assets/gogi/assets/media/image/logo.png') }}" alt="logo" height="40">
                     </a>
                 </div>
@@ -547,9 +547,9 @@
     <!-- ./ Header -->
 
     <!-- Content wrapper -->
-    <div class="content-wrapper mt-3">
+    <div class="content-wrapper">
         <!-- begin::navigation -->
-        <div class="navigation">
+        <div class="navigation mt-5">
             <div class="navigation-header">
                 <span>Navigation</span>
                 <a href="#">
@@ -567,22 +567,12 @@
                         </a>
                     </li>
                 </ul>
-                <ul>
-                    <li>
-                        <a @if(request()->segment(1) == 'list-spesialisasi') class="active" @endif href="{{ url('list-spesialisasi') }}">
-                    <span class="nav-link-icon">
-                        <i data-feather="pie-chart"></i>
-                    </span>
-                            <span>List Spesialiasi</span>
-                        </a>
-                    </li>
-                </ul>
             </div>
         </div>
         <!-- end::navigation -->
 
         <!-- Content body -->
-        <div class="content-body">
+        <div class="content-body mt-5">
             <!-- Content -->
             <div class="content @yield('parentClassName')">
                 @yield('content')

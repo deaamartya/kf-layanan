@@ -2,7 +2,7 @@
 
 @section('head')
     <!-- Prism -->
-    <link rel="stylesheet" href="{{ url('vendors/prism/prism.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/prism/prism.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -111,11 +111,11 @@
 
 @section('script')
     <!-- Google map example -->
-    <script src="{{ url('assets/js/examples/google-map.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/google-map.js') }}"></script>
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDodpsFh_9UvPq6272RwRWUBqpjxuZ-MfA&callback=initialize"
             async defer></script>
 
     <!-- Prism -->
-    <script src="{{ url('vendors/prism/prism.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/prism/prism.js') }}"></script>
 @endsection

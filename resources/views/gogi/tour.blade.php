@@ -2,10 +2,10 @@
 
 @section('head')
     <!-- Tour -->
-    <link rel="stylesheet" href="{{ url('vendors/enjoyhint/enjoyhint.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/enjoyhint/enjoyhint.css') }}" type="text/css">
 
     <!-- Prism -->
-    <link rel="stylesheet" href="{{ url('vendors/prism/prism.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/prism/prism.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -75,9 +75,9 @@
 
 @section('script')
     <!-- Tour -->
-    <script src="{{ url('vendors/enjoyhint/enjoyhint.min.js') }}"></script>
-    <script src="{{ url('assets/js/examples/tour.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/enjoyhint/enjoyhint.min.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/tour.js') }}"></script>
 
     <!-- Prism -->
-    <script src="{{ url('vendors/prism/prism.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/prism/prism.js') }}"></script>
 @endsection

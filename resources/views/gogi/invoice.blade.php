@@ -9,7 +9,7 @@
                     <div class="invoice">
                         <div class="d-md-flex justify-content-between align-items-center">
                             <h2 class="font-weight-bold d-flex align-items-center">
-                                <img src="{{ url('assets/media/image/dark-logo.png') }}" alt="dark logo">
+                                <img src="{{ asset('assets/gogi/assets/media/image/dark-logo.png') }}" alt="dark logo">
                             </h2>
                             <h3 class="text-xs-left m-b-0">Invoice #INV-16</h3>
                         </div>

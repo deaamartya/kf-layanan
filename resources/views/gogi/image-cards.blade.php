@@ -2,7 +2,7 @@
 
 @section('head')
     <!-- Prism -->
-    <link rel="stylesheet" href="{{ url('vendors/prism/prism.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/prism/prism.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -32,7 +32,7 @@
 
                     <div class="card-group">
                         <div class="card">
-                            <img src="{{ url('assets/media/image/portfolio-six.jpg') }}" class="card-img-top" alt="image">
+                            <img src="{{ asset('assets/gogi/assets/media/image/portfolio-six.jpg') }}" class="card-img-top" alt="image">
                             <div class="card-body">
                                 <h6 class="card-title">Card title</h6>
                                 <p class="card-text">This is a wider card with supporting text below as a natural
@@ -44,7 +44,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img src="{{ url('assets/media/image/portfolio-four.jpg') }}" class="card-img-top" alt="image">
+                            <img src="{{ asset('assets/gogi/assets/media/image/portfolio-four.jpg') }}" class="card-img-top" alt="image">
                             <div class="card-body">
                                 <h6 class="card-title">Card title</h6>
                                 <p class="card-text">This card has supporting text below as a natural lead-in to
@@ -56,7 +56,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img src="{{ url('assets/media/image/portfolio-two.jpg') }}" class="card-img-top" alt="image">
+                            <img src="{{ asset('assets/gogi/assets/media/image/portfolio-two.jpg') }}" class="card-img-top" alt="image">
                             <div class="card-body">
                                 <h6 class="card-title">Card title</h6>
                                 <p class="card-text">This is a wider card with supporting text below as a natural
@@ -74,7 +74,7 @@
                     <div class="card-columns">
 
                         <div class="card">
-                            <img src="{{ url('assets/media/image/portfolio-one.jpg') }}" class="card-img-top" alt="image">
+                            <img src="{{ asset('assets/gogi/assets/media/image/portfolio-one.jpg') }}" class="card-img-top" alt="image">
                             <div class="card-body">
                                 <p class="card-text">Some quick example text to build on the card title and make up the
                                     bulk of the
@@ -83,7 +83,7 @@
                         </div>
 
                         <div class="card">
-                            <img src="{{ url('assets/media/image/portfolio-two.jpg') }}" class="card-img-top" alt="image">
+                            <img src="{{ asset('assets/gogi/assets/media/image/portfolio-two.jpg') }}" class="card-img-top" alt="image">
                             <div class="card-body">
                                 <h6 class="card-title">Card title</h6>
                                 <p class="card-text">This is a wider card with supporting text below as a natural
@@ -96,7 +96,7 @@
                         </div>
 
                         <div class="card">
-                            <img src="{{ url('assets/media/image/portfolio-four.jpg') }}" class="card-img-top" alt="image">
+                            <img src="{{ asset('assets/gogi/assets/media/image/portfolio-four.jpg') }}" class="card-img-top" alt="image">
                             <div class="card-body">
                                 <p class="card-text">Some quick example text to build on the card title and make up the
                                     bulk of the
@@ -115,11 +115,11 @@
                                     <small class="text-muted">Last updated 3 mins ago</small>
                                 </p>
                             </div>
-                            <img src="{{ url('assets/media/image/portfolio-three.jpg') }}" class="card-img-top" alt="image">
+                            <img src="{{ asset('assets/gogi/assets/media/image/portfolio-three.jpg') }}" class="card-img-top" alt="image">
                         </div>
 
                         <div class="card bg-dark text-white">
-                            <img src="{{ url('assets/media/image/portfolio-six.jpg') }}" class="card-img" alt="image">
+                            <img src="{{ asset('assets/gogi/assets/media/image/portfolio-six.jpg') }}" class="card-img" alt="image">
                             <div class="card-img-overlay">
                                 <h6 class="card-title">Card title</h6>
                                 <p class="card-text">This is a wider card with supporting text below as a natural
@@ -130,14 +130,14 @@
                         </div>
 
                         <div class="card">
-                            <img src="{{ url('assets/media/image/portfolio-five.jpg') }}" class="card-img-top" alt="image">
+                            <img src="{{ asset('assets/gogi/assets/media/image/portfolio-five.jpg') }}" class="card-img-top" alt="image">
                         </div>
 
                         <div class="card">
                             <div class="card-header">Card Header</div>
                             <div class="card-body">
                                 <figure>
-                                    <img src="{{ url('assets/media/image/portfolio-four.jpg') }}" class="card-img-top" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/portfolio-four.jpg') }}" class="card-img-top" alt="image">
                                 </figure>
                                 <p class="card-text">Some quick example text to build on the card title and make up the
                                     bulk of the
@@ -158,5 +158,5 @@
 
 @section('script')
     <!-- Prism -->
-    <script src="{{ url('vendors/prism/prism.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/prism/prism.js') }}"></script>
 @endsection

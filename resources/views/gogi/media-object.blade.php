@@ -2,7 +2,7 @@
 
 @section('head')
     <!-- Prism -->
-    <link rel="stylesheet" href="{{ url('vendors/prism/prism.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/prism/prism.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -31,7 +31,7 @@
                 <div class="card-body">
                     <h6 class="card-title">Media</h6>
                     <div class="media">
-                        <img src="{{ url('assets/media/image/portfolio-one.jpg') }}" class="mr-3" alt="image">
+                        <img src="{{ asset('assets/gogi/assets/media/image/portfolio-one.jpg') }}" class="mr-3" alt="image">
                         <div class="media-body">
                             <h5 class="mt-0">Media heading</h5>
                             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
@@ -57,7 +57,7 @@
                 <div class="card-body">
                     <h6 class="card-title">Nesting</h6>
                     <div class="media">
-                        <img src="{{ url('assets/media/image/portfolio-one.jpg') }}" class="mr-3" alt="image">
+                        <img src="{{ asset('assets/gogi/assets/media/image/portfolio-one.jpg') }}" class="mr-3" alt="image">
                         <div class="media-body">
                             <h5 class="mt-0">Media heading</h5>
                             Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
@@ -68,7 +68,7 @@
 
                             <div class="media mt-3">
                                 <a class="mr-3" href="#">
-                                    <img src="{{ url('assets/media/image/portfolio-one.jpg') }}" alt="image">
+                                    <img src="{{ asset('assets/gogi/assets/media/image/portfolio-one.jpg') }}" alt="image">
                                 </a>
                                 <div class="media-body">
                                     <h5 class="mt-0">Media heading</h5>
@@ -137,7 +137,7 @@
                     </div>
                     <div class="media">
                         <figure class="avatar mr-3">
-                            <img src="{{ url('assets/media/image/user/man_avatar1.jpg') }}" class="rounded-circle" alt="image">
+                            <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar1.jpg') }}" class="rounded-circle" alt="image">
                         </figure>
                         <div class="media-body">
                             <h5 class="mt-0">Media heading</h5>
@@ -190,7 +190,7 @@
                 <div class="card-body">
                     <h6 class="card-title">Alignment</h6>
                     <div class="media">
-                        <img src="{{ url('assets/media/image/portfolio-one.jpg') }}" class="align-self-start mr-3" alt="image">
+                        <img src="{{ asset('assets/gogi/assets/media/image/portfolio-one.jpg') }}" class="align-self-start mr-3" alt="image">
                         <div class="media-body">
                             <h5 class="mt-0">Top-aligned media</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
@@ -214,7 +214,7 @@
 &lt;/div&gt;</code></pre>
                     </div>
                     <div class="media">
-                        <img src="{{ url('assets/media/image/portfolio-one.jpg') }}" class="align-self-center mr-3" alt="image">
+                        <img src="{{ asset('assets/gogi/assets/media/image/portfolio-one.jpg') }}" class="align-self-center mr-3" alt="image">
                         <div class="media-body">
                             <h5 class="mt-0">Center-aligned media</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
@@ -237,7 +237,7 @@
 &lt;/div&gt;</code></pre>
                     </div>
                     <div class="media">
-                        <img src="{{ url('assets/media/image/portfolio-one.jpg') }}" class="align-self-end mr-3" alt="image">
+                        <img src="{{ asset('assets/gogi/assets/media/image/portfolio-one.jpg') }}" class="align-self-end mr-3" alt="image">
                         <div class="media-body">
                             <h5 class="mt-0">Bottom-aligned media</h5>
                             <p>Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
@@ -274,7 +274,7 @@
                             nisi
                             vulputate fringilla. Donec lacinia congue felis in faucibus.
                         </div>
-                        <img src="{{ url('assets/media/image/portfolio-one.jpg') }}" class="ml-3" alt="image">
+                        <img src="{{ asset('assets/gogi/assets/media/image/portfolio-one.jpg') }}" class="ml-3" alt="image">
                     </div>
 
                     <div data-label="CODE EXAMPLE" class="demo-code-preview">
@@ -297,5 +297,5 @@
 
 @section('script')
     <!-- Prism -->
-    <script src="{{ url('vendors/prism/prism.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/prism/prism.js') }}"></script>
 @endsection

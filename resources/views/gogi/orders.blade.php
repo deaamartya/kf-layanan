@@ -2,7 +2,7 @@
 
 @section('head')
     <!-- Datatable -->
-    <link rel="stylesheet" href="{{ url('vendors/dataTable/datatables.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/dataTable/datatables.min.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -68,7 +68,7 @@
                                 </td>
                                 <td>
                                     <a href="{{ route('product-detail') }}" class="d-flex align-items-center">
-                                        <img width="40" src="{{ url('assets/media/image/products/product1.png') }}"
+                                        <img width="40" src="{{ asset('assets/gogi/assets/media/image/products/product1.png') }}"
                                              class="rounded mr-3" alt="Vase">
                                         <span>Vase</span>
                                     </a>
@@ -103,7 +103,7 @@
                                 </td>
                                 <td>
                                     <a href="{{ route('product-detail') }}" class="d-flex align-items-center">
-                                        <img width="40" src="{{ url('assets/media/image/products/product2.png') }}"
+                                        <img width="40" src="{{ asset('assets/gogi/assets/media/image/products/product2.png') }}"
                                              class="rounded mr-3" alt="Glasses">
                                         <span>Glasses</span>
                                     </a>
@@ -138,7 +138,7 @@
                                 </td>
                                 <td>
                                     <a href="{{ route('product-detail') }}" class="d-flex align-items-center">
-                                        <img width="40" src="{{ url('assets/media/image/products/product3.png') }}"
+                                        <img width="40" src="{{ asset('assets/gogi/assets/media/image/products/product3.png') }}"
                                              class="rounded mr-3" alt="Plate">
                                         <span>Plate</span>
                                     </a>
@@ -173,7 +173,7 @@
                                 </td>
                                 <td>
                                     <a href="{{ route('product-detail') }}" class="d-flex align-items-center">
-                                        <img width="40" src="{{ url('assets/media/image/products/product4.png') }}"
+                                        <img width="40" src="{{ asset('assets/gogi/assets/media/image/products/product4.png') }}"
                                              class="rounded mr-3" alt="Pen">
                                         <span>Pen</span>
                                     </a>
@@ -208,7 +208,7 @@
                                 </td>
                                 <td>
                                     <a href="{{ route('product-detail') }}" class="d-flex align-items-center">
-                                        <img width="40" src="{{ url('assets/media/image/products/product5.png') }}"
+                                        <img width="40" src="{{ asset('assets/gogi/assets/media/image/products/product5.png') }}"
                                              class="rounded mr-3" alt="Armchair">
                                         <span>Armchair</span>
                                     </a>
@@ -243,7 +243,7 @@
                                 </td>
                                 <td>
                                     <a href="{{ route('product-detail') }}" class="d-flex align-items-center">
-                                        <img width="40" src="{{ url('assets/media/image/products/product6.png') }}"
+                                        <img width="40" src="{{ asset('assets/gogi/assets/media/image/products/product6.png') }}"
                                              class="rounded mr-3" alt="Flowerpot">
                                         <span>Flowerpot</span>
                                     </a>
@@ -278,7 +278,7 @@
                                 </td>
                                 <td>
                                     <a href="{{ route('product-detail') }}" class="d-flex align-items-center">
-                                        <img width="40" src="{{ url('assets/media/image/products/product7.png') }}"
+                                        <img width="40" src="{{ asset('assets/gogi/assets/media/image/products/product7.png') }}"
                                              class="rounded mr-3" alt="Wall Clock">
                                         <span>Wall Clock</span>
                                     </a>
@@ -313,7 +313,7 @@
                                 </td>
                                 <td>
                                     <a href="{{ route('product-detail') }}" class="d-flex align-items-center">
-                                        <img width="40" src="{{ url('assets/media/image/products/product8.png') }}"
+                                        <img width="40" src="{{ asset('assets/gogi/assets/media/image/products/product8.png') }}"
                                              class="rounded mr-3" alt="Desk">
                                         <span>Desk</span>
                                     </a>
@@ -348,7 +348,7 @@
                                 </td>
                                 <td>
                                     <a href="{{ route('product-detail') }}" class="d-flex align-items-center">
-                                        <img width="40" src="{{ url('assets/media/image/products/product9.png') }}"
+                                        <img width="40" src="{{ asset('assets/gogi/assets/media/image/products/product9.png') }}"
                                              class="rounded mr-3" alt="Night light">
                                         <span>Night light</span>
                                     </a>
@@ -383,7 +383,7 @@
                                 </td>
                                 <td>
                                     <a href="{{ route('product-detail') }}" class="d-flex align-items-center">
-                                        <img width="40" src="{{ url('assets/media/image/products/product10.png') }}"
+                                        <img width="40" src="{{ asset('assets/gogi/assets/media/image/products/product10.png') }}"
                                              class="rounded mr-3" alt="Shoe">
                                         <span>Shoe</span>
                                     </a>
@@ -424,7 +424,7 @@
 
 @section('script')
     <!-- Datatable -->
-    <script src="{{ url('vendors/dataTable/datatables.min.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/dataTable/datatables.min.js') }}"></script>
 
-    <script src="{{ url('assets/js/examples/pages/orders.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/pages/orders.js') }}"></script>
 @endsection

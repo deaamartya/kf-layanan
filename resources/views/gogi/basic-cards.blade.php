@@ -2,7 +2,7 @@
 
 @section('head')
     <!-- Prism -->
-    <link rel="stylesheet" href="{{ url('vendors/prism/prism.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/prism/prism.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -32,7 +32,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="card shadow-none border">
-                                <img src="{{ url('assets/media/image/photo1.jpg') }}" class="card-img-top" alt="...">
+                                <img src="{{ asset('assets/gogi/assets/media/image/photo1.jpg') }}" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Some quick example text to build on the card title and
@@ -114,7 +114,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="card shadow-none border mb-0">
-                                <img src="{{ url('assets/media/image/photo1.jpg') }}" class="card-img-top" alt="...">
+                                <img src="{{ asset('assets/gogi/assets/media/image/photo1.jpg') }}" class="card-img-top" alt="...">
                                 <div class="card-body">
                                     <p class="card-text">Some quick example text to build on the card title and
                                         make up the bulk of the card's content.</p>
@@ -448,5 +448,5 @@
 
 @section('script')
     <!-- Prism -->
-    <script src="{{ url('vendors/prism/prism.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/prism/prism.js') }}"></script>
 @endsection

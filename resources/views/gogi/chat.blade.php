@@ -66,7 +66,7 @@
                                 <a href="#" class="list-group-item d-flex align-items-center">
                                     <div class="pr-3">
                                         <div class="avatar avatar-state-success">
-                                            <img src="{{ url('assets/media/image/user/women_avatar1.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar1.jpg') }}"
                                                  class="rounded-circle"
                                                  alt="image">
                                         </div>
@@ -83,7 +83,7 @@
                                 <a href="#" class="list-group-item active d-flex align-items-center">
                                     <div class="pr-3">
                                         <span class="avatar avatar-state-warning">
-                                            <img src="{{ url('assets/media/image/user/women_avatar2.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar2.jpg') }}"
                                                  class="rounded-circle"
                                                  alt="image">
                                         </span>
@@ -101,7 +101,7 @@
                                 <a href="#" class="list-group-item d-flex align-items-center">
                                     <div class="pr-3">
                                             <span class="avatar avatar-state-info">
-                                                <img src="{{ url('assets/media/image/user/man_avatar1.jpg') }}"
+                                                <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar1.jpg') }}"
                                                      class="rounded-circle"
                                                      alt="image">
                                             </span>
@@ -133,7 +133,7 @@
                                 <a href="#" class="list-group-item d-flex align-items-center">
                                     <div class="pr-3">
                                         <span class="avatar avatar-state-success">
-                                            <img src="{{ url('assets/media/image/user/man_avatar2.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar2.jpg') }}"
                                                  class="rounded-circle"
                                                  alt="image">
                                         </span>
@@ -149,7 +149,7 @@
                                 <a href="#" class="list-group-item d-flex align-items-center">
                                     <div class="pr-3">
                                         <span class="avatar avatar-state-danger">
-                                            <img src="{{ url('assets/media/image/user/women_avatar3.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar3.jpg') }}"
                                                  class="rounded-circle"
                                                  alt="image">
                                         </span>
@@ -167,7 +167,7 @@
                                 <a href="#" class="list-group-item d-flex align-items-center">
                                     <div class="pr-3">
                                         <span class="avatar avatar-state-warning">
-                                            <img src="{{ url('assets/media/image/user/man_avatar4.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar4.jpg') }}"
                                                  class="rounded-circle"
                                                  alt="image">
                                         </span>
@@ -191,7 +191,7 @@
                             <a href="#" class="list-group-item d-flex align-items-center">
                                 <div class="pr-3">
                                     <div class="avatar avatar-state-warning">
-                                        <img src="{{ url('assets/media/image/user/women_avatar2.jpg') }}"
+                                        <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar2.jpg') }}"
                                              class="rounded-circle"
                                              alt="image">
                                     </div>
@@ -210,7 +210,7 @@
                             <a href="#" class="list-group-item d-flex align-items-center">
                                 <div class="pr-3">
                                     <div class="avatar avatar-state-success">
-                                        <img src="{{ url('assets/media/image/user/man_avatar1.jpg') }}"
+                                        <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar1.jpg') }}"
                                              class="rounded-circle"
                                              alt="image">
                                     </div>
@@ -229,7 +229,7 @@
                             <a href="#" class="list-group-item d-flex align-items-center">
                                 <div class="pr-3">
                                     <div class="avatar avatar-state-warning">
-                                        <img src="{{ url('assets/media/image/user/women_avatar1.jpg') }}"
+                                        <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar1.jpg') }}"
                                              class="rounded-circle"
                                              alt="image">
                                     </div>
@@ -265,7 +265,7 @@
                             <a href="#" class="list-group-item d-flex align-items-center">
                                 <div class="pr-3">
                                     <div class="avatar avatar-state-info">
-                                        <img src="{{ url('assets/media/image/user/women_avatar2.jpg') }}"
+                                        <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar2.jpg') }}"
                                              class="rounded-circle"
                                              alt="image">
                                     </div>
@@ -313,7 +313,7 @@
                                 <li class="list-group-item d-flex align-items-center">
                                     <div class="pr-3">
                                         <div class="avatar avatar-state-success">
-                                            <img src="{{ url('assets/media/image/user/man_avatar1.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar1.jpg') }}"
                                                  class="rounded-circle"
                                                  alt="image">
                                         </div>
@@ -337,7 +337,7 @@
                                 <li class="list-group-item d-flex align-items-center">
                                     <div class="pr-3">
                                         <div class="avatar avatar-state-warning">
-                                            <img src="{{ url('assets/media/image/user/women_avatar1.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar1.jpg') }}"
                                                  class="rounded-circle"
                                                  alt="image">
                                         </div>
@@ -361,7 +361,7 @@
                                 <li class="list-group-item d-flex align-items-center">
                                     <div class="pr-3">
                                         <div class="avatar avatar-state-info">
-                                            <img src="{{ url('assets/media/image/user/women_avatar2.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar2.jpg') }}"
                                                  class="rounded-circle"
                                                  alt="image">
                                         </div>
@@ -407,7 +407,7 @@
                                 <li class="list-group-item d-flex align-items-center">
                                     <div class="pr-3">
                                         <div class="avatar avatar-state-success">
-                                            <img src="{{ url('assets/media/image/user/man_avatar1.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar1.jpg') }}"
                                                  class="rounded-circle"
                                                  alt="image">
                                         </div>
@@ -431,7 +431,7 @@
                                 <li class="list-group-item d-flex align-items-center">
                                     <div class="pr-3">
                                         <div class="avatar avatar-state-danger">
-                                            <img src="{{ url('assets/media/image/user/women_avatar1.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar1.jpg') }}"
                                                  class="rounded-circle"
                                                  alt="image">
                                         </div>
@@ -455,7 +455,7 @@
                                 <li class="list-group-item d-flex align-items-center">
                                     <div class="pr-3">
                                         <div class="avatar avatar-state-warning">
-                                            <img src="{{ url('assets/media/image/user/women_avatar2.jpg') }}"
+                                            <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar2.jpg') }}"
                                                  class="rounded-circle"
                                                  alt="image">
                                         </div>
@@ -494,7 +494,7 @@
                 <div class="d-flex align-items-center">
                     <div class="pr-3">
                         <div class="avatar avatar-state-warning">
-                            <img src="{{ url('assets/media/image/user/women_avatar2.jpg') }}" class="rounded-circle"
+                            <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar2.jpg') }}" class="rounded-circle"
                                  alt="image">
                         </div>
                     </div>
@@ -577,7 +577,7 @@
                     <span class="time small text-muted font-italic">02:30 PM</span>
                 </div>
                 <div class="message-item me message-media">
-                    <img src="{{ url('assets/media/image/photo1.jpg') }}" alt="image">
+                    <img src="{{ asset('assets/gogi/assets/media/image/photo1.jpg') }}" alt="image">
                     <span class="time small text-muted font-italic">02:30 PM</span>
                 </div>
                 <div class="message-item message-item-divider">

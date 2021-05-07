@@ -2,7 +2,7 @@
 
 @section('head')
     <!-- Lightbox -->
-    <link rel="stylesheet" href="{{ url('vendors/lightbox/magnific-popup.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/lightbox/magnific-popup.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -163,7 +163,7 @@
                                         <div class="col-lg-4 col-md-6">
                                             <div class="card border">
                                                 <img class="card-img-top"
-                                                     src="{{ url('assets/media/image/photo1.jpg') }}"
+                                                     src="{{ asset('assets/gogi/assets/media/image/photo1.jpg') }}"
                                                      alt="image">
                                                 <div class="card-body">
                                                     <p class="card-text">Some quick example text to build on the card
@@ -175,7 +175,7 @@
                                         <div class="col-lg-4 col-md-6">
                                             <div class="card border">
                                                 <img class="card-img-top"
-                                                     src="{{ url('assets/media/image/photo2.jpg') }}"
+                                                     src="{{ asset('assets/gogi/assets/media/image/photo2.jpg') }}"
                                                      alt="image">
                                                 <div class="card-body">
                                                     <p class="card-text">Some quick example text to build on the card
@@ -187,7 +187,7 @@
                                         <div class="col-lg-4 col-md-6">
                                             <div class="card border">
                                                 <img class="card-img-top"
-                                                     src="{{ url('assets/media/image/photo3.jpg') }}"
+                                                     src="{{ asset('assets/gogi/assets/media/image/photo3.jpg') }}"
                                                      alt="image">
                                                 <div class="card-body">
                                                     <p class="card-text">Some quick example text to build on the card
@@ -199,7 +199,7 @@
                                         <div class="col-lg-4 col-md-6">
                                             <div class="card border">
                                                 <img class="card-img-top"
-                                                     src="{{ url('assets/media/image/photo4.jpg') }}"
+                                                     src="{{ asset('assets/gogi/assets/media/image/photo4.jpg') }}"
                                                      alt="image">
                                                 <div class="card-body">
                                                     <p class="card-text">Some quick example text to build on the card
@@ -211,7 +211,7 @@
                                         <div class="col-lg-4 col-md-6">
                                             <div class="card border">
                                                 <img class="card-img-top"
-                                                     src="{{ url('assets/media/image/photo5.jpg') }}"
+                                                     src="{{ asset('assets/gogi/assets/media/image/photo5.jpg') }}"
                                                      alt="image">
                                                 <div class="card-body">
                                                     <p class="card-text">Some quick example text to build on the card
@@ -223,7 +223,7 @@
                                         <div class="col-lg-4 col-md-6">
                                             <div class="card border">
                                                 <img class="card-img-top"
-                                                     src="{{ url('assets/media/image/photo6.jpg') }}"
+                                                     src="{{ asset('assets/gogi/assets/media/image/photo6.jpg') }}"
                                                      alt="image">
                                                 <div class="card-body">
                                                     <p class="card-text">Some quick example text to build on the card
@@ -237,66 +237,66 @@
                                 <div class="tab-pane fade" id="photos" role="tabpanel">
                                     <div class="row">
                                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
-                                            <a href="{{ url('assets/media/image/portfolio-one.jpg') }}"
+                                            <a href="{{ asset('assets/gogi/assets/media/image/portfolio-one.jpg') }}"
                                                class="image-popup-gallery-item">
                                                 <img class="img-fluid rounded"
-                                                     src="{{ url('assets/media/image/portfolio-one.jpg') }}"
+                                                     src="{{ asset('assets/gogi/assets/media/image/portfolio-one.jpg') }}"
                                                      alt="image">
                                             </a>
                                         </div>
                                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
-                                            <a href="{{ url('assets/media/image/portfolio-two.jpg') }}"
+                                            <a href="{{ asset('assets/gogi/assets/media/image/portfolio-two.jpg') }}"
                                                class="image-popup-gallery-item">
                                                 <img class="img-fluid rounded"
-                                                     src="{{ url('assets/media/image/portfolio-two.jpg') }}"
+                                                     src="{{ asset('assets/gogi/assets/media/image/portfolio-two.jpg') }}"
                                                      alt="image">
                                             </a>
                                         </div>
                                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
-                                            <a href="{{ url('assets/media/image/portfolio-three.jpg') }}"
+                                            <a href="{{ asset('assets/gogi/assets/media/image/portfolio-three.jpg') }}"
                                                class="image-popup-gallery-item">
                                                 <img class="img-fluid rounded"
-                                                     src="{{ url('assets/media/image/portfolio-three.jpg') }}"
+                                                     src="{{ asset('assets/gogi/assets/media/image/portfolio-three.jpg') }}"
                                                      alt="image">
                                             </a>
                                         </div>
                                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
-                                            <a href="{{ url('assets/media/image/portfolio-four.jpg') }}"
+                                            <a href="{{ asset('assets/gogi/assets/media/image/portfolio-four.jpg') }}"
                                                class="image-popup-gallery-item">
                                                 <img class="img-fluid rounded"
-                                                     src="{{ url('assets/media/image/portfolio-four.jpg') }}"
+                                                     src="{{ asset('assets/gogi/assets/media/image/portfolio-four.jpg') }}"
                                                      alt="image">
                                             </a>
                                         </div>
                                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
-                                            <a href="{{ url('assets/media/image/portfolio-five.jpg') }}"
+                                            <a href="{{ asset('assets/gogi/assets/media/image/portfolio-five.jpg') }}"
                                                class="image-popup-gallery-item">
                                                 <img class="img-fluid rounded"
-                                                     src="{{ url('assets/media/image/portfolio-five.jpg') }}"
+                                                     src="{{ asset('assets/gogi/assets/media/image/portfolio-five.jpg') }}"
                                                      alt="image">
                                             </a>
                                         </div>
                                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
-                                            <a href="{{ url('assets/media/image/portfolio-six.jpg') }}"
+                                            <a href="{{ asset('assets/gogi/assets/media/image/portfolio-six.jpg') }}"
                                                class="image-popup-gallery-item">
                                                 <img class="img-fluid rounded"
-                                                     src="{{ url('assets/media/image/portfolio-six.jpg') }}"
+                                                     src="{{ asset('assets/gogi/assets/media/image/portfolio-six.jpg') }}"
                                                      alt="image">
                                             </a>
                                         </div>
                                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
-                                            <a href="{{ url('assets/media/image/portfolio-one.jpg') }}"
+                                            <a href="{{ asset('assets/gogi/assets/media/image/portfolio-one.jpg') }}"
                                                class="image-popup-gallery-item">
                                                 <img class="img-fluid rounded"
-                                                     src="{{ url('assets/media/image/portfolio-one.jpg') }}"
+                                                     src="{{ asset('assets/gogi/assets/media/image/portfolio-one.jpg') }}"
                                                      alt="image">
                                             </a>
                                         </div>
                                         <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12 mb-4">
-                                            <a href="{{ url('assets/media/image/portfolio-two.jpg') }}"
+                                            <a href="{{ asset('assets/gogi/assets/media/image/portfolio-two.jpg') }}"
                                                class="image-popup-gallery-item">
                                                 <img class="img-fluid rounded"
-                                                     src="{{ url('assets/media/image/portfolio-two.jpg') }}"
+                                                     src="{{ asset('assets/gogi/assets/media/image/portfolio-two.jpg') }}"
                                                      alt="image">
                                             </a>
                                         </div>
@@ -318,7 +318,7 @@
                                         <li class="list-group-item px-0">
                                             <div class="media">
                                                 <figure class="avatar mr-3">
-                                                    <img src="{{ url('assets/media/image/user/man_avatar1.jpg') }}"
+                                                    <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar1.jpg') }}"
                                                          class="rounded-circle" alt="image">
                                                 </figure>
                                                 <div class="media-body">
@@ -400,6 +400,6 @@
 
 @section('script')
     <!-- lightbox -->
-    <script src="{{ url('vendors/lightbox/jquery.magnific-popup.min.js') }}"></script>
-    <script src="{{ url('assets/js/examples/lightbox.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/lightbox/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/lightbox.js') }}"></script>
 @endsection

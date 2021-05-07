@@ -498,5 +498,5 @@
 
 @section('script')
     <!-- File manager example -->
-    <script src="{{ url('assets/js/examples/file-manager.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/file-manager.js') }}"></script>
 @endsection

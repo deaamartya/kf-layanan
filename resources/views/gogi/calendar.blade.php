@@ -2,13 +2,13 @@
 
 @section('head')
     <!-- Fullcalendar -->
-    <link rel="stylesheet" href="{{ url('vendors/fullcalendar/fullcalendar.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/fullcalendar/fullcalendar.min.css') }}" type="text/css">
 
     <!-- Clockpicker -->
-    <link rel="stylesheet" href="{{ url('vendors/clockpicker/bootstrap-clockpicker.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/clockpicker/bootstrap-clockpicker.min.css') }}" type="text/css">
 
     <!-- Datepicker -->
-    <link rel="stylesheet" href="{{ url('vendors/datepicker/daterangepicker.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/datepicker/daterangepicker.css') }}" type="text/css">
 @endsection
 
 @section('parentClassName', 'web-app')
@@ -137,7 +137,7 @@
                                         <span class="avatar-title bg-primary rounded-circle">C</span>
                                     </figure>
                                     <figure class="avatar avatar-sm">
-                                        <img src="{{ url('assets/media/image/user/women_avatar3.jpg') }}"
+                                        <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar3.jpg') }}"
                                              class="rounded-circle"
                                              alt="image">
                                     </figure>
@@ -192,17 +192,17 @@
 @section('script')
 
     <!-- Fullcalendar -->
-    <script src="{{ url('vendors/fullcalendar/moment.min.js') }}"></script>
-    <script src="{{ url('vendors/fullcalendar/fullcalendar.min.js') }}"></script>
-    <script src="{{ url('assets/js/examples/fullcalendar.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/fullcalendar/moment.min.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/fullcalendar/fullcalendar.min.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/fullcalendar.js') }}"></script>
 
     <!-- Clockpicker -->
-    <script src="{{ url('vendors/clockpicker/bootstrap-clockpicker.min.js') }}"></script>
-    <script src="{{ url('assets/js/examples/clockpicker.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/clockpicker/bootstrap-clockpicker.min.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/clockpicker.js') }}"></script>
 
     <!-- Datepicker -->
-    <script src="{{ url('vendors/datepicker/daterangepicker.js') }}"></script>
-    <script src="{{ url('assets/js/examples/datepicker.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/datepicker/daterangepicker.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/datepicker.js') }}"></script>
 
-    <script src="{{ url('assets/js/examples/pages/calendar.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/pages/calendar.js') }}"></script>
 @endsection

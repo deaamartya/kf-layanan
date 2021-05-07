@@ -2,16 +2,16 @@
 
 @section('head')
     <!-- Select2 -->
-    <link rel="stylesheet" href="{{ url('vendors/select2/css/select2.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/select2/css/select2.min.css') }}" type="text/css">
 
     <!-- Range slider -->
-    <link rel="stylesheet" href="{{ url('vendors/range-slider/css/ion.rangeSlider.min.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/range-slider/css/ion.rangeSlider.min.css') }}" type="text/css">
 
     <!-- Tagsinput -->
-    <link rel="stylesheet" href="{{ url('vendors/tagsinput/bootstrap-tagsinput.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/tagsinput/bootstrap-tagsinput.css') }}" type="text/css">
 
     <!-- Prism -->
-    <link rel="stylesheet" href="{{ url('vendors/prism/prism.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/prism/prism.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -57,10 +57,10 @@
                     </div>
                     <div data-label="INCLUDED FILES" class="demo-code-preview">
                                 <pre><code class="language-html">&lt;!-- Style --&gt;
-&lt;link rel="stylesheet" href="{{ url('vendors/select2/css/select2.min.css') }}" type="text/css"&gt;
+&lt;link rel="stylesheet" href="{{ asset('assets/gogi/vendors/select2/css/select2.min.css') }}" type="text/css"&gt;
 
 &lt;!-- Javascript --&gt;
-&lt;script src="{{ url('vendors/select2/js/select2.min.js') }}"&gt;&lt;/script&gt;</code></pre>
+&lt;script src="{{ asset('assets/gogi/vendors/select2/js/select2.min.js') }}"&gt;&lt;/script&gt;</code></pre>
                     </div>
                     <div data-label="HTML" class="demo-code-preview">
                                 <pre><code class="language-html">&lt;select class="select2-example"&gt;
@@ -157,10 +157,10 @@
                     </div>
                     <div data-label="INCLUDED FILES" class="demo-code-preview">
                                 <pre><code class="language-html">&lt;!-- Style --&gt;
-&lt;link rel="stylesheet" href="{{ url('vendors/range-slider/css/ion.rangeSlider.min.css') }}" type="text/css"&gt;
+&lt;link rel="stylesheet" href="{{ asset('assets/gogi/vendors/range-slider/css/ion.rangeSlider.min.css') }}" type="text/css"&gt;
 
 &lt;!-- Javascript --&gt;
-&lt;script src="{{ url('vendors/range-slider/js/ion.rangeSlider.min.js') }}"&gt;&lt;/script&gt;</code></pre>
+&lt;script src="{{ asset('assets/gogi/vendors/range-slider/js/ion.rangeSlider.min.js') }}"&gt;&lt;/script&gt;</code></pre>
                     </div>
                     <div data-label="HTML" class="demo-code-preview">
                                     <pre><code
@@ -264,10 +264,10 @@
                            value="HTML5, CSS3, JavaScript, Laravel">
                     <div data-label="INCLUDED FILES" class="demo-code-preview">
                                 <pre><code class="language-html">&lt;!-- Style --&gt;
-&lt;link rel="stylesheet" href="{{ url('vendors/tagsinput/bootstrap-tagsinput.css') }}" type="text/css"&gt;
+&lt;link rel="stylesheet" href="{{ asset('assets/gogi/vendors/tagsinput/bootstrap-tagsinput.css') }}" type="text/css"&gt;
 
 &lt;!-- Javascript --&gt;
-&lt;script src="{{ url('vendors/tagsinput/bootstrap-tagsinput.js') }}"&gt;&lt;/script&gt;</code></pre>
+&lt;script src="{{ asset('assets/gogi/vendors/tagsinput/bootstrap-tagsinput.js') }}"&gt;&lt;/script&gt;</code></pre>
                     </div>
                     <div data-label="HTML" class="demo-code-preview">
                         <pre><code class="language-html">&lt;input type="text" class="form-control tagsinput-example" placeholder="Tags" value="HTML5, CSS3, JavaScript, Laravel"&gt;</code></pre>
@@ -284,7 +284,7 @@
                     <h6 class="card-title">Input Mask</h6>
                     <div data-label="INCLUDED FILES" class="demo-code-preview">
                                 <pre><code class="language-html">&lt;!-- Javascript --&gt;
-&lt;script src="{{ url('vendors/input-mask/jquery.mask.js') }}"&gt;&lt;/script&gt;</code></pre>
+&lt;script src="{{ asset('assets/gogi/vendors/input-mask/jquery.mask.js') }}"&gt;&lt;/script&gt;</code></pre>
                     </div>
                     <div class="form-group">
                         <label>Phone</label>
@@ -353,21 +353,21 @@
 
 @section('script')
     <!-- Select2 -->
-    <script src="{{ url('vendors/select2/js/select2.min.js') }}"></script>
-    <script src="{{ url('assets/js/examples/select2.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/select2/js/select2.min.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/select2.js') }}"></script>
 
     <!-- Range slider -->
-    <script src="{{ url('vendors/range-slider/js/ion.rangeSlider.min.js') }}"></script>
-    <script src="{{ url('assets/js/examples/range-slider.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/range-slider/js/ion.rangeSlider.min.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/range-slider.js') }}"></script>
 
     <!-- Input mask -->
-    <script src="{{ url('vendors/input-mask/jquery.mask.js') }}"></script>
-    <script src="{{ url('assets/js/examples/input-mask.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/input-mask/jquery.mask.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/input-mask.js') }}"></script>
 
     <!-- Tagsinput -->
-    <script src="{{ url('vendors/tagsinput/bootstrap-tagsinput.js') }}"></script>
-    <script src="{{ url('assets/js/examples/tagsinput.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/tagsinput/bootstrap-tagsinput.js') }}"></script>
+    <script src="{{ asset('assets/js/examples/tagsinput.js') }}"></script>
 
     <!-- Prism -->
-    <script src="{{ url('vendors/prism/prism.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/prism/prism.js') }}"></script>
 @endsection

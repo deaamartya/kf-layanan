@@ -2,7 +2,7 @@
 
 @section('head')
     <!-- Prism -->
-    <link rel="stylesheet" href="{{ url('vendors/prism/prism.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/prism/prism.css') }}" type="text/css">
 @endsection
 
 @section('content')
@@ -31,7 +31,7 @@
                 <div class="card-body">
                     <h6 class="card-title">Default</h6>
                     <figure class="avatar">
-                        <img src="{{ url('assets/media/image/user/man_avatar5.jpg') }}" class="rounded-circle" alt="image">
+                        <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar5.jpg') }}" class="rounded-circle" alt="image">
                     </figure>
                     <div data-label="CODE EXAMPLE" class="demo-code-preview">
                         <pre><code class="language-html">&lt;figure class="avatar"&gt;
@@ -44,16 +44,16 @@
                 <div class="card-body">
                     <h6 class="card-title">Sizes</h6>
                     <figure class="avatar avatar-xl">
-                        <img src="{{ url('assets/media/image/user/man_avatar1.jpg') }}" class="rounded-circle" alt="image">
+                        <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar1.jpg') }}" class="rounded-circle" alt="image">
                     </figure>
                     <figure class="avatar avatar-lg">
-                        <img src="{{ url('assets/media/image/user/man_avatar2.jpg') }}" class="rounded-circle" alt="image">
+                        <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar2.jpg') }}" class="rounded-circle" alt="image">
                     </figure>
                     <figure class="avatar">
-                        <img src="{{ url('assets/media/image/user/women_avatar1.jpg') }}" class="rounded-circle" alt="image">
+                        <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar1.jpg') }}" class="rounded-circle" alt="image">
                     </figure>
                     <figure class="avatar avatar-sm">
-                        <img src="{{ url('assets/media/image/user/women_avatar2.jpg') }}" class="rounded-circle" alt="image">
+                        <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar2.jpg') }}" class="rounded-circle" alt="image">
                     </figure>
                     <div data-label="CODE EXAMPLE" class="demo-code-preview">
                         <pre><code class="language-html">&lt;figure class="avatar avatar-xl"&gt;
@@ -168,16 +168,16 @@
                 <div class="card-body">
                     <h6 class="card-title">Avatar states</h6>
                     <figure class="avatar avatar-xl avatar-state-warning">
-                        <img src="{{ url('assets/media/image/user/man_avatar1.jpg') }}" class="rounded-circle" alt="image">
+                        <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar1.jpg') }}" class="rounded-circle" alt="image">
                     </figure>
                     <figure class="avatar avatar-lg avatar-state-success">
-                        <img src="{{ url('assets/media/image/user/women_avatar1.jpg') }}" class="rounded-circle" alt="image">
+                        <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar1.jpg') }}" class="rounded-circle" alt="image">
                     </figure>
                     <figure class="avatar avatar-state-danger">
-                        <img src="{{ url('assets/media/image/user/man_avatar3.jpg') }}" class="rounded-circle" alt="image">
+                        <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar3.jpg') }}" class="rounded-circle" alt="image">
                     </figure>
                     <figure class="avatar avatar-sm avatar-state-secondary">
-                        <img src="{{ url('assets/media/image/user/women_avatar2.jpg') }}" class="rounded-circle" alt="image">
+                        <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar2.jpg') }}" class="rounded-circle" alt="image">
                     </figure>
                     <div data-label="CODE EXAMPLE" class="demo-code-preview">
                                 <pre><code class="language-html">&lt;figure class="avatar avatar-xl avatar-state-warning"&gt;
@@ -200,13 +200,13 @@
                 <div class="card-body">
                     <h6 class="card-title">Avatar shapes</h6>
                     <figure class="avatar">
-                        <img src="{{ url('assets/media/image/user/man_avatar5.jpg') }}" alt="image">
+                        <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar5.jpg') }}" alt="image">
                     </figure>
                     <figure class="avatar">
-                        <img src="{{ url('assets/media/image/user/man_avatar2.jpg') }}" class="rounded" alt="image">
+                        <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar2.jpg') }}" class="rounded" alt="image">
                     </figure>
                     <figure class="avatar">
-                        <img src="{{ url('assets/media/image/user/women_avatar5.jpg') }}" class="rounded-circle" alt="image">
+                        <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar5.jpg') }}" class="rounded-circle" alt="image">
                     </figure>
                     <div data-label="CODE EXAMPLE" class="demo-code-preview">
                                 <pre><code class="language-html">&lt;figure class="avatar"&gt;
@@ -232,14 +232,14 @@
                             <span class="avatar-title bg-success rounded-circle">E</span>
                         </figure>
                         <figure class="avatar">
-                            <img src="{{ url('assets/media/image/user/man_avatar5.jpg') }}" class="rounded-circle"
+                            <img src="{{ asset('assets/gogi/assets/media/image/user/man_avatar5.jpg') }}" class="rounded-circle"
                                  alt="image">
                         </figure>
                         <figure class="avatar">
                             <span class="avatar-title bg-danger rounded-circle">S</span>
                         </figure>
                         <figure class="avatar">
-                            <img src="{{ url('assets/media/image/user/women_avatar3.jpg') }}" class="rounded-circle"
+                            <img src="{{ asset('assets/gogi/assets/media/image/user/women_avatar3.jpg') }}" class="rounded-circle"
                                  alt="image">
                         </figure>
                         <figure class="avatar">
@@ -274,5 +274,5 @@
 
 @section('script')
     <!-- Prism -->
-    <script src="{{ url('vendors/prism/prism.js') }}"></script>
+    <script src="{{ asset('assets/gogi/vendors/prism/prism.js') }}"></script>
 @endsection

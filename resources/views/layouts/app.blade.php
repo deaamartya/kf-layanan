@@ -569,12 +569,22 @@
                 </ul>
                 <ul>
                     <li>
-                        <a @if(request()->segment(1) == 'list-spesialisasi') class="active" @endif href="{{ url('list-spesialisasi') }}">
-                    <span class="nav-link-icon">
-                        <i data-feather="pie-chart"></i>
-                    </span>
+                        <a @if(request()->segment(1) == 'list-spesialisasi') class="active"@endif href="{{ url('list-spesialisasi') }}">
+                            <span class="nav-link-icon">
+                                <i data-feather="menu"></i>
+                            </span>
                             <span>List Spesialiasi</span>
                         </a>
+                        <ul>
+                            <li>
+                                <a @if(request()->segment(1) == 'list-dokter') class="active"@endif href="{{ url('list-dokter') }}">
+                                    <span class="nav-link-icon">
+                                        <i data-feather="menu"></i>
+                                    </span>
+                                    <span>List Dokter</span>
+                                </a>
+                            </li>
+                        </ul>
                     </li>
                 </ul>
             </div>

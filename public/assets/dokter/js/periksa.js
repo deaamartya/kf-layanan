@@ -1,0 +1,1 @@
+$('#periksa-pasien-menu').addClass('active')

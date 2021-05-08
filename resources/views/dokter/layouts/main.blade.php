@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{{ asset('/assets/fontawesome/css/all.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/assets/gogi/vendors/bundle.css') }}" type="text/css">
     <link rel="stylesheet" href="{{ asset('/assets/gogi/assets/css/app.min.css') }}" type="text/css">
-    <link rel="stylesheet" href="{{ asset('/assets/perawat/css/layouts.css') }}" type="text/css">
+    <link rel="stylesheet" href="{{ asset('/assets/dokter/css/layouts.css') }}" type="text/css">
     
     {{-- Extra Styles --}}
     @yield('extra-styles')
@@ -27,19 +27,19 @@
     {{-- End of Preloader --}}
 
     {{-- Sidebar Group --}}
-    {{-- @include('perawat/layouts/sidebar-group') --}}
+    {{-- @include('dokter/layouts/sidebar-group') --}}
 
     {{-- Start Layout Wrapper --}}
     <div class="layout-wrapper">
 
         {{-- Header --}}
-        @include('perawat/layouts/header')
+        @include('dokter/layouts/header')
 
         {{-- Start Content Wrapper --}}
         <div class="content-wrapper">
 
             {{-- Navigation --}}
-            @include('perawat/layouts/navigation')
+            @include('dokter/layouts/navigation')
 
             {{-- Start Content Body --}}
             <div class="content-body">
@@ -48,7 +48,7 @@
                 @yield('content')
 
                 {{-- Footer --}}
-                @include('perawat/layouts/footer')
+                @include('dokter/layouts/footer')
 
             </div>
             {{-- End of Content Body --}}

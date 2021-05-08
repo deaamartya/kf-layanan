@@ -1,8 +1,8 @@
-@extends('perawat/layouts/main')
-@section('title', 'Home | Perawat')
+@extends('dokter/layouts/main')
+@section('title', 'Home | Dokter')
 @section('extra-styles')
 <link rel="stylesheet" href="{{ asset('/assets/gogi/vendors/select2/css/select2.min.css') }}">
-<link rel="stylesheet" href="{{ asset('/assets/perawat/css/home.css') }}">
+<link rel="stylesheet" href="{{ asset('/assets/dokter/css/home.css') }}">
 @endsection
 
 @section('content')
@@ -25,7 +25,7 @@
         </table>
     </div>
 
-    <a href="{{ url('/perawat/reset-session') }}" id="reset_session_btn" class="my-4 btn btn-rounded btn-uppercase">
+    <a href="{{ url('/dokter/reset-session') }}" id="reset_session_btn" class="my-4 btn btn-rounded btn-uppercase">
         <i class="ti-reload mr-2"></i>
         Reset Session
     </a>
@@ -118,16 +118,16 @@
     
 </div>
 
-<audio id="recall_bell" src="{{ asset('/assets/perawat/sound/bell.mp3') }}"></audio>
+<audio id="recall_bell" src="{{ asset('/assets/dokter/sound/bell.mp3') }}"></audio>
 
-@include('perawat/components/rekam_medis_modal')
+@include('dokter/components/rekam_medis_modal')
 @endsection
 
 @section('extra-scripts')
 <script>
     const CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content')
-    const BASE_URL = "{{ url('/perawat') }}"
+    const BASE_URL = "{{ url('/dokter') }}"
 </script>
 <script src="{{ asset('/assets/gogi/vendors/select2/js/select2.min.js') }}"></script>
-<script src="{{ asset('/assets/perawat/js/home.js') }}"></script>
+<script src="{{ asset('/assets/dokter/js/home.js') }}"></script>
 @endsection

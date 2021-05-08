@@ -1,0 +1,47 @@
+.navigation {
+    margin-top: 50px;
+}
+
+.content {
+    background-color: white !important;
+}
+
+/* Disable arrow button pada input nomor telepon - Chrome, Safari, Edge, Opera */
+.num-without-style::-webkit-outer-spin-button,
+.num-without-style::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Disable arrow button pada input nomor telepon - Firefox */
+.num-without-style {
+  -moz-appearance: textfield;
+}
+
+table {
+    text-align: center;
+    font-weight: 500;   
+}
+
+table td, table th {
+    word-wrap: break-word !important;
+    white-space: normal !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .navigation {
+        margin-top: 0;
+    }
+
+    .header {
+        margin-bottom: 50px;
+    }
+
+    .table-responsive-stack {
+        font-size: 3vw !important;
+    }
+
+    table {
+        font-size: 1em;
+    }
+}

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Perawat;
+namespace App\Http\Controllers\Dokter;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -19,7 +19,7 @@ class MainController extends Controller
         }
 
         $this->check_data_pasien_complete();
-        return view('perawat/home');
+        return view('dokter/home');
     }
 
     public function reset_session()
@@ -30,7 +30,7 @@ class MainController extends Controller
         Session::forget('perawat_pasien');
         Session::forget('perawat_antrian_saat_ini');
 
-        return redirect('/perawat');
+        return redirect('/dokter');
     }
 
     public function get_pasien_data($id)
@@ -63,7 +63,7 @@ class MainController extends Controller
         Session::put('perawat_pasien.'.$id.'.tinggi', $tinggi);
         Session::put('perawat_session_status', 'modified');
 
-        return redirect('/perawat');
+        return redirect('/dokter');
     }
 
     public function update_status_panggil(Request $request){

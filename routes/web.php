@@ -35,8 +35,8 @@ Route::get('farmasi/pesanan-reset', 'FarmasiController@resetOnline');
 Route::get('ambil/{id}', 'FarmasiController@ambil');
 Route::get('pesanan-online/online', 'FarmasiController@pesanOnline');
 Route::get('konfirm-ambil', 'FarmasiController@simAmbil');
-
-
+Route::get('konfirm-kirim', 'FarmasiController@simKirim');
+Route::get('konfirm-selesai', 'FarmasiController@simSelesai');
 
 
 Route::get('/', function () {

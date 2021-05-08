@@ -16,8 +16,8 @@
                 <a href="{{url('farmasi/pesanan-reset')}}"><button class="btn btn-warning btn-rounded btn-uppercase">Reset</button></a>
                 <a href="{{url('pesanan-online/online')}}"><button class="btn btn-secondary btn-rounded btn-uppercase">Pesanan Online</button></a>
                 <a href="{{url('konfirm-ambil')}}"><button class="btn btn-secondary btn-rounded btn-uppercase">Konfirm Ambil</button></a>
-                <button class="btn btn-secondary btn-rounded btn-uppercase">Konfirm Selesai</button>
-                <button class="btn btn-secondary btn-rounded btn-uppercase">Antar Selesai</button>
+                <a href="{{url('konfirm-kirim')}}"><button class="btn btn-secondary btn-rounded btn-uppercase">Konfirm Kirim</button></a>
+                <a href="{{url('konfirm-selesai')}}"><button class="btn btn-secondary btn-rounded btn-uppercase">Antar Selesai</button></a>
             </div>
         </div></br>
         <div class="row">

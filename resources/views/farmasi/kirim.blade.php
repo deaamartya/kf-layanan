@@ -57,9 +57,9 @@
                             @endphp
                             <a href="{{route('pesanan-online')}}"><button class="btn btn-light mr-3 btn-uppercase">Kembali</button></a>
                             @if($data['STATUS'] == "3")
-                            <button class="btn btn-primary mr-3 btn-uppercase">Ready Kirim</button>
+                            <a href="{{url('ready-kirim/'.$id)}}"><button class="btn btn-primary mr-3 btn-uppercase">Ready Kirim</button></a>
                             @elseif($data['STATUS'] == "5")
-                            <button class="btn btn-primary mr-3 btn-uppercase">OTW</button>
+                            <a href="{{url('otw/'.$id)}}"><button class="btn btn-primary mr-3 btn-uppercase">OTW</button></a>
                             @endif
                         </div>
                     </div>

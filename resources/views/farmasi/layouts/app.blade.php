@@ -25,7 +25,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="default-navigation">
+<body>
 <!-- Preloader -->
 <div class="preloader">
     <div class="preloader-icon"></div>
@@ -315,7 +315,7 @@
 <div class="layout-wrapper">
 
     <!-- Header -->
-    <div class="header d-print-none">
+    <div class="header d-print-none" style="padding-top: 15px;margin-bottom: 10px;">
         <div class="header-container">
             <div class="header-left justify-content-center">
                 <div class="navigation-toggler">
@@ -324,8 +324,8 @@
                     </a>
                 </div>
 
-                <div class="header-logo" style="background-color: white;padding: 2px 5px;margin: 15px 0;border-radius: 10px;">
-                    <a href="{{ url('/') }}">
+                <div class="header-logo" style="background-color: white;padding: 7px;border-radius: 5px;vertical-align: middle;">
+                    <a href="{{ url('/') }}" style="height: auto">
                         <img class="logo" src="{{ asset('assets/gogi/assets/media/image/logo.png') }}" alt="logo" height="40">
                     </a>
                 </div>
@@ -371,8 +371,7 @@
                                 <i data-feather="bell"></i>
                             </a>
                             <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
-                                <div
-                                    class="border-bottom px-4 py-3 text-center d-flex justify-content-between align-items-center">
+                                <div class="border-bottom px-4 py-3 text-center d-flex justify-content-between align-items-center">
                                     <h5 class="mb-0">Notifications</h5>
                                     @php
                                         $count = '0';
@@ -387,8 +386,9 @@
                                 <div class="dropdown-scroll">
                                     <ul class="list-group list-group-flush">
                                         @foreach(Session::get('online') as $pasien)
+                                        @if($pasien['STATUS'] == "0")
                                         <li class="px-4 py-3 list-group-item">
-                                            <a href="#" class="d-flex align-items-center hide-show-toggler">
+                                            <a href="{{ route('pesanan-online') }}" class="d-flex align-items-center hide-show-toggler">
                                                 <div class="flex-shrink-0">
                                                     <figure class="avatar mr-3">
                                                         <span
@@ -406,6 +406,7 @@
                                                 </div>
                                             </a>
                                         </li>
+                                        @endif
                                         @endforeach
                                     </ul>
                                 </div>
@@ -477,9 +478,9 @@
     <!-- ./ Header -->
 
     <!-- Content wrapper -->
-    <div class="content-wrapper">
+    <div class="content-wrapper mt-3">
         <!-- begin::navigation -->
-        <div class="navigation mt-5">
+        <div class="navigation">
             <div class="navigation-header">
                 <span>Navigation</span>
                 <a href="#">
@@ -489,7 +490,7 @@
             <div class="navigation-menu-body">
                 <ul>
                     <li>
-                        <a id="walkin" @if(!request()->segment(1)) class="active" @endif href="{{ route('walkin') }}">
+                        <a id="walkin" @if(!request()->segment(1)) class="active" @endif href="{{ route('farmasi') }}">
                             <span>Walkin</span>
                         </a>
                     </li>
@@ -512,7 +513,7 @@
         <!-- end::navigation -->
 
         <!-- Content body -->
-        <div class="content-body mt-5">
+        <div class="content-body">
             <!-- Content -->
             <div class="content @yield('parentClassName')">
                 @yield('content')

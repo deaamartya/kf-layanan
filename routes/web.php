@@ -2,10 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 // Route Farmasi
-Route::get('walkin', 'FarmasiController@walkin')->name('walkin');
+Route::get('farmasi', 'FarmasiController@walkin')->name('farmasi');
 Route::get('pesanan-online', 'FarmasiController@online')->name('pesanan-online');
-Route::get('farmasi/walkin-reset', 'FarmasiController@walkinReset');
-Route::get('farmasi/walkin-pesan', 'FarmasiController@walkinPesan');
+Route::get('farmasi/walkin-reset', 'FarmasiController@resetWalkin');
+
 
 // Route Pasien
 Route::view('pasien','pasien.home');
@@ -29,13 +29,12 @@ Route::view('registrasi','auth.register');
 Route::view('login','auth.login');
 
 
-// Route Perawat
-
-
-
-
-// Route Dokter
-
+// Route Farmasi
+Route::get('farmasi/pesanan/{id}', 'FarmasiController@checkStatus');
+Route::get('farmasi/pesanan-reset', 'FarmasiController@resetOnline');
+Route::get('ambil/{id}', 'FarmasiController@ambil');
+Route::get('pesanan-online/online', 'FarmasiController@pesanOnline');
+Route::get('konfirm-ambil', 'FarmasiController@simAmbil');
 
 
 

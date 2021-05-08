@@ -24,6 +24,10 @@ table td, table th {
     white-space: normal !important;
 }
 
+.nav-link.active {
+    background-color: transparent !important;
+}
+
 @media only screen and (max-width: 600px) {
     .navigation {
         margin-top: 0;

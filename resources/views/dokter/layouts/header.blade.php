@@ -50,7 +50,7 @@
                     </li>
 
                     <li class="nav-item dropdown">
-                        @include('perawat/layouts/notification')
+                        @include('dokter/layouts/notification')
                     </li>
 
                     <li class="nav-item dropdown">
@@ -58,7 +58,7 @@
                             <figure class="avatar avatar-sm">
                                 <img src="{{ asset('/assets/gogi/assets/media/image/user/man_avatar3.jpg') }}" class="rounded-circle" alt="avatar">
                             </figure>
-                            <span class="ml-2 d-sm-inline d-none">Febriyanthi</span>
+                            <span class="ml-2 d-sm-inline d-none">{{ Session::get('perawat_nama_dokter') }}</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right dropdown-menu-big">
                             <div class="text-center py-4">
@@ -66,8 +66,8 @@
                                     <img src="{{ asset('/assets/gogi/assets/media/image/user/man_avatar3.jpg') }}"
                                          class="rounded-circle" alt="image">
                                 </figure>
-                                <h5 class="text-center">Febriyanthi</h5>
-                                <div class="mb-3 small text-center text-muted">PERAWAT</div>
+                                <h5 class="text-center">{{ Session::get('perawat_nama_dokter') }}</h5>
+                                <div class="mb-3 small text-center text-muted">DOKTER</div>
                                 <a href="#" class="btn btn-outline-light btn-rounded">Manage Your Account</a>
                             </div>
                             <div class="list-group">

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Perawat;
+namespace App\Http\Controllers\Dokter;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -19,7 +19,7 @@ class MainController extends Controller
         }
 
         $this->check_data_pasien_complete();
-        return view('perawat/home');
+        return view('dokter/home');
     }
 
     public function reset_session()
@@ -30,7 +30,7 @@ class MainController extends Controller
         Session::forget('perawat_pasien');
         Session::forget('perawat_antrian_saat_ini');
 
-        return redirect('/perawat');
+        return redirect('/dokter');
     }
 
     public function get_pasien_data($id)
@@ -63,7 +63,7 @@ class MainController extends Controller
         Session::put('perawat_pasien.'.$id.'.tinggi', $tinggi);
         Session::put('perawat_session_status', 'modified');
 
-        return redirect('/perawat');
+        return redirect('/dokter');
     }
 
     public function update_status_panggil(Request $request){
@@ -99,7 +99,7 @@ class MainController extends Controller
         return 'success';
     }
 
-    private function create_session_data()
+    protected function create_session_data()
     {
         $perawat_nama_dokter = "dr. Dian Permata Sari, SpOG";
         $perawat_spesialisasi_dokter = "Obstetri dan Ginekologi";
@@ -192,7 +192,8 @@ class MainController extends Controller
         Session::put('perawat_status_antrian_saat_ini', $perawat_status_antrian_saat_ini);
     }
 
-    private function check_data_pasien_complete(){
+    protected function check_data_pasien_complete()
+    {
         for($i = 1; $i <= count(Session::get('perawat_pasien')); $i++){
             if(Session::get('perawat_pasien')['PX000'.$i]['nama'] != null
                 && Session::get('perawat_pasien')['PX000'.$i]['usia'] != null

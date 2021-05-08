@@ -194,6 +194,9 @@ class FarmasiController extends Controller
                 $online = FarmasiController::data();
                 $online[$i]['STATUS'] = "2";
             }
+            else{
+                $online = FarmasiController::data();
+            }
         }
         Session::put('online', $online);
 
@@ -210,6 +213,9 @@ class FarmasiController extends Controller
                 $online = FarmasiController::data();
                 $online[$i]['STATUS'] = "3";
             }
+            else{
+                $online = FarmasiController::data();
+            }
         }
         Session::put('online', $online);
 
@@ -225,6 +231,9 @@ class FarmasiController extends Controller
             {
                 $online = FarmasiController::data();
                 $online[$i]['STATUS'] = "7";
+            }
+            else{
+                $online = FarmasiController::data();
             }
         }
         Session::put('online', $online);

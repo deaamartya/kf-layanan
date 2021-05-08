@@ -2,6 +2,10 @@
     margin-top: 50px;
 }
 
+.content {
+    background-color: white !important;
+}
+
 /* Disable arrow button pada input nomor telepon - Chrome, Safari, Edge, Opera */
 .num-without-style::-webkit-outer-spin-button,
 .num-without-style::-webkit-inner-spin-button {

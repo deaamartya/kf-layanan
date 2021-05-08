@@ -141,11 +141,6 @@
                             Jember - Jl. Gajah Mada No. 171
                         </h6>
                     </div>
-                    <div class="col-12">
-                        <a href="#">
-                            <button class="btn btn-primary">Simulasi Scan</button>
-                        </a>
-                    </div>
                 </div>
                 
             </div>

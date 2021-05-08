@@ -20,10 +20,10 @@
 </head>
 <body class="horizontal-navigation scrollable-layout">
     {{-- Start Preloader --}}
-    <div class="preloader">
+    {{-- <div class="preloader">
         <div class="preloader-icon"></div>
         <span>Loading...</span>
-    </div>
+    </div> --}}
     {{-- End of Preloader --}}
 
     {{-- Sidebar Group --}}

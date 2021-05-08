@@ -88,13 +88,27 @@
                 <div class="card">
                     <h6 class="text-center card-header">Antrian{{ Session::get('nama_dokter') }}</h6>
                     <div id="antrian_saat_ini" class="card-body">
-                        <h1 class="nomor">{{ Session::get('perawat_antrian_saat_ini') }}</h1>
-                        <h6>Status: <span class="status">Masuk</span></h6>
+                        <h1 class="nomor">
+                            <input type="hidden" id="input_no_antrian_saat_ini" value="{{ Session::get('perawat_antrian_saat_ini') }}">
+                            A0{{ Session::get('perawat_antrian_saat_ini') }}
+                        </h1>
+                        <h6>
+                            Status: 
+                            <span class="status">
+                                @if (Session::get('perawat_status_antrian_saat_ini') == 0)
+                                    <input type="hidden" id="input_status_antrian_saat_ini" value="0">
+                                    Panggil
+                                @else
+                                    <input type="hidden" id="input_status_antrian_saat_ini" value="1">
+                                    Masuk
+                                @endif
+                            </span>
+                        </h6>
                     </div>
                     <div class="card-footer antrian_btn_container">
-                        <button class="btn btn-primary btn-rounded btn-uppercase">Next</button>
-                        <button class="btn btn-secondary btn-rounded btn-uppercase">Recall</button>
-                        <button class="btn btn-success btn-rounded btn-uppercase">Masuk</button>
+                        <button type="button" id="antrian_next_btn" class="btn btn-primary btn-rounded btn-uppercase">Next</button>
+                        <button type="button" id="antrian_recall_btn" class="btn btn-secondary btn-rounded btn-uppercase">Recall</button>
+                        <button type="button" id="antrian_masuk_btn" class="btn btn-success btn-rounded btn-uppercase">Masuk</button>
                     </div>
                 </div>
             </div>
@@ -103,6 +117,8 @@
     </div>
     
 </div>
+
+<audio id="recall_bell" src="{{ asset('/assets/perawat/sound/bell.mp3') }}"></audio>
 
 @include('perawat/components/rekam_medis_modal')
 @endsection

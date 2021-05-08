@@ -66,11 +66,45 @@ class MainController extends Controller
         return redirect('/perawat');
     }
 
+    public function update_status_panggil(Request $request){
+        $id = $request->id;
+        $status_panggil = $request->status_panggil;
+
+        Session::put('perawat_pasien.'.$id.'.status_panggil', $status_panggil);
+        Session::put('perawat_session_status', 'modified');
+
+        return 'success';
+    }
+
+    public function antrian(Request $request){
+        $button = $request->button;
+        $no_antrian = $request->no_antrian;
+        $id_pasien = 'PX000' . $no_antrian;
+        $status_panggil = Session::get('perawat_pasien')[$id_pasien]['status_panggil'];
+
+        if($button == 'next'){
+            if($status_panggil != 1){
+                Session::put('perawat_pasien.'.$id_pasien.'.status_panggil', 2);
+            }
+
+            Session::put('perawat_antrian_saat_ini', (int)$no_antrian + 1);
+            Session::put('perawat_status_antrian_saat_ini', 0);
+
+        } elseif ($button == 'masuk') {
+            Session::put('perawat_pasien.'.$id_pasien.'.status_panggil', 1);
+            Session::put('perawat_status_antrian_saat_ini', 1);
+        }
+
+        Session::put('perawat_session_status', 'modified');
+        return 'success';
+    }
+
     private function create_session_data()
     {
         $perawat_nama_dokter = "dr. Dian Permata Sari, SpOG";
         $perawat_spesialisasi_dokter = "Obstetri dan Ginekologi";
-        $perawat_antrian_saat_ini = '01';
+        $perawat_antrian_saat_ini = 1;
+        $perawat_status_antrian_saat_ini = 0;
 
         $perawat_pasien = [
             "PX0001" => [
@@ -155,6 +189,7 @@ class MainController extends Controller
         Session::put('perawat_spesialisasi_dokter', $perawat_spesialisasi_dokter);
         Session::put('perawat_pasien', $perawat_pasien);
         Session::put('perawat_antrian_saat_ini', $perawat_antrian_saat_ini);
+        Session::put('perawat_status_antrian_saat_ini', $perawat_status_antrian_saat_ini);
     }
 
     private function check_data_pasien_complete(){

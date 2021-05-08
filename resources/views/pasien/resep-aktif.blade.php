@@ -14,6 +14,7 @@
     </div>
     <div class="mt-md-0">
         <button type="button" class="btn btn-primary ml-0 ml-md-2 mt-2 mt-md-0" id="terimaresep">Simulasi Terima Resep</button>
+        <button type="button" class="btn btn-primary ml-0 ml-md-2 mt-2 mt-md-0" id="hapusresep">Hapus Resep</button>
     </div>
 </div>
 <div class="row">

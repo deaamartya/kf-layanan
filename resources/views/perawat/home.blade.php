@@ -1,4 +1,4 @@
-@extends('perawat/layouts/main')
+@extends('perawat/layouts/app')
 @section('title', 'Home | Perawat')
 @section('extra-styles')
 <link rel="stylesheet" href="{{ asset('/assets/gogi/vendors/select2/css/select2.min.css') }}">
@@ -106,9 +106,9 @@
                         </h6>
                     </div>
                     <div class="card-footer antrian_btn_container">
-                        <button type="button" id="antrian_next_btn" class="btn btn-primary btn-rounded btn-uppercase">Next</button>
-                        <button type="button" id="antrian_recall_btn" class="btn btn-secondary btn-rounded btn-uppercase">Recall</button>
-                        <button type="button" id="antrian_masuk_btn" class="btn btn-success btn-rounded btn-uppercase">Masuk</button>
+                        <button type="button" id="antrian_next_btn" class="btn btn-primary btn-rounded btn-uppercase btn-sm">Next</button>
+                        <button type="button" id="antrian_recall_btn" class="btn btn-secondary btn-rounded btn-uppercase btn-sm">Recall</button>
+                        <button type="button" id="antrian_masuk_btn" class="btn btn-success btn-rounded btn-uppercase btn-sm">Masuk</button>
                     </div>
                 </div>
             </div>

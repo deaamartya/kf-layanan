@@ -125,7 +125,7 @@ class MainController extends Controller
             "PX0002" => [
                 "id" => "PX0002",
                 "no_antrian" => "02",
-                "status_panggil" => 0,
+                "status_panggil" => 1,
                 "nama" => "Pelita Harapan",
                 "usia" => null,
                 "tensi_atas" => null,

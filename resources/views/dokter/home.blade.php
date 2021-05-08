@@ -1,4 +1,4 @@
-@extends('dokter/layouts/main')
+@extends('dokter/layouts/app')
 @section('title', 'Home | Dokter')
 @section('extra-styles')
 <link rel="stylesheet" href="{{ asset('/assets/gogi/vendors/select2/css/select2.min.css') }}">
@@ -43,8 +43,9 @@
                                 <thead class="thead-dark">
                                     <tr>
                                         <th class="w-auto">No. Antrian</th>
-                                        <th class="w-75">Nama</th>
+                                        <th class="w-50">Nama</th>
                                         <th class="w-auto">status</th>
+                                        <th class="w-auto">action</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -71,6 +72,15 @@
                                                 echo "<td>Telah Diperiksa</td>";
                                             }
                                         @endphp
+                                        @if ($pasien['status_panggil'] == 1)
+                                            <td>
+                                                <a href="{{ url('/dokter/periksa/'.$pasien['id']) }}" target="_blank" class="btn btn-sm btn-rounded btn-light btn-uppercase">
+                                                    Periksa
+                                                </a>
+                                            </td>
+                                        @else
+                                            <td></td>
+                                        @endif
                                     </tr>
                                     @endforeach
                                 </tbody>
@@ -106,9 +116,9 @@
                         </h6>
                     </div>
                     <div class="card-footer antrian_btn_container">
-                        <button type="button" id="antrian_next_btn" class="btn btn-primary btn-rounded btn-uppercase">Next</button>
-                        <button type="button" id="antrian_recall_btn" class="btn btn-secondary btn-rounded btn-uppercase">Recall</button>
-                        <button type="button" id="antrian_masuk_btn" class="btn btn-success btn-rounded btn-uppercase">Masuk</button>
+                        <button type="button" id="antrian_next_btn" class="btn btn-primary btn-rounded btn-uppercase btn-sm">Next</button>
+                        <button type="button" id="antrian_recall_btn" class="btn btn-secondary btn-rounded btn-uppercase btn-sm">Recall</button>
+                        <button type="button" id="antrian_masuk_btn" class="btn btn-success btn-rounded btn-uppercase btn-sm">Masuk</button>
                     </div>
                 </div>
             </div>

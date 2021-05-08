@@ -386,6 +386,7 @@
                                 <div class="dropdown-scroll">
                                     <ul class="list-group list-group-flush">
                                         @foreach(Session::get('online') as $pasien)
+                                        @if($pasien['STATUS'] == "0")
                                         <li class="px-4 py-3 list-group-item">
                                             <a href="{{ route('pesanan-online') }}" class="d-flex align-items-center hide-show-toggler">
                                                 <div class="flex-shrink-0">
@@ -405,6 +406,7 @@
                                                 </div>
                                             </a>
                                         </li>
+                                        @endif
                                         @endforeach
                                     </ul>
                                 </div>

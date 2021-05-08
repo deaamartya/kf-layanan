@@ -34,8 +34,8 @@
                 </div>
                 <div class="col-md-6 col-sm-12">
                     <div style="float: right">
-                        <a href="{{ url('farmasi/walkin-reset') }}"><button class="btn btn-warning btn-rounded btn-uppercase">Reset</button>
-                        <a href="{{ url('farmasi/walkin-pesan') }}"><button class="btn btn-secondary btn-rounded btn-uppercase">Pesanan Online</button>
+                        <a href="{{ url('farmasi/walkin-reset') }}"><button class="btn btn-warning btn-rounded btn-uppercase">Reset</button></a>
+                        <a href="{{ url('pesanan-online/online') }}"><button class="btn btn-secondary btn-rounded btn-uppercase">Pesanan Online</button></a>
                         <button class="btn btn-primary btn-rounded btn-uppercase" id="scan">Scan QRcode</button>
                     </div>
                 </div>
@@ -43,25 +43,10 @@
         </div>
         <div class="card col-sm-6">
             <div class="card-body">
-                <div class="row">
-                    <div class="col-md-2 col-sm-6">
-                        <h5>Rx</h5>
-                    </div>
-                    <div class="col-md-7 col-sm-6">
-                        <div class="form-group">
-                            <input type="text" value="" class="form-control" readonly>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" value="" class="form-control" readonly>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6">
-                        <h6>Jumlah : </h6>
-                    </div>
-                </div><hr>
+                
                 <div class="row" style="float: right">
-                    <button class="btn btn-danger mr-3 btn-uppercase">Hapus</button>
-                    <button class="btn btn-primary mr-3 btn-uppercase">Proses</button>
+                    <button class="btn btn-danger mr-3 btn-uppercase" disabled>Hapus</button>
+                    <button class="btn btn-primary mr-3 btn-uppercase" disabled>Proses</button>
                 </div>
             </div>
         </div>
@@ -109,6 +94,25 @@
                 "columnDefs": [
                     { "type": "any-number", "targets": 0 }
                 ],
+            });
+
+            $('#scan').on('click', function(){
+                $el = '<div class="row">'+
+                        '<div class="col-md-2 col-sm-6">'+
+                            '<h5>Rx</h5>'+
+                        '</div>'+
+                        '<div class="col-md-7 col-sm-6">'+
+                            '<div class="form-group">'+
+                                '<input type="text" value="" class="form-control" readonly>'+
+                            '</div>'+
+                            '<div class="form-group">'+
+                                '<input type="text" value="" class="form-control" readonly>'+
+                            '</div>'+
+                        '</div>'+
+                        '<div class="col-md-3 col-sm-6">'+
+                            '<h6>Jumlah : </h6>'+
+                        '</div>'+
+                    '</div><hr>';
             });
         });
     </script>

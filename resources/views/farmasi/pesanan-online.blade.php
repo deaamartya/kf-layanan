@@ -13,9 +13,9 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <button class="btn btn-warning btn-rounded btn-uppercase">Reset</button>
-                <button class="btn btn-secondary btn-rounded btn-uppercase">Pesanan Online</button>
-                <button class="btn btn-secondary btn-rounded btn-uppercase">Konfirm Ambil</button>
+                <a href="{{url('farmasi/pesanan-reset')}}"><button class="btn btn-warning btn-rounded btn-uppercase">Reset</button></a>
+                <a href="{{url('pesanan-online/online')}}"><button class="btn btn-secondary btn-rounded btn-uppercase">Pesanan Online</button></a>
+                <a href="{{url('konfirm-ambil')}}"><button class="btn btn-secondary btn-rounded btn-uppercase">Konfirm Ambil</button></a>
                 <button class="btn btn-secondary btn-rounded btn-uppercase">Konfirm Selesai</button>
                 <button class="btn btn-secondary btn-rounded btn-uppercase">Antar Selesai</button>
             </div>
@@ -91,9 +91,11 @@
             // Select Pesanan
             $('.select').on('click', function(){
                 $id = $(this).attr('id');
+                $url = 'farmasi/pesanan/'+$id;
+                console.log($url);
                 setTimeout(function(){ 
-                    window.location.replace("{{ url('farmasi/pesanan/"+$id+"') }}");
-                }, 1000);
+                    window.location = $url;
+                }, 0);
             });
         });
     </script>

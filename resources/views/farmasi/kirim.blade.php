@@ -15,29 +15,52 @@
             <div class="col-md-8">
                 <div class="card">
                     <div style="margin-top: 15px; margin-right: 15px">
-                        <h4 style="float: right">Harga : Rp. 100000</h4>
+                        <h4 style="float: right">Harga : Rp. @php 
+                                                                $random = [0, 1, 2];
+                                                                $array = array_rand($random);
+                                                                if($array == 0){
+                                                                    echo 100000;
+                                                                }
+                                                                else if($array == 1){
+                                                                    echo 150000;
+                                                                }
+                                                                else{
+                                                                    echo 200000;
+                                                                }
+                                                                
+                                                            @endphp
+                        </h4>
                     </div><hr>
                     <div class="card-body">
+                        @foreach(Session::get('data')['ISI_RESEP'] as $data)
                         <div class="row">
                             <div class="col-md-2 col-sm-6">
                                 <h5>Rx</h5>
                             </div>
                             <div class="col-md-7 col-sm-6">
                                 <div class="form-group">
-                                    <input type="text" value="" class="form-control" readonly>
+                                    <input type="text" value="{{$data['OBAT']}}" class="form-control" readonly>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" value="" class="form-control" readonly>
+                                    <input type="text" value="{{$data['TAKARAN']}}" class="form-control" readonly>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
-                                <h6>Jumlah : </h6>
+                                <h6>Jumlah : {{$data['JUMLAH']}}</h6>
                             </div>
                         </div><hr>
+                        @endforeach
                         <div class="row" style="float: right">
-                            <button class="btn btn-light mr-3 btn-uppercase">Kembali</button>
+                            @php
+                                $data = Session::get('data');
+                                $id = $data['ID_PESANAN'];
+                            @endphp
+                            <a href="{{route('pesanan-online')}}"><button class="btn btn-light mr-3 btn-uppercase">Kembali</button></a>
+                            @if($data['STATUS'] == "3")
                             <button class="btn btn-primary mr-3 btn-uppercase">Ready Kirim</button>
+                            @else if($data['STATUS'])
                             <button class="btn btn-primary mr-3 btn-uppercase">OTW</button>
+                            @endif
                         </div>
                     </div>
                 </div>

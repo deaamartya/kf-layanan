@@ -84,6 +84,64 @@ class FarmasiController extends Controller
                 ],
                 ]
             ],
+            [
+                'ID_PESANAN' => 'P00005',
+                'NAMA_PASIEN' => 'Aqilla',
+                'STATUS' => '4',
+                'ISI_RESEP' => [[
+                    'OBAT' => 'GLIMEPIRIDE DEXA 4MG',
+                    'TAKARAN' => '1 - oo',
+                    'JUMLAH' => '30',
+                ],
+                [
+                    'OBAT' => 'METROMIN IKA 500MG TAB',
+                    'TAKARAN' => '3 x 1',
+                    'JUMLAH' => '21',
+                ],
+                [
+                    'OBAT' => 'ACARBOSE DAXA 100MG TAB 100S',
+                    'TAKARAN' => '3 x 1',
+                    'JUMLAH' => '18',
+                ],
+                ]
+            ],
+            [
+                'ID_PESANAN' => 'P00006',
+                'NAMA_PASIEN' => 'Adinda',
+                'STATUS' => '5',
+                'ISI_RESEP' => [[
+                    'OBAT' => 'BRAXIDIN TAB',
+                    'TAKARAN' => '3 x 1',
+                    'JUMLAH' => '30',
+                ],
+                [
+                    'OBAT' => 'PUMPITOR 20MG CAP',
+                    'TAKARAN' => '2 x 1',
+                    'JUMLAH' => '20',
+                ],
+                [
+                    'OBAT' => 'EPISAN SYR 100 ML',
+                    'TAKARAN' => '3 x 15 CC',
+                    'JUMLAH' => '1',
+                ],
+                ]
+            ],
+            [
+                'ID_PESANAN' => 'P00007',
+                'NAMA_PASIEN' => 'Rifqi',
+                'STATUS' => '7',
+                'ISI_RESEP' => [[
+                    'OBAT' => 'PUMPITOR 20MG CAP',
+                    'TAKARAN' => '2 x 1',
+                    'JUMLAH' => '20',
+                ],
+                [
+                    'OBAT' => 'EPISAN SYR 100 ML',
+                    'TAKARAN' => '3 x 15 CC',
+                    'JUMLAH' => '1',
+                ],
+                ]
+            ],
         ];
 
         return $online;
@@ -130,14 +188,37 @@ class FarmasiController extends Controller
             Session::put('data', $data);
             return view('farmasi.stock');
         }
-        else if($data['STATUS'] == "2"){
+        else if($data['STATUS'] == "2" || $data['STATUS'] == "4"){
             Session::put('data', $data);
             return view('farmasi.ambil');
         }
-        else if($data['STATUS'] == "3"){
+        else if($data['STATUS'] == "3" || $data['STATUS'] == "5"){
             Session::put('data', $data);
             return view('farmasi.kirim');
         }
+    }
+
+    public function checkStock($id, $status)
+    {
+        $online = FarmasiController::data();
+        if($status == "0"){
+            $status = "-1";
+        }
+        else{
+            $status;
+        }
+        
+        for($i=0; $i<count($online); $i++)
+        {
+            if($online[$i]['ID_PESANAN'] == $id)
+            {
+                $online = FarmasiController::data();
+                $online[$i]['STATUS'] = $status;
+            }
+        }
+        Session::put('online', $online);
+
+        return view('farmasi.pesanan-online');
     }
 
     public function ambil($id)
@@ -157,12 +238,63 @@ class FarmasiController extends Controller
         return view('farmasi.pesanan-online');
     }
 
+    public function diambil($id)
+    {
+        $data = FarmasiController::data();
+
+        for($i=0; $i<count($data); $i++)
+        {
+            if($data[$i]['ID_PESANAN'] == $id)
+            {
+                $online = FarmasiController::data();
+                $online[$i]['STATUS'] = "7";
+            }
+        }
+        Session::put('online', $online);
+
+        return view('farmasi.pesanan-online');
+    }
+
+    public function readyKirim($id)
+    {
+        $data = FarmasiController::data();
+
+        for($i=0; $i<count($data); $i++)
+        {
+            if($data[$i]['ID_PESANAN'] == $id)
+            {
+                $online = FarmasiController::data();
+                $online[$i]['STATUS'] = "5";
+            }
+        }
+        Session::put('online', $online);
+
+        return view('farmasi.pesanan-online');
+    }
+
+    public function otw($id)
+    {
+        $data = FarmasiController::data();
+
+        for($i=0; $i<count($data); $i++)
+        {
+            if($data[$i]['ID_PESANAN'] == $id)
+            {
+                $online = FarmasiController::data();
+                $online[$i]['STATUS'] = "6";
+            }
+        }
+        Session::put('online', $online);
+
+        return view('farmasi.pesanan-online');
+    }
+
     public function pesanOnline()
     {
         $data = FarmasiController::data();
 
         $new = [
-            'ID_PESANAN' => 'P00005',
+            'ID_PESANAN' => 'P00008',
             'NAMA_PASIEN' => 'Indah',
             'STATUS' => '0',
             'ISI_RESEP' => [[
@@ -186,16 +318,13 @@ class FarmasiController extends Controller
 
     public function simAmbil()
     {
-        $data = FarmasiController::data();
-        for($i=0; $i<count($data); $i++)
+        $online = FarmasiController::data();
+        for($i=0; $i<count($online); $i++)
         {
-            if($data[$i]['STATUS'] == "1")
+            if($online[$i]['STATUS'] == "1")
             {
                 $online = FarmasiController::data();
                 $online[$i]['STATUS'] = "2";
-            }
-            else{
-                $online = FarmasiController::data();
             }
         }
         Session::put('online', $online);
@@ -205,10 +334,10 @@ class FarmasiController extends Controller
 
     public function simKirim()
     {
-        $data = FarmasiController::data();
-        for($i=0; $i<count($data); $i++)
+        $online = FarmasiController::data();
+        for($i=0; $i<count($online); $i++)
         {
-            if($data[$i]['STATUS'] == "1")
+            if($online[$i]['STATUS'] == "1")
             {
                 $online = FarmasiController::data();
                 $online[$i]['STATUS'] = "3";
@@ -224,10 +353,10 @@ class FarmasiController extends Controller
 
     public function simSelesai()
     {
-        $data = FarmasiController::data();
-        for($i=0; $i<count($data); $i++)
+        $online = FarmasiController::data();
+        for($i=0; $i<count($online); $i++)
         {
-            if($data[$i]['STATUS'] == "6")
+            if($online[$i]['STATUS'] == "6")
             {
                 $online = FarmasiController::data();
                 $online[$i]['STATUS'] = "7";

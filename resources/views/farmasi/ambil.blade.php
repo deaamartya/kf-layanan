@@ -59,7 +59,7 @@
                             @if($data['STATUS'] == "2")
                             <a href="{{url('ambil/'.$id)}}"><button class="btn btn-primary mr-3 btn-uppercase">Ready Ambil</button></a>
                             @elseif($data['STATUS'] == "4")
-                            <button class="btn btn-primary mr-3 btn-uppercase">Diambil</button>
+                            <a href="{{url('diambil/'.$id)}}"><button class="btn btn-primary mr-3 btn-uppercase">Diambil</button></a>
                             @endif
                         </div>
                     </div>

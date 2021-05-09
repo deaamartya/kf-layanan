@@ -4,15 +4,15 @@
     <h5>Log In</h5>
 
     <!-- form -->
-    <form action="{{ url('pasien') }}" method="post">
-        @crsf
+    <form action="{{ url('pasien') }}" method="get">
+        @csrf
         <div class="form-group">
             <label>Username</label>
-            <input type="text" class="form-control" required autofocus id="nama">
+            <input type="text" class="form-control" autofocus id="nama">
         </div>
         <div class="form-group">
             <label>Password</label>
-            <input type="text" class="form-control" required id="password">
+            <input type="text" class="form-control" id="password">
         </div>
         <button class="btn btn-primary btn-block" id="register" type="submit">Log In</button>
         <hr>

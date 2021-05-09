@@ -73,9 +73,7 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col text-center">
-                                        <a href="#" title="dokter">
-                                            <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="100" width="100">
-                                        </a>
+                                        <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="100" width="100">
                                     </div>
                                     <div class="col-7">
                                         <h5>dr. Amelia Abdullah, Sp.OG</h5>
@@ -112,9 +110,7 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col text-center">
-                                        <a href="#" title="dokter">
-                                            <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="100" width="100">
-                                        </a>
+                                        <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="100" width="100">
                                     </div>
                                     <div class="col-7">
                                         <h5>dr. Masnunah, Sp.OG</h5>
@@ -151,9 +147,7 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col text-center">
-                                        <a href="#" title="dokter">
-                                            <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="100" width="100">
-                                        </a>
+                                        <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="100" width="100">
                                     </div>
                                     <div class="col-7">
                                         <h5>dr. Elsa Fury, Sp.OG</h5>
@@ -190,9 +184,7 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col text-center">
-                                        <a href="#" title="dokter">
-                                            <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="100" width="100">
-                                        </a>
+                                        <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="100" width="100">
                                     </div>
                                     <div class="col-7">
                                         <h5>dr. Amelia Suganda, Sp.OG</h5>
@@ -229,9 +221,7 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col text-center">
-                                        <a href="#" title="dokter">
-                                            <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="100" width="100">
-                                        </a>
+                                        <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="100" width="100">
                                     </div>
                                     <div class="col-7">
                                         <h5>dr. Kathleen Juanita Gunawan Soenario, Sp.OG</h5>
@@ -276,9 +266,7 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col text-center">
-                                        <a href="#" title="dokter">
-                                            <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="100" width="100">
-                                        </a>
+                                        <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="100" width="100">
                                     </div>
                                     <div class="col-7">
                                         <h5>dr. Amelia Abdullah, Sp.OG</h5>
@@ -315,9 +303,7 @@
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col text-center">
-                                        <a href="#" title="dokter">
-                                            <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="100" width="100">
-                                        </a>
+                                        <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="100" width="100">
                                     </div>
                                     <div class="col-7">
                                         <h5>dr. Masnunah, Sp.OG</h5>
@@ -387,9 +373,7 @@
             <div class="modal-body">
                 <div class="row mb-5">
                     <div class="col-4">
-                        <a href="#" title="dokter">
-                            <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="200" width="200">
-                        </a>
+                        <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="200" width="200">
                     </div>
                     <div class="col">
                         <h5>dr. Amelia Abdullah, Sp.OG</h5>
@@ -427,6 +411,12 @@
                 </div>
                 <a href="{{ url('registrasi') }}">
                     <button class="btn btn-orange btn-block btn-lg">Reservasi</button>
+                </a>
+                <a href="{{ url('registrasi') }}">
+                    <button>Reservasi (regis)</button>
+                </a>
+                <a href="{{ url('login') }}">
+                    <button>Reservasi (login)</button>
                 </a>
             </div>
         </div>

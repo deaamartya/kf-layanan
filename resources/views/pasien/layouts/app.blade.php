@@ -4,17 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gogi - Admin and Dashboard Template</title>
+    <title>Kimia Farma</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset('assets/gogi/assets/media/image/favicon.png') }}"/>
+    <link rel="shortcut icon" href="{{ asset('assets/gogi/assets/media/image/logo.png') }}"/>
 
     <!-- Main css -->
     <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/bundle.css') }}" type="text/css">
 
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    <style>
+        #toast-container > .toast-error {
+            background-image:  url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sbnM6c3ZnanM9Imh0dHA6Ly9zdmdqcy5jb20vc3ZnanMiIHZlcnNpb249IjEuMSIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHg9IjAiIHk9IjAiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyIiB4bWw6c3BhY2U9InByZXNlcnZlIiBjbGFzcz0iIj48Zz48ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Im0yNTYgNTEyYzMwLjY5MiAwIDU3LjEyMi0xOC41MzkgNjguNzE5LTQ1aC0xMzcuNDM4YzExLjU5NyAyNi40NjEgMzguMDI4IDQ1IDY4LjcxOSA0NXoiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiLz48cGF0aCBkPSJtNDExIDI0Ny44NjJ2LTMyLjg2MmMwLTY5LjgyMi00Ni40MTEtMTI5LjAwMS0xMTAtMTQ4LjMzdi0yMS42N2MwLTI0LjgxMy0yMC4xODctNDUtNDUtNDVzLTQ1IDIwLjE4Ny00NSA0NXYyMS42N2MtNjMuNTkgMTkuMzI5LTExMCA3OC41MDctMTEwIDE0OC4zM3YzMi44NjJjMCA2MS4zMzItMjMuMzc4IDExOS40ODgtNjUuODI3IDE2My43NTYtNC4xNiA0LjMzOC01LjMyOSAxMC43MzktMi45NzEgMTYuMjY3czcuNzg4IDkuMTE1IDEzLjc5OCA5LjExNWg0MjBjNi4wMSAwIDExLjQzOS0zLjU4NyAxMy43OTctOS4xMTVzMS4xODktMTEuOTI5LTIuOTctMTYuMjY3Yy00Mi40NDktNDQuMjY4LTY1LjgyNy0xMDIuNDI1LTY1LjgyNy0xNjMuNzU2em0tMTQwLTE4Ny4xMzRjLTQuOTM3LS40NzYtOS45NC0uNzI4LTE1LS43MjhzLTEwLjA2My4yNTItMTUgLjcyOHYtMTUuNzI4YzAtOC4yNzEgNi43MjktMTUgMTUtMTVzMTUgNi43MjkgMTUgMTV6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIi8+PHBhdGggZD0ibTQ1MSAyMTVjMCA4LjI4NCA2LjcxNiAxNSAxNSAxNXMxNS02LjcxNiAxNS0xNWMwLTYwLjEtMjMuNDA0LTExNi42MDMtNjUuOTAxLTE1OS4xLTUuODU3LTUuODU3LTE1LjM1NS01Ljg1OC0yMS4yMTMgMHMtNS44NTggMTUuMzU1IDAgMjEuMjEzYzM2LjgzMSAzNi44MzEgNTcuMTE0IDg1LjggNTcuMTE0IDEzNy44ODd6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIi8+PHBhdGggZD0ibTQ2IDIzMGM4LjI4NCAwIDE1LTYuNzE2IDE1LTE1IDAtNTIuMDg2IDIwLjI4NC0xMDEuMDU1IDU3LjExNC0xMzcuODg2IDUuODU4LTUuODU4IDUuODU4LTE1LjM1NSAwLTIxLjIxMy01Ljg1Ny01Ljg1OC0xNS4zNTUtNS44NTgtMjEuMjEzIDAtNDIuNDk3IDQyLjQ5Ny02NS45MDEgOTguOTk5LTY1LjkwMSAxNTkuMDk5IDAgOC4yODQgNi43MTYgMTUgMTUgMTV6IiBmaWxsPSIjZmZmZmZmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIi8+PC9nPjwvZz48L3N2Zz4K') !important;
+            background-size: 24px 24px;
+        }
+    </style>
 @yield('head')
 
 <!-- App css -->
@@ -561,7 +566,7 @@
                     <li>
                         <a @if(request()->segment(1) == 'pasien'&& !request()->segment(2)) class="active" @endif href="{{ url('pasien') }}">
                             <span class="nav-link-icon">
-                                <i data-feather="pie-chart"></i>
+                                <i data-feather="home"></i>
                             </span>
                             <span>Dashboard</span>
                         </a>
@@ -569,15 +574,15 @@
                     <li>
                         <a @if(request()->segment(1) == 'pasien' && request()->segment(2) == 'pembayaran') class="active" @endif href="{{ url('pasien/pembayaran') }}">
                             <span class="nav-link-icon">
-                                <i data-feather="pie-chart"></i>
+                                <i data-feather="dollar-sign"></i>
                             </span>
-                            <span>Pembayaran (simulasi)</span>
+                            <span>Pembayaran</span>
                         </a>
                     </li>
                     <li>
                         <a @if(request()->segment(1) == 'pasien' && request()->segment(2) == 'riwayat-layanan-dokter') class="active" @endif href="{{ url('pasien/riwayat-layanan-dokter') }}">
                             <span class="nav-link-icon">
-                                <i data-feather="pie-chart"></i>
+                                <i data-feather="list"></i>
                             </span>
                             <span>Riwayat Layanan Dokter</span>
                         </a>
@@ -585,7 +590,7 @@
                     <li>
                         <a @if(request()->segment(1) == 'pasien' && request()->segment(2) == 'resep-aktif') class="active" @endif href="{{ url('pasien/resep-aktif') }}">
                             <span class="nav-link-icon">
-                                <i data-feather="pie-chart"></i>
+                                <i data-feather="clipboard"></i>
                             </span>
                             <span>Resep Aktif</span>
                         </a>

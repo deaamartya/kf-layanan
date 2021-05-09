@@ -173,9 +173,62 @@
             {{-- rujukan --}}
             <div class="tab-pane fade" id="nav-rujukan" role="tabpanel" aria-labelledby="nav-rujukan-tab">
                 <div class="container py-4">
-                    rujukan
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Dokumen</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Surat Rujukan</td>
+                                    <td colspan="2">
+                                        <button type="button" id="tulis_surat_rujukan_btn" class="btn btn-sm btn-rounded btn-warning btn-uppercase m-2" data-toggle="modal" data-target="#suratRujukanModal">
+                                            <i class="fas fa-pen mr-2"></i>
+                                            Tulis
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-rounded btn-youtube btn-uppercase m-2">
+                                            <i class="fas fa-file-pdf mr-2"></i>
+                                            Cetak
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Surat Keterangan Sehat</td>
+                                    <td colspan="2">
+                                        <button type="button" id="tulis_surat_sehat_btn" class="btn btn-sm btn-rounded btn-warning btn-uppercase m-2">
+                                            <i class="fas fa-pen mr-2"></i>
+                                            Tulis
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-rounded btn-youtube btn-uppercase m-2">
+                                            <i class="fas fa-file-pdf mr-2"></i>
+                                            Cetak
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Surat Keterangan Sakit</td>
+                                    <td colspan="2">
+                                        <button type="button" id="tulis_surat_sakit_btn" class="btn btn-sm btn-rounded btn-warning btn-uppercase m-2">
+                                            <i class="fas fa-pen mr-2"></i>
+                                            Tulis
+                                        </button>
+                                        <button type="button" class="btn btn-sm btn-rounded btn-youtube btn-uppercase m-2">
+                                            <i class="fas fa-file-pdf mr-2"></i>
+                                            Cetak
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
+            @include('dokter/components/surat_rujukan_modal')
+            @include('dokter/components/surat_sehat_modal')
+            @include('dokter/components/surat_sakit_modal')
             {{-- end rujukan --}}
             
             {{-- biaya --}}
@@ -185,6 +238,14 @@
                 </div>
             </div>
             {{-- end biaya --}}
+        </div>
+
+        <div class="my-3">
+            <hr>
+            <button type="submit" class="btn btn-primary btn-rounded btn-uppercase float-right">
+                <i class="mr-2 fas fa-save"></i>
+                Simpan
+            </button>
         </div>
     </form>
 
@@ -197,5 +258,6 @@
     const BASE_URL = "{{ url('/dokter') }}"
 </script>
 <script src="{{ asset('/assets/gogi/vendors/select2/js/select2.min.js') }}"></script>
+<script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
 <script src="{{ asset('/assets/dokter/js/periksa.js') }}"></script>
 @endsection

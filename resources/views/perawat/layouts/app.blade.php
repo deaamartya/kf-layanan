@@ -192,7 +192,7 @@
                     <li>
                         <a href="{{ url('/perawat') }}" id="home-menu">
                             <span class="nav-link-icon">
-                                <i data-feather="home"></i>
+                                <i class="fas fa-home"></i>
                             </span>
                             <span>Home</span>
                         </a>

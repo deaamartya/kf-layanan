@@ -192,19 +192,19 @@
                     <li>
                         <a href="{{ url('/dokter') }}" id="home-menu">
                             <span class="nav-link-icon">
-                                <i data-feather="home"></i>
+                                <i class="fas fa-home"></i>
                             </span>
                             <span>Home</span>
                         </a>
                         <a href="#" id="periksa-pasien-menu">
                             <span class="nav-link-icon">
-                                <i data-feather="home"></i>
+                                <i class="fas fa-clipboard-check"></i>
                             </span>
                             <span>Periksa Pasien</span>
                         </a>
                         <a href="{{ url('/dokter/rekam-medis') }}" id="rekam-medis-menu">
                             <span class="nav-link-icon">
-                                <i data-feather="home"></i>
+                                <i class="fas fa-copy"></i>
                             </span>
                             <span>Rekam Medis</span>
                         </a>
@@ -243,6 +243,7 @@
     <script src="{{ asset('/assets/gogi/vendors/bundle.js') }}"></script>
     <script src="{{ asset('/assets/gogi/assets/js/app.min.js') }}"></script>
     <script src="{{ asset('/assets/fontawesome/js/all.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     @yield('extra-scripts')
 </body>
 </html>

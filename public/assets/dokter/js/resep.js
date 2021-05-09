@@ -5,18 +5,31 @@ let total_obat_racik = 0
 $('#tambah_obat_satuan_btn').on('click', function(){
     total_obat_satuan += 1
 
-    // parrent div
+    // parent div
     let div = document.createElement('div')
     div.className = 'mt-2 form-group'
     div.style = 'display: flex; flex-direction: column; align-items: center;'
+
+    // input group div (nama obat + search button)
+    let group_div = document.createElement('div')
+    group_div.className = 'input-group my-2 w-100'
 
     // input nama obat
     let input_nama_obat = document.createElement('input')
     input_nama_obat.name = `input_nama_obat_satuan_${total_obat_satuan}`
     input_nama_obat.type = 'text'
-    input_nama_obat.className = 'input_nama_obat_satuan my-2 w-100 form-control'
+    input_nama_obat.className = 'input_nama_obat_satuan form-control'
     input_nama_obat.placeholder = 'Nama Obat'
     input_nama_obat.style = ''
+
+    // search button
+    let search_obat_btn = document.createElement('button')
+    search_obat_btn.type = 'button'
+    search_obat_btn.className = 'search_obat_btn btn btn-light'
+
+    // search icon
+    let search_obat_icon = document.createElement('i')
+    search_obat_icon.className = 'fas fa-search'
 
     // input signatura
     let input_signatura = document.createElement('input')
@@ -46,17 +59,26 @@ $('#tambah_obat_satuan_btn').on('click', function(){
     let hr = document.createElement('hr')
     hr.className = 'w-100 my-2'
 
-    div.appendChild(input_nama_obat)
+    search_obat_btn.appendChild(search_obat_icon)
+    group_div.appendChild(input_nama_obat)
+    group_div.appendChild(search_obat_btn)
+
+    div.appendChild(group_div)
     div.appendChild(input_signatura)
     div.appendChild(input_jumlah)
     div.appendChild(rm_btn)
     div.appendChild(hr)
 
-    document.getElementById('obat_satuan_parrent_div').appendChild(div)
+    document.getElementById('obat_satuan_parent_div').appendChild(div)
 
     // remove obat
     $(rm_btn).on('click', function(){
         this.parentNode.remove()
+    })
+
+    // search obat
+    $(search_obat_btn).on('click', function(){
+        search_obat(input_nama_obat)
     })
 
 })
@@ -65,7 +87,7 @@ $('#tambah_obat_satuan_btn').on('click', function(){
 $('#tambah_obat_racik_btn').on('click', function(){
     total_obat_racik += 1
 
-    // parrent div
+    // parent div
     let div = document.createElement('div')
     div.className = 'mt-2 form-group'
     div.style = 'display: flex; flex-direction: column; align-items: center;'
@@ -140,7 +162,7 @@ $('#tambah_obat_racik_btn').on('click', function(){
     div.appendChild(rm_btn)
     div.appendChild(hr)
 
-    document.getElementById('obat_racik_parrent_div').appendChild(div)
+    document.getElementById('obat_racik_parent_div').appendChild(div)
 
     // tambah nama obat
     $(tambah_nama_obat).on('click', function(){
@@ -179,3 +201,31 @@ $('#tambah_obat_racik_btn').on('click', function(){
     })
 
 })
+
+// search obat
+function search_obat(input_form){
+    let keyword = $(input_form).val()
+
+    let obat_1 = `${keyword} 10 Mg Tab`
+    let obat_2 = `${keyword} 15 Mg Tab`
+    let obat_3 = `${keyword} 20 Mg Tab`
+
+    obat_1 = obat_1.toUpperCase()
+    obat_2 = obat_2.toUpperCase()
+    obat_3 = obat_3.toUpperCase()
+
+    $('#search_obat_modal #radio_obat_1').val(obat_1)
+    $('#search_obat_modal #radio_obat_2').val(obat_2)
+    $('#search_obat_modal #radio_obat_3').val(obat_3)
+
+    $('#search_obat_modal #input_text_radio_obat_1').val(obat_1)
+    $('#search_obat_modal #input_text_radio_obat_2').val(obat_2)
+    $('#search_obat_modal #input_text_radio_obat_3').val(obat_3)
+    
+    $('#search_obat_modal').modal('show')
+
+    $('#search_obat_modal #pilih_obat_modal_btn').on('click', function(){
+        var radio_val = $("#search_obat_modal input[name='radio_obat']:checked").val()
+        $(input_form).val(radio_val)
+    })
+}

@@ -12,7 +12,7 @@
         <hr>
     </div>
 
-    <form class="col-md-12">
+    <form id="form_periksa_pasien" class="col-md-12">
         @csrf
 
         <nav class="mt-3">
@@ -252,6 +252,8 @@
     </form>
 
 </div>
+
+@include('dokter/components/search_obat_modal')
 @endsection
 
 @section('extra-scripts')

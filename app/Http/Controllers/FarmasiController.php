@@ -129,7 +129,7 @@ class FarmasiController extends Controller
             [
                 'ID_PESANAN' => 'P00007',
                 'NAMA_PASIEN' => 'Rifqi',
-                'STATUS' => '7',
+                'STATUS' => '6',
                 'ISI_RESEP' => [[
                     'OBAT' => 'PUMPITOR 20MG CAP',
                     'TAKARAN' => '2 x 1',
@@ -152,6 +152,7 @@ class FarmasiController extends Controller
         $online = FarmasiController::data();
 
         Session::put('online', $online);
+        Session::put('audio', '0');
 
         return view('farmasi.resep-walkin');
     }
@@ -313,7 +314,9 @@ class FarmasiController extends Controller
         $data[] = $new;
         // dd($data);
         Session::put('online', $data);
-        return view('farmasi.resep-walkin');
+        Session::put('audio', '1');
+
+        return view('farmasi.resep-walkin')->with('info', 'Ada pesanan masuk.');
     }
 
     public function simAmbil()
@@ -368,5 +371,19 @@ class FarmasiController extends Controller
         Session::put('online', $online);
 
         return view('farmasi.pesanan-online');
+    }
+
+    public function copyResep($id)
+    {
+        $online = FarmasiController::data();
+
+        foreach($online as $online){
+            if($online['ID_PESANAN'] == $id){
+                $data = $online;
+            }
+        }
+        Session::put('data', $data);
+
+        return view('farmasi.copy-resep');
     }
 }

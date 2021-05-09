@@ -39,6 +39,9 @@ Route::get('konfirm-kirim', 'FarmasiController@simKirim');
 Route::get('konfirm-selesai', 'FarmasiController@simSelesai');
 Route::get('diambil/{id}', 'FarmasiController@diambil');
 Route::get('ready-kirim/{id}', 'FarmasiController@readyKirim');
+Route::get('farmasi/copy-resep/{id}', 'FarmasiController@copyResep');
+
+
 Route::get('/', function () {
     return view('gogi.welcome');
 });

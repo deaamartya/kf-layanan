@@ -375,11 +375,11 @@ class FarmasiController extends Controller
 
     public function copyResep($id)
     {
-        $data = FarmasiController::data();
+        $online = FarmasiController::data();
 
-        foreach($data as $data){
-            if($data['ID_PESANAN'] == $id){
-                $data;
+        foreach($online as $online){
+            if($online['ID_PESANAN'] == $id){
+                $data = $online;
             }
         }
         Session::put('data', $data);

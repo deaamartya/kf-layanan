@@ -164,8 +164,8 @@
             
             {{-- resep --}}
             <div class="tab-pane fade" id="nav-resep" role="tabpanel" aria-labelledby="nav-resep-tab">
-                <div class="container py-4">
-                    resep
+                <div class="py-4">
+                    @include('dokter/components/resep')
                 </div>
             </div>
             {{-- end resep --}}
@@ -242,10 +242,12 @@
 
         <div class="my-3">
             <hr>
-            <button type="submit" class="btn btn-primary btn-rounded btn-uppercase float-right">
-                <i class="mr-2 fas fa-save"></i>
-                Simpan
-            </button>
+            <div style="display: grid; place-items: center;">
+                <button type="submit" class="btn btn-primary btn-rounded btn-uppercase text-center">
+                    <i class="mr-2 fas fa-save"></i>
+                    Simpan
+                </button>
+            </div>
         </div>
     </form>
 
@@ -260,4 +262,5 @@
 <script src="{{ asset('/assets/gogi/vendors/select2/js/select2.min.js') }}"></script>
 <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
 <script src="{{ asset('/assets/dokter/js/periksa.js') }}"></script>
+<script src="{{ asset('/assets/dokter/js/resep.js') }}"></script>
 @endsection

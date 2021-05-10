@@ -21,11 +21,11 @@
                         </div><hr>
                         <div class="card-body">
                             <button type="button" id="tambah_obat_satuan_btn" class="btn btn-sm btn-rounded btn-uppercase btn-primary mr-2">
-                                <!-- <i class="fas fa-plus-circle mr-2"></i> -->
+                                <i class="fas fa-plus-circle mr-2"></i>
                                 Obat Satuan
                             </button>
                             <button type="button" id="tambah_obat_racik_btn" class="btn btn-sm btn-rounded btn-uppercase btn-warning">
-                                <!-- <i class="fas fa-plus-circle mr-2"></i> -->
+                                <i class="fas fa-plus-circle mr-2"></i>
                                 Obat Racik
                             </button>
                             <div class="row my-4">
@@ -58,7 +58,7 @@
                             <div class="row">
                                 <div class="col-md-12 col-sm-12" style="text-align: center">
                                     <hr>
-                                    <button class="btn btn-primary btn-rounded mr-3 btn-uppercase" data-toggle="modal" data-target="#modal"></i>Simpan</button>
+                                    <button class="btn btn-primary btn-rounded mr-3 btn-uppercase" data-toggle="modal" data-target="#modal">Simpan</button>
                                 </div>
                             </div>
                         </div>
@@ -70,6 +70,59 @@
 </div>
 
 @endsection
+
+<div class="modal fade" id="search_obat_modal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header bg-secondary">
+                <h5 class="modal-title">Pencarian Obat</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <i class="fas fa-times-circle text-danger"></i>
+                </button>
+            </div>
+
+            <div class="modal-body py-3">
+                <h5 class="my-2">3 Hasil ditemukan</h5>
+
+                <div class="input-group mt-1">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" name="radio_obat" id="radio_obat_1" value="" checked>
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" id="input_text_radio_obat_1" value="Obat 1" readonly>
+                </div>
+                
+                <div class="input-group mt-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" name="radio_obat" id="radio_obat_2" value="">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" id="input_text_radio_obat_2" value="Obat 2" readonly>
+                </div>
+                
+                <div class="input-group mt-2">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <input type="radio" name="radio_obat" id="radio_obat_3" value="">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" id="input_text_radio_obat_3" value="Obat 3" readonly>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <div class="container">
+                    <button type="button" id="pilih_obat_modal_btn" class="btn btn-linkedin btn-rounded btn-uppercase float-right" data-dismiss="modal">
+                        Pilih
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <div class="modal" id="modal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
@@ -107,13 +160,26 @@
                 div.className = 'mt-2 form-group'
                 div.style = 'display: flex; flex-direction: column; align-items: center;'
 
+                // input group div (nama obat + search button)
+                let group_div = document.createElement('div')
+                group_div.className = 'input-group my-2 w-100'
+
                 // input nama obat
                 let input_nama_obat = document.createElement('input')
                 input_nama_obat.name = `input_nama_obat_satuan_${total_obat_satuan}`
                 input_nama_obat.type = 'text'
-                input_nama_obat.className = 'input_nama_obat_satuan my-2 w-100 form-control'
+                input_nama_obat.className = 'input_nama_obat_satuan form-control'
                 input_nama_obat.placeholder = 'Nama Obat'
                 input_nama_obat.style = ''
+
+                // search button
+                let search_obat_btn = document.createElement('button')
+                search_obat_btn.type = 'button'
+                search_obat_btn.className = 'search_obat_btn btn btn-light'
+
+                // search icon
+                let search_obat_icon = document.createElement('i')
+                search_obat_icon.className = 'fas fa-search'
 
                 // input signatura
                 let input_signatura = document.createElement('input')
@@ -143,7 +209,11 @@
                 let hr = document.createElement('hr')
                 hr.className = 'w-100 my-2'
 
-                div.appendChild(input_nama_obat)
+                search_obat_btn.appendChild(search_obat_icon)
+                group_div.appendChild(input_nama_obat)
+                group_div.appendChild(search_obat_btn)
+
+                div.appendChild(group_div)
                 div.appendChild(input_signatura)
                 div.appendChild(input_jumlah)
                 div.appendChild(rm_btn)
@@ -154,6 +224,22 @@
                 // remove obat
                 $(rm_btn).on('click', function(){
                     this.parentNode.remove()
+                })
+
+                // search obat
+                // let x = document.getElementById('input_nama_obat_satuan');
+                // x.addEventListener("keyup", function(event) {
+                //     if (event.keyCode === 13) {
+                //         event.preventDefault();
+                //         let index = $(this).attr('name').slice('23')
+                //         search_obat(input_nama_obat)
+                //         console.log(index);
+                //     }
+                // });
+
+                // search obat
+                $(search_obat_btn).on('click', function(){
+                    search_obat(input_nama_obat)
                 })
 
             });
@@ -283,6 +369,34 @@
                 console.log(id);
                 $('.data-'+id).remove();
             });
+
+            // search obat
+function search_obat(input_form){
+    let keyword = $(input_form).val()
+
+    let obat_1 = `${keyword} 10 Mg Tab`
+    let obat_2 = `${keyword} 15 Mg Tab`
+    let obat_3 = `${keyword} 20 Mg Tab`
+
+    obat_1 = obat_1.toUpperCase()
+    obat_2 = obat_2.toUpperCase()
+    obat_3 = obat_3.toUpperCase()
+
+    $('#search_obat_modal #radio_obat_1').val(obat_1)
+    $('#search_obat_modal #radio_obat_2').val(obat_2)
+    $('#search_obat_modal #radio_obat_3').val(obat_3)
+
+    $('#search_obat_modal #input_text_radio_obat_1').val(obat_1)
+    $('#search_obat_modal #input_text_radio_obat_2').val(obat_2)
+    $('#search_obat_modal #input_text_radio_obat_3').val(obat_3)
+    
+    $('#search_obat_modal').modal('show')
+
+    $('#search_obat_modal #pilih_obat_modal_btn').on('click', function(){
+        var radio_val = $("#search_obat_modal input[name='radio_obat']:checked").val()
+        $(input_form).val(radio_val)
+    })
+}
         });
     </script>
 @endsection

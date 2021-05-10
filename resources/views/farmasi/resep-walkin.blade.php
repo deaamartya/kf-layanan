@@ -6,7 +6,7 @@
 @section('content')
 <div class="row">
     <div class="col-md-12">
-
+        <input type="hidden" value="{{Session::get('pesanan')}}" id="pesanan">
         <div class="judul-tabel mb-3">
             <h5>Resep Walkin</h5>
         </div>
@@ -54,13 +54,16 @@
     <script src="{{ asset('assets/gogi/vendors/dataTable/datatables.min.js') }}"></script>
     <script src="{{ asset('assets/gogi/assets/js/examples/toast.js') }}"></script>
     <script>
-        if(Session::has('info')){
-            toastr.options =
-            {
-                "closeButton" : true,
-                "progressBar" : true
-            }
-            toastr.info("{{ session('info') }}");
+        if(document.getElementById('pesanan').value == "1"){
+            toastr.options = {
+                    timeOut: 10000,
+                    progressBar: true,
+                    showMethod: "slideDown",
+                    hideMethod: "slideUp",
+                    showDuration: 200,
+                    hideDuration: 200
+                };
+                toastr["info"]("Ada pesanan masuk.");
         }
     </script>
     <script>

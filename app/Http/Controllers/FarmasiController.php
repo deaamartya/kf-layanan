@@ -153,6 +153,7 @@ class FarmasiController extends Controller
 
         Session::put('online', $online);
         Session::put('audio', '0');
+        Session::put('pesanan', '0');
 
         return view('farmasi.resep-walkin');
     }
@@ -315,7 +316,7 @@ class FarmasiController extends Controller
         // dd($data);
         Session::put('online', $data);
         Session::put('audio', '1');
-
+        Session::put('pesanan', '1');
         return view('farmasi.resep-walkin')->with('info', 'Ada pesanan masuk.');
     }
 

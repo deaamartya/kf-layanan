@@ -233,53 +233,49 @@
             
             {{-- biaya --}}
             <div class="tab-pane fade" id="nav-biaya" role="tabpanel" aria-labelledby="nav-biaya-tab">
-                <div class="container py-4">
-                    <div class="form-group">
-                        <label>Tindakan</label>
-                        <select class="form-control select_tindakan">
-                            <option value="Konsultasi">Konsultasi</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label>Biaya</label>
-                        <div class="input-group">
-                            <div class="input-group-append">
-                                <span class="input-group-text">Rp</span>
-                            </div>
-                            <input type="number" class="form-control num-without-style nominal_biaya">
+                <div class="form-group mt-4">
+                    <label>Tindakan</label>
+                    <select class="form-control select_tindakan">
+                        <option value="Konsultasi">Konsultasi</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>Biaya</label>
+                    <div class="input-group">
+                        <div class="input-group-append">
+                            <span class="input-group-text">Rp</span>
                         </div>
+                        <input type="number" id="biaya_input_nominal" class="form-control num-without-style nominal_biaya" value="" min="0">
                     </div>
+                </div>
 
-                    <div class="form-group">
-                        <label>Keterangan</label>
-                        <textarea rows="10" class="form-control keterangan_biaya"></textarea>
-                    </div>
+                <div class="form-group">
+                    <label>Keterangan</label>
+                    <textarea rows="10" class="form-control keterangan_biaya"></textarea>
+                </div>
 
-                    <button type="button" id="tambah_biaya_btn" class="btn btn-sm btn-dark btn-uppercase">
-                        Tambah
-                    </button>
+                <button type="button" id="tambah_biaya_btn" class="btn btn-sm btn-dark btn-uppercase">
+                    Tambah
+                </button>
 
-                    <div class="table-responsive mt-5">
-                        <div class="row text-center">
-                            <div class="col-3 card" id="biaya_tindakan_container">
-                                <h6 class="card-header">Tindakan</h6>
-                            </div>
-                            <div class="col-3 card" id="biaya_nominal_container">
-                                <h6 class="card-header">Biaya</h6>
-                            </div>
-                            <div class="col-6 card" id="biaya_keterangan_container">
-                                <h6 class="card-header">Keterangan</h6>
-                            </div>
-                        </div>
+                <div class="table-responsive my-4">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th class="w-25">Tindakan</th>
+                                <th class="w-25">Biaya</th>
+                                <th class="w-50">Keterangan</th>
+                            </tr>
+                        </thead>
+                        <tbody id="biaya_table"></tbody>
+                    </table>
+                </div>
 
-                        <hr class="mt-5">
-                        <div class="form-group row">
-                            <label class="col-sm-2 col-form-label font-weight-bold">Total Biaya: </label>
-                            <div class="col-sm-10">
-                                <input type="number" name="input_total_biaya" id="input_total_biaya" class="form-control-plaintext" value="0" readonly>
-                            </div>
-                        </div>
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label font-weight-bold">Total Biaya: </label>
+                    <div class="col-sm-10">
+                        <input type="number" name="input_total_biaya" id="input_total_biaya" class="form-control-plaintext" value="0" readonly>
                     </div>
                 </div>
             </div>

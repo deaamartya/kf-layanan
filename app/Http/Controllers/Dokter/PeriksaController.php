@@ -14,4 +14,15 @@ class PeriksaController extends MainController
         $pasien = MainController::get_pasien_data($id);
         return view('dokter/periksa', compact('pasien'));
     }
+
+    public function store_data(Request $request)
+    {
+        $id_pasien = $request->input_id_pasien;
+        $status_panggil = 3;
+
+        Session::put('perawat_pasien.'.$id_pasien.'.status_panggil', $status_panggil);
+        Session::put('perawat_session_status', 'modified');
+
+        return redirect('/dokter');
+    }
 }

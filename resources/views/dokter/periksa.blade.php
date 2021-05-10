@@ -12,7 +12,7 @@
         <hr>
     </div>
 
-    <form id="form_periksa_pasien" class="col-md-12">
+    <form action="{{ url('/dokter/periksa') }}" method="POST" id="form_periksa_pasien" class="col-md-12">
         @csrf
 
         <nav class="mt-3">
@@ -33,7 +33,7 @@
                 <div class="container py-4">
                     <div class="form-group">
                         <label>ID Pasien</label>
-                        <input type="text" name="id" id="input_id_pasien" value="{{ $pasien['id'] }}" class="form-control" readonly>
+                        <input type="text" name="input_id_pasien" id="input_id_pasien" value="{{ $pasien['id'] }}" class="form-control" readonly>
                     </div>
                     <div class="form-group">
                         <label>Nama Pasien</label>

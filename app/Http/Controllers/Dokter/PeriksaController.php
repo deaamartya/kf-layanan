@@ -23,7 +23,7 @@ class PeriksaController extends MainController
         Session::put('perawat_pasien.'.$id_pasien.'.status_panggil', $status_panggil);
         Session::put('perawat_session_status', 'modified');
 
-        return redirect('/dokter');
+        return redirect('/dokter')->with('toast_msg', ' Data pemeriksaan pasien disimpan');
     }
 
     public function download_dokumen($filename)

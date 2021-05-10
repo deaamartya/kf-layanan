@@ -38,7 +38,7 @@
                     <h6 class="text-center card-header">Antrian Pasien</h6>
 
                     <div class="card-body">
-                        <div class="table-responsive">
+                        <div class="table-responsive" style="overflow: scroll; height: 400px;">
                             <table class="table table-bordered">
                                 <thead class="thead-dark">
                                     <tr>
@@ -118,7 +118,11 @@
                     <div class="card-footer antrian_btn_container">
                         <button type="button" id="antrian_next_btn" class="btn btn-primary btn-rounded btn-uppercase btn-sm">Next</button>
                         <button type="button" id="antrian_recall_btn" class="btn btn-secondary btn-rounded btn-uppercase btn-sm">Recall</button>
-                        <button type="button" id="antrian_masuk_btn" class="btn btn-success btn-rounded btn-uppercase btn-sm">Masuk</button>
+                        @if (Session::get('perawat_status_antrian_saat_ini') == 0)
+                            <button type="button" id="antrian_masuk_btn" class="btn btn-success btn-rounded btn-uppercase btn-sm">Masuk</button>
+                        @else
+                            <button type="button" id="antrian_masuk_btn" class="btn btn-success btn-rounded btn-uppercase btn-sm" style="cursor: not-allowed;" disabled>Masuk</button>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -134,10 +138,22 @@
 @endsection
 
 @section('extra-scripts')
+
+@if (session('toast_msg')) 
+<script>
+    toastr.success('{{ session('toast_msg') }}');
+</script>
+@endif
+
+@php
+    Session::forget('toast_msg')
+@endphp
+
 <script>
     const CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content')
     const BASE_URL = "{{ url('/dokter') }}"
 </script>
+
 <script src="{{ asset('/assets/gogi/vendors/select2/js/select2.min.js') }}"></script>
 <script src="{{ asset('/assets/dokter/js/home.js') }}"></script>
 @endsection

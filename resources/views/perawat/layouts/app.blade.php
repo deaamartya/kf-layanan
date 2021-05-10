@@ -231,6 +231,16 @@
     <script src="{{ asset('/assets/gogi/vendors/bundle.js') }}"></script>
     <script src="{{ asset('/assets/gogi/assets/js/app.min.js') }}"></script>
     <script src="{{ asset('/assets/fontawesome/js/all.min.js') }}"></script>
+    <script>
+        toastr.options = {
+                        timeOut: 3000,
+                        progressBar: true,
+                        showMethod: "slideDown",
+                        hideMethod: "slideUp",
+                        showDuration: 200,
+                        hideDuration: 200
+                    }
+    </script>
     @yield('extra-scripts')
 </body>
 </html>

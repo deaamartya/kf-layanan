@@ -73,6 +73,7 @@ $('#nav-biaya #tambah_biaya_btn').on('click', function(){
     total_biaya += parseFloat($(input_nominal).val())
 
     $('#nav-biaya #input_total_biaya').val(total_biaya)
+    toastr.success('Biaya ditambahkan')
 })
 
 // format rupiah input biaya

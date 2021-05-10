@@ -246,7 +246,7 @@
                         <div class="input-group-append">
                             <span class="input-group-text">Rp</span>
                         </div>
-                        <input type="number" id="biaya_input_nominal" class="form-control num-without-style nominal_biaya" value="" min="0">
+                        <input type="number" id="biaya_input_nominal" class="form-control num-without-style nominal_biaya" value="0" min="0">
                     </div>
                 </div>
 

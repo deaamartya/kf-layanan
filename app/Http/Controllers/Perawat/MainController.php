@@ -30,7 +30,7 @@ class MainController extends Controller
         Session::forget('perawat_pasien');
         Session::forget('perawat_antrian_saat_ini');
 
-        return redirect('/perawat');
+        return redirect('/perawat')->with('toast_msg', 'Reset session berhasil');
     }
 
     public function get_pasien_data($id)
@@ -63,12 +63,16 @@ class MainController extends Controller
         Session::put('perawat_pasien.'.$id.'.tinggi', $tinggi);
         Session::put('perawat_session_status', 'modified');
 
-        return redirect('/perawat');
+        return redirect('/perawat')->with('toast_msg', 'Data berhasil disimpan');
     }
 
     public function update_status_panggil(Request $request){
         $id = $request->id;
         $status_panggil = $request->status_panggil;
+
+        if($status_panggil == 1){
+            Session::put('toast_msg', 'Pasien masuk');
+        }
 
         Session::put('perawat_pasien.'.$id.'.status_panggil', $status_panggil);
         Session::put('perawat_session_status', 'modified');
@@ -85,6 +89,7 @@ class MainController extends Controller
         if($button == 'next'){
             if($status_panggil != 1){
                 Session::put('perawat_pasien.'.$id_pasien.'.status_panggil', 2);
+                Session::put('toast_msg', 'Pasien dilewati');
             }
 
             Session::put('perawat_antrian_saat_ini', (int)$no_antrian + 1);
@@ -93,6 +98,7 @@ class MainController extends Controller
         } elseif ($button == 'masuk') {
             Session::put('perawat_pasien.'.$id_pasien.'.status_panggil', 1);
             Session::put('perawat_status_antrian_saat_ini', 1);
+            Session::put('toast_msg', 'Pasien masuk');
         }
 
         Session::put('perawat_session_status', 'modified');

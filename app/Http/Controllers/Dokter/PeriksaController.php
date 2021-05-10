@@ -25,4 +25,11 @@ class PeriksaController extends MainController
 
         return redirect('/dokter');
     }
+
+    public function download_dokumen($filename)
+    {
+        return response()->file(
+            public_path('assets/dokter/document/' . $filename)
+        );
+    }
 }

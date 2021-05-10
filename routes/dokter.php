@@ -18,6 +18,9 @@ Route::get('/dokter/rekam-medis', 'Dokter\RekamMedisController@index');
 Route::get('/dokter/periksa/{id}', 'Dokter\PeriksaController@halaman_periksa');
 Route::post('/dokter/periksa', 'Dokter\PeriksaController@store_data');
 
+// Download dokumen/surat
+Route::get('/dokter/download/document/{filename}', 'Dokter\PeriksaController@download_dokumen');
+
 // Flush session
 Route::get('/dokter/flush-session', function(){
     Session::flush();

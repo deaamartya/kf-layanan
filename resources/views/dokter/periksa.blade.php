@@ -189,10 +189,10 @@
                                             <i class="fas fa-pen mr-2"></i>
                                             Tulis
                                         </button>
-                                        <button type="button" class="btn btn-sm btn-rounded btn-youtube btn-uppercase m-2">
+                                        <a href="{{ url('/dokter/download/document/surat_rujukan_dokter.pdf') }}" target="_blank" class="btn btn-sm btn-rounded btn-youtube btn-uppercase m-2">
                                             <i class="fas fa-file-pdf mr-2"></i>
                                             Cetak
-                                        </button>
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -202,10 +202,10 @@
                                             <i class="fas fa-pen mr-2"></i>
                                             Tulis
                                         </button>
-                                        <button type="button" class="btn btn-sm btn-rounded btn-youtube btn-uppercase m-2">
+                                        <a href="{{ url('/dokter/download/document/surat_keterangan_sehat.pdf') }}" target="_blank" class="btn btn-sm btn-rounded btn-youtube btn-uppercase m-2">
                                             <i class="fas fa-file-pdf mr-2"></i>
                                             Cetak
-                                        </button>
+                                        </a>
                                     </td>
                                 </tr>
                                 <tr>
@@ -215,10 +215,10 @@
                                             <i class="fas fa-pen mr-2"></i>
                                             Tulis
                                         </button>
-                                        <button type="button" class="btn btn-sm btn-rounded btn-youtube btn-uppercase m-2">
+                                        <a href="{{ url('/dokter/download/document/surat_keterangan_sakit.pdf') }}" target="_blank" class="btn btn-sm btn-rounded btn-youtube btn-uppercase m-2">
                                             <i class="fas fa-file-pdf mr-2"></i>
                                             Cetak
-                                        </button>
+                                        </a>
                                     </td>
                                 </tr>
                             </tbody>

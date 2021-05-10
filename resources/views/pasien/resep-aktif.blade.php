@@ -13,8 +13,8 @@
         <h3>Resep Aktif</h3>
     </div>
     <div class="mt-md-0">
-        <button type="button" class="btn btn-primary ml-0 ml-md-2 mt-2 mt-md-0" id="terimaresep">Simulasi Terima Resep</button>
-        <button type="button" class="btn btn-primary ml-0 ml-md-2 mt-2 mt-md-0" id="hapusresep">Hapus Resep</button>
+        <button type="button" id="terimaresep">Simulasi Terima Resep</button>
+        <button type="button" id="hapusresep">Hapus Resep</button>
     </div>
 </div>
 <div class="row">
@@ -23,7 +23,7 @@
             <div class="col-12">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-12" id="tidak-ada-resep">
-                        <div class="card border">
+                        <div class="card">
                             <div class="card-body">
                                 <div class="row align-items-center justify-content-center">
                                     <h4>Tidak ada Resep yang Aktif</h4>
@@ -38,7 +38,7 @@
                         </div>
                     </div>
                     <div class="col-12" id="list-resep">
-                        <div class="card border">
+                        <div class="card">
                             <div class="card-body">
                                 <div class="row align-items-center">
                                     <div class="col-md-4 col-12 text-center">
@@ -51,7 +51,7 @@
                                         <h5>dr. Amelia Abdullah, Sp.OG</h5>
                                         <p>Resep ini dibuat pada 8 Mei 2021 11.31WIB</p>
                                         <a href="{{ url('pasien/pesan-online') }}">
-                                            <button class="btn btn-success">Pesan Online</button>
+                                            <button class="btn btn-success"><i class="fa fa-shopping-cart mr-2"></i>Pesan Online</button>
                                         </a>
                                     </div>
                                 </div>
@@ -150,7 +150,11 @@
             setTimeout(function(){ 
                 $("#loader-dokter").hide();
                 $("#list-resep").show();
-            }, 500);
+            }, 5000);
+        });
+        $("#hapusresep").on('click',function(){
+            $("#list-resep").hide();
+            $("#tidak-ada-resep").show();
         });
     </script>
 @endsection

@@ -28,10 +28,10 @@
             @endphp
             @foreach($spesialisasi as $s)
             <div class="col-md-3 col-sm-6">
-                <a href="{{ url('list-dokter') }}" class="img-spesialiasi">
-                    <div class="card bg-dark text-white rounded">
-                        <img src="{{ asset('assets/img/dokter-kandungan.jpg') }}" class="card-img img-overlay" alt="image">
-                        <div class="card-img-overlay justify-content-center d-flex align-items-center">
+                <a href="{{ url('list-dokter') }}" class="img-spesialiasi" style="border-radius: 10px;">
+                    <div class="card bg-dark text-white" style="border-radius: 10px;">
+                        <img src="{{ asset('assets/img/dokter-kandungan.jpg') }}" class="card-img img-overlay" style="border-radius: 10px;" alt="image">
+                        <div class="card-img-overlay justify-content-center d-flex align-items-center" style="border-radius: 10px;">
                             <h3 class="card-title text-center">Dokter {{$s}}</h3>
                         </div>
                     </div>

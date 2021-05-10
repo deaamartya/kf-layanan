@@ -11,13 +11,13 @@
 
 <div class="row my-4">
     <div class="col-md-6 col-sm-12 obat_satuan_container">
-        <div class="card" id="obat_satuan_parrent_div">
+        <div class="card" id="obat_satuan_parent_div">
             <h6 class="card-header text-center">Obat Satuan</h6>
         </div>
     </div>
 
     <div class="col-md-6 col-sm-12 obat_racik_container">
-        <div class="card" id="obat_racik_parrent_div">
+        <div class="card" id="obat_racik_parent_div">
             <h6 class="card-header text-center">Obat Racik</h6>
         </div>
     </div>

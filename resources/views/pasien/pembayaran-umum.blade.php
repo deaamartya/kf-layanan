@@ -123,6 +123,7 @@
             setTimeout(function(){ 
                 $("#loader-dokter").hide();
                 $("#list-dokter-2").show();
+                
             }, 2000);
         });
     </script>

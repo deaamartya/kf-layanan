@@ -10,7 +10,7 @@
 @section('content')
 <div class="page-header">
     <div>
-        <h3>Cari Dokter</h3>
+        <h3>Riwayat Layanan Dokter</h3>
     </div>
 </div>
 <div class="row">
@@ -135,8 +135,9 @@
                     </div>
                     <div class="col-7">
                         <h6 class="text-gray">
-                            Apotek Kimia Farma Tempat Pengambilan Resep
+                            Tempat Pengambilan Resep
                         </h6>
+                        <h6>Apotek Kimia Farma Gajah Mada</h6>
                         <h6>
                             Jember - Jl. Gajah Mada No. 171
                         </h6>

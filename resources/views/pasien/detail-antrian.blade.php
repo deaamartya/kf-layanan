@@ -17,7 +17,10 @@
 <div class="page-header">
     <div class="row">
         <div class="col-10">
-            <h3>Detail Antrian #5</h3>
+            <h3>Detail Antrian</h3>
+        </div>
+        <div class="col-2">
+            <button id="simulasi-dipanggil">Simulasi dipanggil</button>
         </div>
     </div>
 </div>
@@ -27,10 +30,20 @@
         <div class="card">
             <div class="card-body">
                 <div class="row">
-                    <div class="col-12">
-                        <h4>Dokter</h4>
+                    <div class="col-3">
+                        <div class="card bg-danger">
+                            <div class="card-body">
+                                <h6 class="card-title">Nomor Antrian Anda</h6>
+                                <div class="d-flex text-center mb-3">
+                                    <div class="font-weight-bold ml-1 font-size-30" id="antrian-sekarang">5</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9">
                         <div class="card bg-light">
                             <div class="card-body">
+                                <h6 class="card-title">Dokter</h6>
                                 <div class="row align-items-center">
                                     <div class="col-3 text-center">
                                         <a href="#" title="dokter">
@@ -76,6 +89,19 @@
                 window.location.replace("{{ url('pasien/detail-antrian') }}");
             }, 3000);
         });
-        
+        $("#simulasi-dipanggil").on('click',function(){
+            toastr.options = {
+                timeOut: 10000,
+                progressBar: true,
+                showMethod: "slideDown",
+                hideMethod: "slideUp",
+                showDuration: 200,
+                hideDuration: 200
+            };
+            toastr["error"]("Anda dipanggil!");
+            var audioElement = document.createElement('audio');
+            audioElement.setAttribute('src', "{{ asset('assets/pasien/sound/bell.wav') }}");
+            audioElement.play();
+        });
     </script>
 @endsection

@@ -18,9 +18,9 @@ Route::view('pasien/riwayat-layanan-dokter','pasien.riwayat-layanan-dokter');
 Route::view('pasien/resep-aktif','pasien.resep-aktif');
 Route::view('pasien/pesan-online','pasien.pesan-online');
 // Route untuk simulasi
-Route::view('pasien/pembayaran-simulasi','pasien.pembayaran-simulasi');
-Route::view('pasien/pembayaran-umum','pasien.pembayaran-umum');
-Route::view('pasien/pembayaran-lainnya','pasien.pembayaran-lainnya');
+// Route::view('pasien/pembayaran-simulasi','pasien.pembayaran-simulasi');
+// Route::view('pasien/pembayaran-umum','pasien.pembayaran-umum');
+// Route::view('pasien/pembayaran-lainnya','pasien.pembayaran-lainnya');
 
 // Route Umum
 Route::view('list-spesialisasi','umum.list-spesialisasi');
@@ -51,7 +51,7 @@ Route::get('/', function () {
 // Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/', function () {
-    return view('gogi.dashboard');
+    return redirect('list-spesialisasi');
 })->name('dashboard');
 
 Route::get('orders', function () {

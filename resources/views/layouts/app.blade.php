@@ -37,7 +37,7 @@
 <div class="layout-wrapper">
 
     <!-- Header -->
-    <div class="header d-print-none" style="padding-top: 15px;">
+    <div class="header d-print-none" style="padding-top: 15px;margin-bottom: 10px;">
         <div class="header-container">
             <div class="header-left justify-content-center">
                 <div class="navigation-toggler">
@@ -85,14 +85,7 @@
 
             <!-- Footer -->
             <footer class="content-footer">
-                <div>© {{ date('Y') }} Gogi - <a href="http://laborasyon.com" target="_blank">Laborasyon</a></div>
-                <div>
-                    <nav class="nav">
-                        <a href="https://themeforest.net/licenses/standard" class="nav-link">Licenses</a>
-                        <a href="#" class="nav-link">Change Log</a>
-                        <a href="#" class="nav-link">Get Help</a>
-                    </nav>
-                </div>
+                <div class="text-white">© {{ date('Y') }} Created by Dimas Dea Sadam</div>
             </footer>
             <!-- ./ Footer -->
         </div>

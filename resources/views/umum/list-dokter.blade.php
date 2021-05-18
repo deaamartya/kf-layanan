@@ -5,6 +5,14 @@
     <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/prism/prism.css') }}" type="text/css">
     <!-- Select2 -->
     <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/select2/css/select2.min.css') }}" type="text/css">
+    <style>
+        @media screen and (min-width: 767px) {
+        .custom-border-left
+            {
+                border-left: 1px solid #dee2e6 !important;
+            }
+        }
+    </style>
 @endsection
 
 @section('content')
@@ -21,7 +29,7 @@
                     <div class="card-body">
                         <h6 class="card-title">Filter Dokter</h6>
                         <div class="row">
-                            <div class="col-3">
+                            <div class="col-md-3 col-12 mb-3">
                                 <select class="select2-example">
                                     <option>Pilih Kota/Kabupaten</option>
                                     @php $kota=['Kabupaten Bangkalan','Kabupaten Banyuwangi','Kabupaten Blitar','Kabupaten Bojonegoro','Kabupaten Bondowoso','Kabupaten Gresik','Kabupaten Jember','Kabupaten Jombang','Kabupaten Kediri','Kabupaten Lamongan','Kabupaten Lumajang','Kabupaten Madiun','Kabupaten Magetan','Kabupaten Malang','Kabupaten Mojokerto','Kabupaten Nganjuk','Kabupaten Ngawi','Kabupaten Pacitan','Kabupaten Pamekasan','Kabupaten Pasuruan','Kabupaten Ponorogo','Kabupaten Probolinggo','Kabupaten Sampang','Kabupaten Sidoarjo','Kabupaten Situbondo','Kabupaten Sumenep','Kabupaten Trenggalek','Kabupaten Tuban','Kabupaten Tulungagung','Kota Batu','Kota Blitar','Kota Kediri','Kota Madiun','Kota Malang','Kota Mojokerto','Kota Pasuruan','Kota Probolinggo','Kota Surabaya'] @endphp
@@ -30,7 +38,7 @@
                                     @endforeach
                                 </select>
                             </div>
-                            <div class="col">
+                            <div class="col-md-3 col-12 mb-3">
                                 <select class="custom-select custom-select-sm">
                                     @php $hari = ["Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"]; @endphp
                                     <option selected>Pilih Hari</option>
@@ -39,7 +47,7 @@
                                     @endforeach
                                 </select>
                             </div>
-                            <div class="col">
+                            <div class="col-md-2 col-12 mb-3">
                                 <select class="custom-select custom-select-sm">
                                     @php $jam_awal = ["08.00", "09.00", "10.00", "11.00", "12.00", "13.00", "14.00"]; @endphp
                                     <option selected>Pilih Jam Awal</option>
@@ -48,7 +56,7 @@
                                     @endforeach
                                 </select>
                             </div>
-                            <div class="col">
+                            <div class="col-md-2 col-12 mb-3">
                                 <select class="custom-select custom-select-sm">
                                     @php $jam_akhir = ["08.30", "09.30", "10.30", "11.30", "12.30", "13.30", "14.30"]; @endphp
                                     <option selected>Pilih Jam Akhir</option>
@@ -57,7 +65,7 @@
                                     @endforeach
                                 </select>
                             </div>
-                            <div class="col">
+                            <div class="col-md-2 col-12">
                                 <button class="btn btn-primary btn" id="terapkan">Terapkan</button>
                             </div>
                         </div>
@@ -75,7 +83,7 @@
                                     <div class="col text-center">
                                         <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="100" width="100">
                                     </div>
-                                    <div class="col-7">
+                                    <div class="col-md-7 col-12 mt-3 mt-md-0">
                                         <h5>dr. Amelia Abdullah, Sp.OG</h5>
                                         <h6 class="text-gray">
                                             <i class="fa fa-stethoscope mr-2"></i>Dokter Kandungan
@@ -84,9 +92,9 @@
                                             <i class="fa fa-hospital-o mr-2"></i>Jember - Jl. Gajah Mada No. 171
                                         </h6>
                                     </div>
-                                    <div class="col-3">
-                                        <div class="row pl-1 mb-3 border-left">
-                                            <div class="col">
+                                    <div class="col-md-3 col-12">
+                                        <div class="row pl-1 mb-md-3 custom-border-left my-md-0 my-2">
+                                            <div class="col my-md-0 my-2">
                                                 <h6 class="text-gray">Ulasan Dokter</h6>
                                                 <div class="row pl-3 mb-0 pb-0">
                                                     <h5 class="text-primary mr-2">
@@ -98,7 +106,7 @@
                                                 <h4 class="text-orange">Rp215.000</h4>
                                             </div>
                                         </div>
-                                        <div class="row mr-2">
+                                        <div class="row mr-2 ml-3 ml-md-0">
                                             <button class="btn btn-orange btn-block" data-toggle="modal"
                                             data-target=".bd-example-modal-lg">Reservasi</button>
                                         </div>
@@ -112,7 +120,7 @@
                                     <div class="col text-center">
                                         <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="100" width="100">
                                     </div>
-                                    <div class="col-7">
+                                    <div class="col-md-7 col-12 mt-3 mt-md-0">
                                         <h5>dr. Masnunah, Sp.OG</h5>
                                         <h6 class="text-gray">
                                             <i class="fa fa-stethoscope mr-2"></i>Dokter Kandungan
@@ -121,9 +129,9 @@
                                             <i class="fa fa-hospital-o mr-2"></i>Jember - Jl. Hayam Wuruk No. 227
                                         </h6>
                                     </div>
-                                    <div class="col-3">
-                                        <div class="row pl-1 mb-3 border-left">
-                                            <div class="col">
+                                    <div class="col-md-3 col-12">
+                                        <div class="row pl-1 mb-md-3 custom-border-left my-md-0 my-2">
+                                            <div class="col my-md-0 my-2">
                                                 <h6 class="text-gray">Ulasan Dokter</h6>
                                                 <div class="row pl-3 mb-0 pb-0">
                                                     <h5 class="text-primary mr-2">
@@ -135,7 +143,7 @@
                                                 <h4 class="text-orange">Rp215.000</h4>
                                             </div>
                                         </div>
-                                        <div class="row mr-2">
+                                        <div class="row mr-2 ml-3 ml-md-0">
                                             <button class="btn btn-orange btn-block" data-toggle="modal"
                                             data-target=".bd-example-modal-lg">Reservasi</button>
                                         </div>
@@ -149,7 +157,7 @@
                                     <div class="col text-center">
                                         <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="100" width="100">
                                     </div>
-                                    <div class="col-7">
+                                    <div class="col-md-7 col-12 mt-3 mt-md-0">
                                         <h5>dr. Elsa Fury, Sp.OG</h5>
                                         <h6 class="text-gray">
                                             <i class="fa fa-stethoscope mr-2"></i>Dokter Kandungan
@@ -158,9 +166,9 @@
                                             <i class="fa fa-hospital-o mr-2"></i>Jember - Jl. A. Yani No. 58
                                         </h6>
                                     </div>
-                                    <div class="col-3">
-                                        <div class="row pl-1 mb-3 border-left">
-                                            <div class="col">
+                                    <div class="col-md-3 col-12">
+                                        <div class="row pl-1 mb-md-3 custom-border-left my-md-0 my-2">
+                                            <div class="col my-md-0 my-2">
                                                 <h6 class="text-gray">Ulasan Dokter</h6>
                                                 <div class="row pl-3 mb-0 pb-0">
                                                     <h5 class="text-primary mr-2">
@@ -172,7 +180,7 @@
                                                 <h4 class="text-orange">Rp215.000</h4>
                                             </div>
                                         </div>
-                                        <div class="row mr-2">
+                                        <div class="row mr-2 ml-3 ml-md-0">
                                             <button class="btn btn-orange btn-block" data-toggle="modal"
                                             data-target=".bd-example-modal-lg">Reservasi</button>
                                         </div>
@@ -186,7 +194,7 @@
                                     <div class="col text-center">
                                         <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="100" width="100">
                                     </div>
-                                    <div class="col-7">
+                                    <div class="col-md-7 col-12 mt-3 mt-md-0">
                                         <h5>dr. Amelia Suganda, Sp.OG</h5>
                                         <h6 class="text-gray">
                                             <i class="fa fa-stethoscope mr-2"></i>Dokter Kandungan
@@ -195,9 +203,9 @@
                                             <i class="fa fa-hospital-o mr-2"></i>Jember - Jl. Let. Jen. Suprapto No. 76
                                         </h6>
                                     </div>
-                                    <div class="col-3">
-                                        <div class="row pl-1 mb-3 border-left">
-                                            <div class="col">
+                                    <div class="col-md-3 col-12">
+                                        <div class="row pl-1 mb-md-3 custom-border-left my-md-0 my-2">
+                                            <div class="col my-md-0 my-2">
                                                 <h6 class="text-gray">Ulasan Dokter</h6>
                                                 <div class="row pl-3 mb-0 pb-0">
                                                     <h5 class="text-primary mr-2">
@@ -209,7 +217,7 @@
                                                 <h4 class="text-orange">Rp215.000</h4>
                                             </div>
                                         </div>
-                                        <div class="row mr-2">
+                                        <div class="row mr-2 ml-3 ml-md-0">
                                             <button class="btn btn-orange btn-block" data-toggle="modal"
                                             data-target=".bd-example-modal-lg">Reservasi</button>
                                         </div>
@@ -223,7 +231,7 @@
                                     <div class="col text-center">
                                         <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="100" width="100">
                                     </div>
-                                    <div class="col-7">
+                                    <div class="col-md-7 col-12 mt-3 mt-md-0">
                                         <h5>dr. Kathleen Juanita Gunawan Soenario, Sp.OG</h5>
                                         <h6 class="text-gray">
                                             <i class="fa fa-stethoscope mr-2"></i>Dokter Kandungan
@@ -232,9 +240,9 @@
                                             <i class="fa fa-hospital-o mr-2"></i>Jember - Jl. Panglima Sudirman No. 46
                                         </h6>
                                     </div>
-                                    <div class="col-3">
-                                        <div class="row pl-1 mb-3 border-left">
-                                            <div class="col">
+                                    <div class="col-md-3 col-12">
+                                        <div class="row pl-1 mb-md-3 custom-border-left my-md-0 my-2">
+                                            <div class="col my-md-0 my-2">
                                                 <h6 class="text-gray">Ulasan Dokter</h6>
                                                 <div class="row pl-3 mb-0 pb-0">
                                                     <h5 class="text-primary mr-2">
@@ -246,7 +254,7 @@
                                                 <h4 class="text-orange">Rp215.000</h4>
                                             </div>
                                         </div>
-                                        <div class="row mr-2">
+                                        <div class="row mr-2 ml-3 ml-md-0">
                                             <button class="btn btn-orange btn-block" data-toggle="modal"
                                             data-target=".bd-example-modal-lg">Reservasi</button>
                                         </div>
@@ -278,7 +286,7 @@
                                         </h6>
                                     </div>
                                     <div class="col-3">
-                                        <div class="row pl-1 mb-3 border-left">
+                                        <div class="row pl-1 mb-3 custom-border-left">
                                             <div class="col">
                                                 <h6 class="text-gray">Ulasan Dokter</h6>
                                                 <div class="row pl-3 mb-0 pb-0">
@@ -315,7 +323,7 @@
                                         </h6>
                                     </div>
                                     <div class="col-3">
-                                        <div class="row pl-1 mb-3 border-left">
+                                        <div class="row pl-1 mb-3 custom-border-left">
                                             <div class="col">
                                                 <h6 class="text-gray">Ulasan Dokter</h6>
                                                 <div class="row pl-3 mb-0 pb-0">
@@ -372,10 +380,10 @@
             </div>
             <div class="modal-body">
                 <div class="row mb-5">
-                    <div class="col-4">
+                    <div class="col-md-4 col-12">
                         <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="200" width="200">
                     </div>
-                    <div class="col">
+                    <div class="col mt-md-0 mt-2">
                         <h5>dr. Amelia Abdullah, Sp.OG</h5>
                         <h6 class="text-gray">
                             <i class="fa fa-stethoscope mr-2"></i>Dokter Kandungan
@@ -409,14 +417,8 @@
                         </table>
                     </div>
                 </div>
-                <a href="{{ url('registrasi') }}">
-                    <button class="btn btn-orange btn-block btn-lg">Reservasi</button>
-                </a>
-                <a href="{{ url('registrasi') }}">
-                    <button>Reservasi (regis)</button>
-                </a>
                 <a href="{{ url('login') }}">
-                    <button>Reservasi (login)</button>
+                    <button class="btn btn-orange btn-block btn-lg">Reservasi</button>
                 </a>
             </div>
         </div>

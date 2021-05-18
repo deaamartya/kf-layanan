@@ -4,7 +4,7 @@
     <h5>Log In</h5>
 
     <!-- form -->
-    <form action="{{ url('pasien') }}" method="get">
+    <form action="{{ url('login') }}" method="post">
         @csrf
         <div class="form-group">
             <label>Username</label>

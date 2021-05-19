@@ -11,9 +11,23 @@
 
             <div class="modal-body py-3">
 
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">ID Pasien</label>
+                    <div class="col-sm-10">
+                        <input type="text" value=": PX0001" class="form-control-plaintext" readonly>
+                    </div>
+                </div>
+                
+                <div class="form-group row">
+                    <label class="col-sm-2 col-form-label">Nama</label>
+                    <div class="col-sm-10">
+                        <input type="text" value=": Nabila Putri" class="form-control-plaintext" readonly>
+                    </div>
+                </div>
+
                 <div class="table-responsive">
                     <table class="table table-bordered">
-                        <thead class="">
+                        <thead class="thead-dark">
                             <tr>
                                 <th>Tanggal</th>
                                 <th>Dokter</th>

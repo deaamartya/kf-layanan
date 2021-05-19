@@ -99,6 +99,13 @@ class MainController extends Controller
             Session::put('perawat_pasien.'.$id_pasien.'.status_panggil', 1);
             Session::put('perawat_status_antrian_saat_ini', 1);
             Session::put('toast_msg', 'Pasien masuk');
+
+            if((int)$no_antrian > 1){
+                $id_pasien_sebelumnya = 'PX000' . ((int)$no_antrian - 1);
+                if(Session::get('perawat_pasien')[$id_pasien_sebelumnya]['status_panggil'] == 1){
+                    Session::put('perawat_pasien.'.$id_pasien_sebelumnya.'.status_panggil', 3);
+                }
+            }
         }
 
         Session::put('perawat_session_status', 'modified');

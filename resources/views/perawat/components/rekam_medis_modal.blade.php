@@ -29,11 +29,11 @@
                             </div>
                             <div class="form-group">
                                 <label>Nama Pasien</label>
-                                <input type="text" name="nama" id="input_nama_pasien" class="form-control">
+                                <input type="text" name="nama" id="input_nama_pasien" class="form-control" readonly>
                             </div>
                             <div class="form-group">
                                 <label>Usia</label>
-                                <input type="number" name="usia" id="input_usia_pasien" class="form-control" min="1">
+                                <input type="number" name="usia" id="input_usia_pasien" class="form-control" min="1" readonly>
                             </div>
                             <div class="form-group">
                                 <label>Nama Dokter</label>

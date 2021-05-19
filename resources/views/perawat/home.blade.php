@@ -1,7 +1,6 @@
 @extends('perawat/layouts/app')
 @section('title', 'Home | Perawat')
 @section('extra-styles')
-<link rel="stylesheet" href="{{ asset('/assets/gogi/vendors/select2/css/select2.min.css') }}">
 <link rel="stylesheet" href="{{ asset('/assets/perawat/css/home.css') }}">
 @endsection
 
@@ -144,6 +143,5 @@
     const BASE_URL = "{{ url('/perawat') }}"
 </script>
 
-<script src="{{ asset('/assets/gogi/vendors/select2/js/select2.min.js') }}"></script>
 <script src="{{ asset('/assets/perawat/js/home.js') }}"></script>
 @endsection

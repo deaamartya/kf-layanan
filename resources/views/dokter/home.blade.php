@@ -1,7 +1,6 @@
 @extends('dokter/layouts/app')
 @section('title', 'Home | Dokter')
 @section('extra-styles')
-<link rel="stylesheet" href="{{ asset('/assets/gogi/vendors/select2/css/select2.min.css') }}">
 <link rel="stylesheet" href="{{ asset('/assets/dokter/css/home.css') }}">
 @endsection
 
@@ -154,6 +153,5 @@
     const BASE_URL = "{{ url('/dokter') }}"
 </script>
 
-<script src="{{ asset('/assets/gogi/vendors/select2/js/select2.min.js') }}"></script>
 <script src="{{ asset('/assets/dokter/js/home.js') }}"></script>
 @endsection

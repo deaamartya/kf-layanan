@@ -8,6 +8,7 @@
 
     <title>@yield('title', 'Kimia Farma')</title>
 
+    <link rel="shortcut icon" href="{{ asset('/assets/gogi/assets/media/image/logo.png') }}"/>
     <link rel="stylesheet" href="{{ asset('/assets/gogi/vendors/bundle.css') }}" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('/assets/gogi/assets/css/app.min.css') }}" type="text/css">

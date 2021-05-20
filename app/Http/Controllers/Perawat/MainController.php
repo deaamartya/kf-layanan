@@ -72,6 +72,15 @@ class MainController extends Controller
 
         if($status_panggil == 1){
             Session::put('toast_msg', 'Pasien masuk');
+
+            foreach(Session::get('perawat_pasien') as $pasien){
+                if($pasien['id'] == $id){
+                    break;
+                }
+
+                Session::put('perawat_pasien.'.$pasien['id'].'.status_panggil', 3);
+            }
+
         }
 
         Session::put('perawat_pasien.'.$id.'.status_panggil', $status_panggil);

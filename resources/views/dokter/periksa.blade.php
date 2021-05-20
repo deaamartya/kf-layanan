@@ -37,11 +37,11 @@
                     </div>
                     <div class="form-group">
                         <label>Nama Pasien</label>
-                        <input type="text" name="nama" id="input_nama_pasien" value="{{ $pasien['nama'] }}" class="form-control">
+                        <input type="text" name="nama" id="input_nama_pasien" value="{{ $pasien['nama'] }}" class="form-control" readonly>
                     </div>
                     <div class="form-group">
                         <label>Usia</label>
-                        <input type="number" name="usia" id="input_usia_pasien" value="{{ $pasien['usia'] }}" class="form-control" min="1">
+                        <input type="number" name="usia" id="input_usia_pasien" value="{{ $pasien['usia'] }}" class="form-control" min="1" readonly>
                     </div>
                     <div class="form-group">
                         <label>Nama Dokter</label>
@@ -66,14 +66,14 @@
                     <div class="form-group">
                         <label>Lama Sakit</label>
                         <div class="input-group">
-                            <input type="number" class="form-control">
+                            <input type="number" class="form-control" id="input_lama_sakit" min="1">
                             <div class="input-group-append">
-                                <select class="form-control">
-                                    <option>Hari</option>
-                                    <option>Minggu</option>
-                                    <option>Bulan</option>
-                                    <option>Tahun</option>
-                                    <option>Sejak Lahir</option>
+                                <select class="form-control" id="input_select_lama_sakit">
+                                    <option value="1">Hari</option>
+                                    <option value="2">Minggu</option>
+                                    <option value="3">Bulan</option>
+                                    <option value="4">Tahun</option>
+                                    <option value="0">Sejak Lahir</option>
                                 </select>
                             </div>
                         </div>

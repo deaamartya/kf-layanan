@@ -2,3 +2,7 @@
     display: flex;
     flex-direction: row;
 }
+
+#search_obat_modal .search_obat_result_btn:hover {
+    border-bottom: 1px solid blue;
+}

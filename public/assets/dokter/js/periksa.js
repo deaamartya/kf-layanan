@@ -99,3 +99,12 @@ function format_rupiah(angka){
 	rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
 	return rupiah
 }
+
+// Disable input number jika lama sakit == sejak lahir
+$('#input_select_lama_sakit').on('change', function(){
+    if($(this).val() == 0){
+        $('#input_lama_sakit').val('').attr('readonly', true)
+    } else {
+        $('#input_lama_sakit').attr('readonly', false)
+    }
+})

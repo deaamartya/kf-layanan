@@ -238,7 +238,6 @@
     <script src="{{ asset('/assets/gogi/vendors/bundle.js') }}"></script>
     <script src="{{ asset('/assets/gogi/assets/js/app.min.js') }}"></script>
     <script src="{{ asset('/assets/fontawesome/js/all.min.js') }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script>
         toastr.options = {
                         timeOut: 3000,

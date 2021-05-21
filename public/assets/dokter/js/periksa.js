@@ -2,9 +2,10 @@ $('#periksa-pasien-menu').addClass('active')
 
 let komponen_biaya = 0
 
-CKEDITOR.replace('input_surat_rujukan')
-CKEDITOR.replace('input_surat_sehat')
-CKEDITOR.replace('input_surat_sakit')
+// Surat2 dokter - WYSIWYG HTML editor config
+// CKEDITOR.replace('input_surat_rujukan')
+// CKEDITOR.replace('input_surat_sehat')
+// CKEDITOR.replace('input_surat_sakit')
 
 // prevent submit form via tombol enter
 document.getElementById("form_periksa_pasien").onkeypress = function(e) {     

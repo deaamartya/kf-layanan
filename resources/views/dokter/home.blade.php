@@ -73,7 +73,7 @@
                                         @endphp
                                         @if ($pasien['status_panggil'] == 1)
                                             <td>
-                                                <a href="{{ url('/dokter/periksa/'.$pasien['id']) }}" target="_blank" class="btn btn-sm btn-rounded btn-light btn-uppercase">
+                                                <a href="{{ url('/dokter/periksa/'.$pasien['id']) }}" class="btn btn-sm btn-rounded btn-light btn-uppercase">
                                                     Periksa
                                                 </a>
                                             </td>

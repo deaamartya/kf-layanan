@@ -25,3 +25,6 @@ Route::get('/dokter/download/document/{filename}', 'Dokter\PeriksaController@dow
 Route::get('/dokter/flush-session', function(){
     Session::flush();
 });
+
+
+// Test

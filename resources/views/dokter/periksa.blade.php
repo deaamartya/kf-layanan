@@ -1,7 +1,6 @@
 @extends('dokter/layouts/app')
 @section('title', 'Periksa Pasien | Dokter')
 @section('extra-styles')
-<link rel="stylesheet" href="{{ asset('/assets/gogi/vendors/select2/css/select2.min.css') }}">
 <link rel="stylesheet" href="{{ asset('/assets/dokter/css/periksa.css') }}">
 @endsection
 
@@ -184,40 +183,55 @@
                             <tbody>
                                 <tr>
                                     <td>Surat Rujukan</td>
-                                    <td colspan="2">
-                                        <button type="button" id="tulis_surat_rujukan_btn" class="btn btn-sm btn-rounded btn-warning btn-uppercase m-2" data-toggle="modal" data-target="#suratRujukanModal">
+                                    <td>
+                                        {{-- <button type="button" id="tulis_surat_rujukan_btn" class="btn btn-sm btn-rounded btn-warning btn-uppercase m-2" data-toggle="modal" data-target="#suratRujukanModal">
                                             <i class="fas fa-pen mr-2"></i>
                                             Tulis
                                         </button>
                                         <a href="{{ url('/dokter/download/document/surat_rujukan_dokter.pdf') }}" target="_blank" class="btn btn-sm btn-rounded btn-youtube btn-uppercase m-2">
                                             <i class="fas fa-file-pdf mr-2"></i>
                                             Cetak
+                                        </a> --}}
+
+                                        <a href="https://docs.google.com/document/d/1AhcdV2i5XtWS5yz4qwRzWHtd-QxhWGpGBXqXHN7F9GU/edit?usp=sharing" target="_blank" class="btn btn-sm btn-rounded btn-warning btn-uppercase">
+                                            <i class="fas fa-pen mr-2"></i>
+                                            Tulis
                                         </a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Surat Keterangan Sehat</td>
-                                    <td colspan="2">
-                                        <button type="button" id="tulis_surat_sehat_btn" class="btn btn-sm btn-rounded btn-warning btn-uppercase m-2">
+                                    <td>
+                                        {{-- <button type="button" id="tulis_surat_sehat_btn" class="btn btn-sm btn-rounded btn-warning btn-uppercase m-2">
                                             <i class="fas fa-pen mr-2"></i>
                                             Tulis
                                         </button>
                                         <a href="{{ url('/dokter/download/document/surat_keterangan_sehat.pdf') }}" target="_blank" class="btn btn-sm btn-rounded btn-youtube btn-uppercase m-2">
                                             <i class="fas fa-file-pdf mr-2"></i>
                                             Cetak
+                                        </a> --}}
+
+                                        <a href="https://docs.google.com/document/d/1vVnmID7Sdit_7ILKYKvZCFmNz07oad1lIHfTLGz_AOI/edit?usp=sharing" target="_blank" class="btn btn-sm btn-rounded btn-warning btn-uppercase">
+                                            <i class="fas fa-pen mr-2"></i>
+                                            Tulis
                                         </a>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>Surat Keterangan Sakit</td>
-                                    <td colspan="2">
-                                        <button type="button" id="tulis_surat_sakit_btn" class="btn btn-sm btn-rounded btn-warning btn-uppercase m-2">
+                                    <td>
+                                        {{-- <button type="button" id="tulis_surat_sakit_btn" class="btn btn-sm btn-rounded btn-warning btn-uppercase m-2">
                                             <i class="fas fa-pen mr-2"></i>
                                             Tulis
                                         </button>
                                         <a href="{{ url('/dokter/download/document/surat_keterangan_sakit.pdf') }}" target="_blank" class="btn btn-sm btn-rounded btn-youtube btn-uppercase m-2">
                                             <i class="fas fa-file-pdf mr-2"></i>
                                             Cetak
+                                        </a> --}}
+
+                                        <a href="https://docs.google.com/document/d/11Jkgo_NUBS3i-suvZgg8KVj69zKjmxEuZoUP5B-YQu8/edit?usp=sharing" target="_blank" class="btn btn-sm btn-rounded btn-warning btn-uppercase">
+                                            <i class="fas fa-pen mr-2"></i>
+                                            Tulis
                                         </a>
                                     </td>
                                 </tr>
@@ -226,9 +240,9 @@
                     </div>
                 </div>
             </div>
-            @include('dokter/components/surat_rujukan_modal')
-            @include('dokter/components/surat_sehat_modal')
-            @include('dokter/components/surat_sakit_modal')
+            {{-- @include('dokter/components/surat_rujukan_modal') --}}
+            {{-- @include('dokter/components/surat_sehat_modal') --}}
+            {{-- @include('dokter/components/surat_sakit_modal') --}}
             {{-- end rujukan --}}
             
             {{-- biaya --}}
@@ -303,8 +317,7 @@
     const CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content')
     const BASE_URL = "{{ url('/dokter') }}"
 </script>
-<script src="{{ asset('/assets/gogi/vendors/select2/js/select2.min.js') }}"></script>
-<script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script>
+{{-- <script src="https://cdn.ckeditor.com/4.16.0/standard/ckeditor.js"></script> --}}
 <script src="{{ asset('/assets/dokter/js/periksa.js') }}"></script>
 <script src="{{ asset('/assets/dokter/js/resep.js') }}"></script>
 @endsection

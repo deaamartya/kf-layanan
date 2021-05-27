@@ -27,7 +27,7 @@
 
     <!-- logo -->
     <div id="logo">
-        <img src="{{ asset('assets/gogi/assets/media/image/logo.png') }}" alt="image" height="100">
+        <img src="{{ asset('assets/gogi/assets/media/image/logo.png') }}" class="img-fluid" alt="image" style="max-height: 100px;">
     </div>
     <!-- ./ logo -->
 

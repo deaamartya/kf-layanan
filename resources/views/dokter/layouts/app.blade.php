@@ -8,6 +8,7 @@
 
     <title>@yield('title', 'Kimia Farma')</title>
 
+    <link rel="shortcut icon" href="{{ asset('/assets/gogi/assets/media/image/logo.png') }}"/>
     <link rel="stylesheet" href="{{ asset('/assets/gogi/vendors/bundle.css') }}" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('/assets/gogi/assets/css/app.min.css') }}" type="text/css">
@@ -224,13 +225,7 @@
 
             <!-- Footer -->
             <footer class="content-footer">
-                <div class="text-white">
-                    &copy;
-                    @php
-                        echo date("Y");
-                    @endphp
-                    <a href="#" class="text-white">PT Kimia Farma Tbk.</a>
-                </div>
+                <div class="text-white">© {{ date('Y') }} Created by Dimas Dea Sadam</div>
             </footer>
             <!-- ./ Footer -->
         </div>
@@ -243,7 +238,16 @@
     <script src="{{ asset('/assets/gogi/vendors/bundle.js') }}"></script>
     <script src="{{ asset('/assets/gogi/assets/js/app.min.js') }}"></script>
     <script src="{{ asset('/assets/fontawesome/js/all.min.js') }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script>
+        toastr.options = {
+                        timeOut: 3000,
+                        progressBar: true,
+                        showMethod: "slideDown",
+                        hideMethod: "slideUp",
+                        showDuration: 200,
+                        hideDuration: 200
+                    }
+    </script>
     @yield('extra-scripts')
 </body>
 </html>

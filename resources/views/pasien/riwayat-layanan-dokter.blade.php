@@ -22,12 +22,12 @@
                         <div class="card border" id="riwayat-1" style="cursor: pointer">
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-3 text-center">
+                                    <div class="col-12 col-md-3 text-center">
                                         <a href="#" title="dokter">
                                             <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="100" width="100">
                                         </a>
                                     </div>
-                                    <div class="col-9">
+                                    <div class="col-12 col-md-9">
                                         <h5>dr. Amelia Abdullah, Sp.OG</h5>
                                         <h6 class="text-gray">
                                             <i class="fa fa-stethoscope mr-2"></i>Dokter Kandungan
@@ -42,12 +42,12 @@
                         <div class="card border" id="riwayat-2" style="cursor: pointer">
                             <div class="card-body">
                                 <div class="row">
-                                    <div class="col-3 text-center">
+                                    <div class="col-12 col-md-3 text-center">
                                         <a href="#" title="dokter">
                                             <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="100" width="100">
                                         </a>
                                     </div>
-                                    <div class="col-9">
+                                    <div class="col-12 col-md-9">
                                         <h5>dr. Masnunah, Sp.OG</h5>
                                         <h6 class="text-gray">
                                             <i class="fa fa-stethoscope mr-2"></i>Dokter Kandungan
@@ -95,7 +95,7 @@
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <h4>Detail Kunjungan</h4>
                         <hr>
                         <div class="row mb-3">
@@ -112,16 +112,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-12 col-md-6">
                         <h4>Dokter</h4>
                         <hr>
                         <div class="row mb-5 align-items-center">
-                            <div class="col-3">
+                            <div class="col-12 col-md-3">
                                 <a href="#" title="dokter">
                                     <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="80" width="80">
                                 </a>
                             </div>
-                            <div class="col-9 align-content-center">
+                            <div class="col-12 col-md-9 align-content-center">
                                 <h5>dr. Amelia Abdullah, Sp.OG</h5>
                             </div>
                         </div>
@@ -130,10 +130,10 @@
                 <h4>Resep</h4>
                 <hr>
                 <div class="row align-items-center">
-                    <div class="col-5">
+                    <div class="col-12 col-md-5">
                         <img src="{{ asset('assets/img/qr-code-resep.png') }}" height="200">
                     </div>
-                    <div class="col-7">
+                    <div class="col-12 col-md-7">
                         <h6 class="text-gray">
                             Tempat Pengambilan Resep
                         </h6>

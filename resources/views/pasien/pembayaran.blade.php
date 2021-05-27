@@ -26,12 +26,12 @@
                         <div class="card bg-light">
                             <div class="card-body">
                                 <div class="row align-items-center">
-                                    <div class="col-3 text-center">
+                                    <div class="col-12 col-md-3 text-center">
                                         <a href="#" title="dokter">
                                             <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="100" width="100">
                                         </a>
                                     </div>
-                                    <div class="col-9">
+                                    <div class="col-12 col-md-9 mt-md-0 mt-2">
                                         <h5>dr. Amelia Abdullah, Sp.OG</h5>
                                         <h6 class="text-gray">
                                             <i class="fa fa-stethoscope mr-2"></i>Dokter Kandungan

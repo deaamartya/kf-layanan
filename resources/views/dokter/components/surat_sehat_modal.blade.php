@@ -10,7 +10,7 @@
             </div>
 
             <div class="modal-body py-3">
-                <textarea rows="50" name="input_surat_sehat" class="form-control"></textarea>
+                <textarea rows="50" id="input_surat_sehat" name="input_surat_sehat" class="form-control"></textarea>
             </div>
 
             <div class="modal-footer">

@@ -2,9 +2,10 @@ $('#periksa-pasien-menu').addClass('active')
 
 let komponen_biaya = 0
 
-CKEDITOR.replace('input_surat_rujukan')
-CKEDITOR.replace('input_surat_sehat')
-CKEDITOR.replace('input_surat_sakit')
+// Surat2 dokter - WYSIWYG HTML editor config
+// CKEDITOR.replace('input_surat_rujukan')
+// CKEDITOR.replace('input_surat_sehat')
+// CKEDITOR.replace('input_surat_sakit')
 
 // prevent submit form via tombol enter
 document.getElementById("form_periksa_pasien").onkeypress = function(e) {     
@@ -73,6 +74,7 @@ $('#nav-biaya #tambah_biaya_btn').on('click', function(){
     total_biaya += parseFloat($(input_nominal).val())
 
     $('#nav-biaya #input_total_biaya').val(total_biaya)
+    toastr.success('Biaya ditambahkan')
 })
 
 // format rupiah input biaya
@@ -98,3 +100,12 @@ function format_rupiah(angka){
 	rupiah = split[1] != undefined ? rupiah + ',' + split[1] : rupiah;
 	return rupiah
 }
+
+// Disable input number jika lama sakit == sejak lahir
+$('#input_select_lama_sakit').on('change', function(){
+    if($(this).val() == 0){
+        $('#input_lama_sakit').val('').attr('readonly', true)
+    } else {
+        $('#input_lama_sakit').attr('readonly', false)
+    }
+})

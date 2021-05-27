@@ -17,8 +17,10 @@ $('#tambah_obat_satuan_btn').on('click', function(){
     // input nama obat
     let input_nama_obat = document.createElement('input')
     input_nama_obat.name = `input_nama_obat_satuan_${total_obat_satuan}`
+    input_nama_obat.id = `input_nama_obat_satuan_${total_obat_satuan}`
     input_nama_obat.type = 'text'
-    input_nama_obat.className = 'input_nama_obat_satuan form-control'
+    // input_nama_obat.className = 'input_nama_obat_satuan form-control'
+    input_nama_obat.className = 'form-control'
     input_nama_obat.placeholder = 'Nama Obat'
     input_nama_obat.style = ''
 
@@ -79,6 +81,13 @@ $('#tambah_obat_satuan_btn').on('click', function(){
     // search obat
     $(search_obat_btn).on('click', function(){
         search_obat(input_nama_obat)
+    })
+
+    // trigger search obat saat user menekan tombol enter pada input nama obat
+    $(input_nama_obat).on('keyup', function(event){
+        if(event.key === 'Enter' || event.keyCode === 13){
+            search_obat(input_nama_obat)
+        }
     })
 
 })
@@ -200,32 +209,22 @@ $('#tambah_obat_racik_btn').on('click', function(){
         this.parentNode.remove()
     })
 
+    // trigger search obat saat user menekan tombol enter pada input nama obat
+    $(input_nama_obat).on('keyup', function(event){
+        if(event.key === 'Enter' || event.keyCode === 13){
+            search_obat(input_nama_obat)
+        }
+    })
+
 })
 
 // search obat
 function search_obat(input_form){
-    let keyword = $(input_form).val()
-
-    let obat_1 = `${keyword} 10 Mg Tab`
-    let obat_2 = `${keyword} 15 Mg Tab`
-    let obat_3 = `${keyword} 20 Mg Tab`
-
-    obat_1 = obat_1.toUpperCase()
-    obat_2 = obat_2.toUpperCase()
-    obat_3 = obat_3.toUpperCase()
-
-    $('#search_obat_modal #radio_obat_1').val(obat_1)
-    $('#search_obat_modal #radio_obat_2').val(obat_2)
-    $('#search_obat_modal #radio_obat_3').val(obat_3)
-
-    $('#search_obat_modal #input_text_radio_obat_1').val(obat_1)
-    $('#search_obat_modal #input_text_radio_obat_2').val(obat_2)
-    $('#search_obat_modal #input_text_radio_obat_3').val(obat_3)
-    
     $('#search_obat_modal').modal('show')
 
-    $('#search_obat_modal #pilih_obat_modal_btn').on('click', function(){
-        var radio_val = $("#search_obat_modal input[name='radio_obat']:checked").val()
-        $(input_form).val(radio_val)
+    $('#search_obat_modal .search_obat_result_btn').on('click', function(){
+        let data_content = $(this).data('content')
+        $(input_form).val(data_content)
+        $('#search_obat_modal').modal('hide')
     })
 }

@@ -375,9 +375,11 @@
                                     <h5 class="mb-0">Notifications</h5>
                                     @php
                                         $count = '0';
-                                        foreach(Session::get('online') as $online){
-                                            if($online['STATUS'] == 0){
-                                                $count = $count + 1;
+                                        if(Session::has('online')){
+                                            foreach(Session::get('online') as $online){
+                                                if($online['STATUS'] == 0){
+                                                    $count = $count + 1;
+                                                }
                                             }
                                         }
                                     @endphp
@@ -385,6 +387,7 @@
                                 </div>
                                 <div class="dropdown-scroll">
                                     <ul class="list-group list-group-flush">
+                                    @if(Session::has('online'))
                                         @foreach(Session::get('online') as $pasien)
                                         @if($pasien['STATUS'] == "0")
                                         <li class="px-4 py-3 list-group-item">
@@ -408,6 +411,7 @@
                                         </li>
                                         @endif
                                         @endforeach
+                                    @endif
                                     </ul>
                                 </div>
                                 <!-- <div class="px-4 py-3 text-right border-top">
@@ -498,9 +502,11 @@
                         <a id="online" @if(!request()->segment(1)) class="active" @endif href="{{ route('pesanan-online') }}">
                             @php
                                 $count = '0';
-                                foreach(Session::get('online') as $online){
-                                    if($online['STATUS'] == 0){
-                                        $count = $count + 1;
+                                if(Session::has('online')){
+                                    foreach(Session::get('online') as $online){
+                                        if($online['STATUS'] == 0){
+                                            $count = $count + 1;
+                                        }
                                     }
                                 }
                             @endphp

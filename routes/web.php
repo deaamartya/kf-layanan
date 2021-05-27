@@ -40,8 +40,8 @@ Route::get('konfirm-selesai', 'FarmasiController@simSelesai');
 Route::get('diambil/{id}', 'FarmasiController@diambil');
 Route::get('ready-kirim/{id}', 'FarmasiController@readyKirim');
 Route::get('farmasi/copy-resep/{id}', 'FarmasiController@copyResep');
-
-
+Route::get('walkin/online', 'FarmasiController@pesanOnlineWalkin');
+Route::get('add', 'FarmasiController@data');
 Route::get('/', function () {
     return view('gogi.welcome');
 });

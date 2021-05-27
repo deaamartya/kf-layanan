@@ -34,7 +34,7 @@
                 <div class="col-md-5 col-sm-12">
                     <div style="float: right">
                         <a href="{{ url('farmasi/walkin-reset') }}"><button class="btn btn-warning btn-rounded btn-uppercase">Reset</button></a>
-                        <a href="{{ url('pesanan-online/online') }}"><button class="btn btn-secondary btn-rounded btn-uppercase">Pesanan Online</button></a>
+                        <a href="{{ url('walkin/online') }}"><button class="btn btn-secondary btn-rounded btn-uppercase">Pesanan Online</button></a>
                         <button class="btn btn-primary btn-rounded btn-uppercase" id="scan">Scan QRcode</button>
                     </div>
                 </div>
@@ -47,6 +47,9 @@
 @if(Session::get('audio') == "1")
 <audio autoplay><source src="{{asset('assets/notification.mp3')}}" type="audio/mp3"></audio>
 @endif
+
+<audio id="audio"><source src="{{asset('assets/scan.mpeg')}}" type="audio/mpeg"></audio>
+
 
 @endsection
 
@@ -128,6 +131,10 @@
                 $('.resep').append($el);
                 document.getElementById('hapus').disabled = false;
                 document.getElementById('proses').disabled = false;
+
+                
+                var audio = document.getElementById("audio");
+                audio.play();
             });
 
             $('#hapus').on('click', function(){

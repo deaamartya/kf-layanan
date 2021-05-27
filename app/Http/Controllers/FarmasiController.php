@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Session;
 
 class FarmasiController extends Controller
 {
-    public function data()
+    public function data(Request $request)
     {
         $online = [
             [
@@ -144,42 +144,51 @@ class FarmasiController extends Controller
             ],
         ];
 
-        return $online;
+        $request->session()->put('online', $online);
+
+        // return $online;
     }
 
     public function walkin(Request $request)
     {
-        $online = FarmasiController::data();
 
-        Session::put('online', $online);
-        Session::put('audio', '0');
-        Session::put('pesanan', '0');
+        $data = $request->session()->get('online');
+        Session::put('online', $data);
 
         return view('farmasi.resep-walkin');
     }
 
     public function online(Request $request)
     {
-        $online = FarmasiController::data();
-
-        Session::put('online', $online);
+        $data = $request->session()->get('online');
+        Session::put('online', $data);
 
         return view('farmasi.pesanan-online');
     }
 
-    public function resetWalkin()
+    public function resetWalkin(Request $request)
     {
+        $data = $request->session()->forget('online');
+        $count = $request->session()->forget('pesanan-online');
+        Session::put('pesanan-online', 0);
+        Session::put('online', $data);
+
         return redirect('farmasi');
     }
 
-    public function resetOnline()
+    public function resetOnline(Request $request)
     {
+        $data = $request->session()->forget('online');
+        $count = $request->session()->forget('pesanan-online');
+        Session::put('pesanan-online', 0);
+        Session::put('online', $data);
+
         return redirect('pesanan-online');
     }
 
-    public function checkStatus($id)
+    public function checkStatus(Request $request, $id)
     {
-        $online = FarmasiController::data();
+        $online = $request->session()->get('online');
 
         foreach($online as $online){
             if($online['ID_PESANAN'] == $id){
@@ -200,9 +209,9 @@ class FarmasiController extends Controller
         }
     }
 
-    public function checkStock($id, $status)
+    public function checkStock(Request $request, $id, $status)
     {
-        $online = FarmasiController::data();
+        $online = $request->session()->get('online');
         if($status == "0"){
             $status = "-1";
         }
@@ -214,89 +223,113 @@ class FarmasiController extends Controller
         {
             if($online[$i]['ID_PESANAN'] == $id)
             {
-                $online = FarmasiController::data();
+                $online = $request->session()->get('online');
                 $online[$i]['STATUS'] = $status;
             }
         }
         Session::put('online', $online);
 
-        return view('farmasi.pesanan-online');
+        return redirect('pesanan-online');
     }
 
-    public function ambil($id)
+    public function ambil(Request $request, $id)
     {
-        $data = FarmasiController::data();
+        $data = $request->session()->get('online');
 
         for($i=0; $i<count($data); $i++)
         {
             if($data[$i]['ID_PESANAN'] == $id)
             {
-                $online = FarmasiController::data();
+                $online = $request->session()->get('online');
                 $online[$i]['STATUS'] = "4";
             }
         }
         Session::put('online', $online);
 
-        return view('farmasi.pesanan-online');
+        return redirect('pesanan-online');
     }
 
-    public function diambil($id)
+    public function diambil(Request $request, $id)
     {
-        $data = FarmasiController::data();
+        $data = $request->session()->get('online');
 
         for($i=0; $i<count($data); $i++)
         {
             if($data[$i]['ID_PESANAN'] == $id)
             {
-                $online = FarmasiController::data();
+                $online = $request->session()->get('online');
                 $online[$i]['STATUS'] = "7";
             }
         }
         Session::put('online', $online);
 
-        return view('farmasi.pesanan-online');
+        return redirect('pesanan-online');
     }
 
-    public function readyKirim($id)
+    public function readyKirim(Request $request, $id)
     {
-        $data = FarmasiController::data();
+        $data = $request->session()->get('online');
 
         for($i=0; $i<count($data); $i++)
         {
             if($data[$i]['ID_PESANAN'] == $id)
             {
-                $online = FarmasiController::data();
+                $online = $request->session()->get('online');
                 $online[$i]['STATUS'] = "5";
             }
         }
         Session::put('online', $online);
 
-        return view('farmasi.pesanan-online');
+        return redirect('pesanan-online');
     }
 
-    public function otw($id)
+    public function otw(Request $request, $id)
     {
-        $data = FarmasiController::data();
+        $data = $request->session()->get('online');
 
         for($i=0; $i<count($data); $i++)
         {
             if($data[$i]['ID_PESANAN'] == $id)
             {
-                $online = FarmasiController::data();
+                $online = $request->session()->get('online');
                 $online[$i]['STATUS'] = "6";
             }
         }
         Session::put('online', $online);
 
-        return view('farmasi.pesanan-online');
+        return redirect('pesanan-online');
     }
 
-    public function pesanOnline()
+    public function countPesanan(Request $request)
     {
-        $data = FarmasiController::data();
+        $count = "0";
+        $request->session()->put('pesanan-online', $count);
+    }
 
-        $new = [
-            'ID_PESANAN' => 'P00008',
+    public function pesanOnline(Request $request)
+    {
+        $data = $request->session()->get('online');
+
+        if($data == null){
+            $id = "P00001";
+        }
+        else{
+            for($i=0; $i<count($data); $i++){
+                $id = $data[$i]['ID_PESANAN'];
+            }
+
+            $id = explode('P',$id);
+            $id = $id[1] + 1;
+            if($id >= "10"){
+                $id = "P000".$id;
+            }
+            else{
+                $id = "P0000".$id;
+            }
+        }
+
+        $arr1 = [
+            'ID_PESANAN' => $id,
             'NAMA_PASIEN' => 'Indah',
             'STATUS' => '0',
             'ISI_RESEP' => [[
@@ -312,71 +345,230 @@ class FarmasiController extends Controller
             ]
         ];
 
-        $data[] = $new;
-        // dd($data);
-        Session::put('online', $data);
-        Session::put('audio', '1');
-        Session::put('pesanan', '1');
-        return view('farmasi.resep-walkin')->with('info', 'Ada pesanan masuk.');
-    }
+        $arr2 = [
+            'ID_PESANAN' => $id,
+            'NAMA_PASIEN' => 'Muhammad',
+            'STATUS' => '0',
+            'ISI_RESEP' => [[
+                'OBAT' => 'GLIMEPIRIDE DEXA 4MG',
+                    'TAKARAN' => '1 - oo',
+                    'JUMLAH' => '30',
+                ],
+                [
+                    'OBAT' => 'METROMIN IKA 500MG TAB',
+                    'TAKARAN' => '3 x 1',
+                    'JUMLAH' => '21',
+                ],
+                [
+                    'OBAT' => 'ACARBOSE DAXA 100MG TAB 100S',
+                    'TAKARAN' => '3 x 1',
+                    'JUMLAH' => '18',
+                ],
+            ]
+        ];
 
-    public function simAmbil()
-    {
-        $online = FarmasiController::data();
-        for($i=0; $i<count($online); $i++)
-        {
-            if($online[$i]['STATUS'] == "1")
-            {
-                $online = FarmasiController::data();
-                $online[$i]['STATUS'] = "2";
-            }
-        }
-        Session::put('online', $online);
+        $arr3 = [
+            'ID_PESANAN' => $id,
+            'NAMA_PASIEN' => 'Ahsan',
+            'STATUS' => '0',
+            'ISI_RESEP' => [[
+                'OBAT' => 'GLIMEPIRIDE DEXA 4MG',
+                'TAKARAN' => '1 - oo',
+                'JUMLAH' => '30',
+            ],
+            [
+                'OBAT' => 'METROMIN IKA 500MG TAB',
+                'TAKARAN' => '3 x 1',
+                'JUMLAH' => '21',
+            ],
+            ]
+        ];
 
-        return view('farmasi.pesanan-online');
-    }
+        $count = $request->session()->get('pesanan-online');
 
-    public function simKirim()
-    {
-        $online = FarmasiController::data();
-        for($i=0; $i<count($online); $i++)
-        {
-            if($online[$i]['STATUS'] == "1")
-            {
-                $online = FarmasiController::data();
-                $online[$i]['STATUS'] = "3";
+        if($count == "0"){
+            if($data == null){
+                $data[] = $arr1;
+                Session::put('pesanan-online', 1);
             }
             else{
-                $online = FarmasiController::data();
+                $data[] = $arr1;
+                Session::put('pesanan-online', 1);
             }
         }
-        Session::put('online', $online);
-
-        return view('farmasi.pesanan-online');
+        else if($count == "1"){
+            $data[] = $arr2;
+            Session::put('pesanan-online', 2);
+        }
+        else if($count == "2"){
+            $data[] = $arr3;
+            Session::put('pesanan-online', 3);
+        }
+        
+        // dd($count);
+        Session::put('online', $data);
+        Session::flash('audioOnline', '1');
+        Session::flash('pesanan', '1');
+        return redirect('pesanan-online')->with('info', 'Ada pesanan masuk.');
     }
 
-    public function simSelesai()
+    public function pesanOnlineWalkin(Request $request)
     {
-        $online = FarmasiController::data();
+        $data = $request->session()->get('online');
+
+        if($data == null){
+            $id = "P00001";
+        }
+        else{
+            for($i=0; $i<count($data); $i++){
+                $id = $data[$i]['ID_PESANAN'];
+            }
+
+            $id = explode('P',$id);
+            $id = $id[1] + 1;
+            if($id >= "10"){
+                $id = "P000".$id;
+            }
+            else{
+                $id = "P0000".$id;
+            }
+        }
+
+        $arr1 = [
+            'ID_PESANAN' => $id,
+            'NAMA_PASIEN' => 'Indah',
+            'STATUS' => '0',
+            'ISI_RESEP' => [[
+                'OBAT' => 'GLIMEPIRIDE DEXA 4MG',
+                'TAKARAN' => '1 - oo',
+                'JUMLAH' => '30',
+            ],
+            [
+                'OBAT' => 'ACARBOSE DAXA 100MG TAB 100S',
+                'TAKARAN' => '3 x 1',
+                'JUMLAH' => '18',
+            ],
+            ]
+        ];
+
+        $arr2 = [
+            'ID_PESANAN' => $id,
+            'NAMA_PASIEN' => 'Muhammad',
+            'STATUS' => '0',
+            'ISI_RESEP' => [[
+                'OBAT' => 'GLIMEPIRIDE DEXA 4MG',
+                    'TAKARAN' => '1 - oo',
+                    'JUMLAH' => '30',
+                ],
+                [
+                    'OBAT' => 'METROMIN IKA 500MG TAB',
+                    'TAKARAN' => '3 x 1',
+                    'JUMLAH' => '21',
+                ],
+                [
+                    'OBAT' => 'ACARBOSE DAXA 100MG TAB 100S',
+                    'TAKARAN' => '3 x 1',
+                    'JUMLAH' => '18',
+                ],
+            ]
+        ];
+
+        $arr3 = [
+            'ID_PESANAN' => $id,
+            'NAMA_PASIEN' => 'Ahsan',
+            'STATUS' => '0',
+            'ISI_RESEP' => [[
+                'OBAT' => 'GLIMEPIRIDE DEXA 4MG',
+                'TAKARAN' => '1 - oo',
+                'JUMLAH' => '30',
+            ],
+            [
+                'OBAT' => 'METROMIN IKA 500MG TAB',
+                'TAKARAN' => '3 x 1',
+                'JUMLAH' => '21',
+            ],
+            ]
+        ];
+
+        $count = $request->session()->get('pesanan-online');
+
+        if($count == "0"){
+            if($data == null){
+                $data[] = $arr1;
+                Session::put('pesanan-online', 1);
+            }
+            else{
+                $data[] = $arr1;
+                Session::put('pesanan-online', 1);
+            }
+        }
+        else if($count == "1"){
+            $data[] = $arr2;
+            Session::put('pesanan-online', 2);
+        }
+        else if($count == "2"){
+            $data[] = $arr3;
+            Session::put('pesanan-online', 3);
+        }
+        
+        // dd($count);
+        Session::put('online', $data);
+        Session::flash('audio', '1');
+        Session::flash('pesanan', '1');
+        return redirect('farmasi')->with('info', 'Ada pesanan masuk.');
+    }
+
+    public function simAmbil(Request $request)
+    {
+        $online = $request->session()->get('online');
+        for($i=0; $i<count($online); $i++)
+        {
+            if($online[$i]['STATUS'] == "1")
+            {
+                $online = $request->session()->get('online');
+                $online[$i]['STATUS'] = "2";
+                Session::put('online', $online);
+            }
+        }
+
+        return redirect('pesanan-online');
+    }
+
+    public function simKirim(Request $request)
+    {
+        $online = $request->session()->get('online');
+        for($i=0; $i<count($online); $i++)
+        {
+            if($online[$i]['STATUS'] == "1")
+            {
+                $online = $request->session()->get('online');
+                $online[$i]['STATUS'] = "3";
+                Session::put('online', $online);
+            }
+        }
+
+        return redirect('pesanan-online');
+    }
+
+    public function simSelesai(Request $request)
+    {
+        $online = $request->session()->get('online');
         for($i=0; $i<count($online); $i++)
         {
             if($online[$i]['STATUS'] == "6")
             {
-                $online = FarmasiController::data();
+                $online = $request->session()->get('online');
                 $online[$i]['STATUS'] = "7";
-            }
-            else{
-                $online = FarmasiController::data();
+                Session::put('online', $online);
             }
         }
-        Session::put('online', $online);
 
-        return view('farmasi.pesanan-online');
+        return redirect('pesanan-online');
     }
 
-    public function copyResep($id)
+    public function copyResep(Request $request, $id)
     {
-        $online = FarmasiController::data();
+        $online = $request->session()->get('online');
 
         foreach($online as $online){
             if($online['ID_PESANAN'] == $id){

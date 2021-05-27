@@ -58,7 +58,7 @@
                             <div class="row">
                                 <div class="col-md-12 col-sm-12" style="text-align: center">
                                     <hr>
-                                    <button class="btn btn-primary btn-rounded mr-3 btn-uppercase" data-toggle="modal" data-target="#modal">Simpan</button>
+                                    <button class="btn btn-primary btn-rounded mr-3 btn-uppercase" id="simpan">Simpan</button>
                                 </div>
                             </div>
                         </div>
@@ -124,22 +124,6 @@
     </div>
 </div>
 
-<div class="modal" id="modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-        <form action="{{route('farmasi')}}" method="GET">
-            <div class="modal-body">
-                <p>Apakah anda yakin ingin menyimpan resep ini ?</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-light" data-dismiss="modal">Tidak</button>
-                <button type="submit" class="btn btn-primary">Ya</button>
-            </div>
-        </form>
-    </div>
-  </div>
-</div>
-
 @section('script')
     <script src="{{ asset('assets/gogi/vendors/dataTable/datatables.min.js') }}"></script>
     <script src="{{ asset('assets/gogi/assets/js/examples/toast.js') }}"></script>
@@ -147,6 +131,25 @@
         $(document).ready(function(){
             const menu = document.getElementById("walkin");
             menu.classList.add("active");
+
+            $('#simpan').on('click', function(){
+                swal({
+                    title: "Apakah anda yakin?",
+                    icon: "warning",
+                    buttons: true,
+                    dangerMode: true,
+                })
+                .then((willSave) => {
+                    if (willSave) {
+                        $url = '{{route("farmasi")}}';
+                        console.log($url);
+                        setTimeout(function(){ 
+                            window.location.replace($url);
+                        }, 1000);
+                    }
+                });
+            });
+            
 
             let total_obat_satuan = 0
             let total_obat_racik = 0
@@ -371,32 +374,32 @@
             });
 
             // search obat
-function search_obat(input_form){
-    let keyword = $(input_form).val()
+            function search_obat(input_form){
+                let keyword = $(input_form).val()
 
-    let obat_1 = `${keyword} 10 Mg Tab`
-    let obat_2 = `${keyword} 15 Mg Tab`
-    let obat_3 = `${keyword} 20 Mg Tab`
+                let obat_1 = `${keyword} 10 Mg Tab`
+                let obat_2 = `${keyword} 15 Mg Tab`
+                let obat_3 = `${keyword} 20 Mg Tab`
 
-    obat_1 = obat_1.toUpperCase()
-    obat_2 = obat_2.toUpperCase()
-    obat_3 = obat_3.toUpperCase()
+                obat_1 = obat_1.toUpperCase()
+                obat_2 = obat_2.toUpperCase()
+                obat_3 = obat_3.toUpperCase()
 
-    $('#search_obat_modal #radio_obat_1').val(obat_1)
-    $('#search_obat_modal #radio_obat_2').val(obat_2)
-    $('#search_obat_modal #radio_obat_3').val(obat_3)
+                $('#search_obat_modal #radio_obat_1').val(obat_1)
+                $('#search_obat_modal #radio_obat_2').val(obat_2)
+                $('#search_obat_modal #radio_obat_3').val(obat_3)
 
-    $('#search_obat_modal #input_text_radio_obat_1').val(obat_1)
-    $('#search_obat_modal #input_text_radio_obat_2').val(obat_2)
-    $('#search_obat_modal #input_text_radio_obat_3').val(obat_3)
-    
-    $('#search_obat_modal').modal('show')
+                $('#search_obat_modal #input_text_radio_obat_1').val(obat_1)
+                $('#search_obat_modal #input_text_radio_obat_2').val(obat_2)
+                $('#search_obat_modal #input_text_radio_obat_3').val(obat_3)
+                
+                $('#search_obat_modal').modal('show')
 
-    $('#search_obat_modal #pilih_obat_modal_btn').on('click', function(){
-        var radio_val = $("#search_obat_modal input[name='radio_obat']:checked").val()
-        $(input_form).val(radio_val)
-    })
-}
+                $('#search_obat_modal #pilih_obat_modal_btn').on('click', function(){
+                    var radio_val = $("#search_obat_modal input[name='radio_obat']:checked").val()
+                    $(input_form).val(radio_val)
+                })
+            }
         });
     </script>
 @endsection

@@ -7,14 +7,14 @@
 
 <div class="row">
     <div class="col-md-12">
-
+        <input type="hidden" value="{{Session::get('pesanan')}}" id="pesanan">
         <div class="judul-tabel mb-3">
             <h5>Pesanan Online</h5>
         </div>
         <div class="row">
             <div class="col-md-12">
                 <a href="{{url('farmasi/pesanan-reset')}}"><button class="btn btn-warning btn-rounded btn-uppercase">Reset</button></a>
-                <a href="{{url('pesanan-online/online')}}"><button class="btn btn-secondary btn-rounded btn-uppercase">Pesanan Online</button></a>
+                <a href="{{url('pesanan-online/online')}}"><button class="btn btn-secondary btn-rounded btn-uppercase pesan">Pesanan Online</button></a>
                 <a href="{{url('konfirm-ambil')}}"><button class="btn btn-secondary btn-rounded btn-uppercase">Konfirm Ambil</button></a>
                 <a href="{{url('konfirm-kirim')}}"><button class="btn btn-secondary btn-rounded btn-uppercase">Konfirm Kirim</button></a>
                 <a href="{{url('konfirm-selesai')}}"><button class="btn btn-secondary btn-rounded btn-uppercase">Antar Selesai</button></a>
@@ -34,12 +34,13 @@
                                     <th scope="col">Status</th>
                                 </thead>
                                 <tbody>
+                                    @if(Session::has('online'))
                                     @foreach(Session::get('online') as $online)
                                     
-                                    <tr style="cursor: pointer" class="select" id="{{$online['ID_PESANAN']}}">
+                                    <tr style="cursor: pointer" class="select @if($online['STATUS'] == '-1') bg-danger @endif" id="{{$online['ID_PESANAN']}}">
                                         <td>{{$online['NAMA_PASIEN']}}</td>
                                         @if($online['STATUS'] == "-1")
-                                        <td class="text-danger">TOLAK</td>
+                                        <td>TOLAK</td>
                                         @elseif($online['STATUS'] == "0")
                                         <td>MENUNGGU KONFIRMASI</td>
                                         @elseif($online['STATUS'] == "1")
@@ -60,6 +61,7 @@
                                     </tr>
                                     
                                     @endforeach
+                                    @endif
                                 </tbody>
                             </table>
                         </div>
@@ -69,10 +71,27 @@
         </div>
     </div>
 </div>
+<!-- Sound -->
+@if(Session::get('audioOnline') == "1")
+<audio autoplay><source src="{{asset('assets/notification.mp3')}}" type="audio/mp3"></audio>
+@endif
 @endsection
 
 @section('script')
     <script src="{{ asset('assets/gogi/vendors/dataTable/datatables.min.js') }}"></script>
+    <script>
+        if(document.getElementById('pesanan').value == "1"){
+            toastr.options = {
+                    timeOut: 10000,
+                    progressBar: true,
+                    showMethod: "slideDown",
+                    hideMethod: "slideUp",
+                    showDuration: 200,
+                    hideDuration: 200
+                };
+                toastr["info"]("Ada pesanan masuk.");
+        }
+    </script>
 
     <script>
         $(document).ready(function(){

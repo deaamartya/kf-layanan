@@ -25,7 +25,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body class="scrollable-layout">
+<body class="scrollable-layout" id="body">
 <!-- Preloader -->
 <div class="preloader">
     <div class="preloader-icon"></div>

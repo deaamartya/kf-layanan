@@ -22,7 +22,7 @@
             <h5>Cek Stock</h5>
         </div>
         <div class="col-md-12">
-            <div class="row">
+            <div class="row" id="resep">
                 <div class="col-md-8 col-sm-12">
                     <div class="card">
                         <div class="card-body">
@@ -71,6 +71,14 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class='preloader' id="loader-stock">
+                        <div class='preloader-icon'></div>
+                        <span id="text">Loading...</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -97,7 +105,12 @@
                 //     $('#check-stock').remove();
                 // }
 
+                $("#resep").hide();
+                document.getElementById('text').innerHTML = "Cek Stock...";
+                $("#loader-stock").show();
                 setTimeout(function(){ 
+                    $("#resep").show();
+                    $("#loader-stock").hide();
                     $('#check-stock').append(el);
                     document.getElementById('konfirm').disabled = false;
                 }, 2000);
@@ -117,7 +130,12 @@
                 //     $('#check-stock').remove();
                 // }
 
+                $("#resep").hide();
+                document.getElementById('text').innerHTML = "Cek Stock...";
+                $("#loader-stock").show();
                 setTimeout(function(){ 
+                    $("#resep").show();
+                    $("#loader-stock").hide();
                     $('#check-stock').append(el);
                     document.getElementById('konfirm').disabled = false;
                 }, 2000);

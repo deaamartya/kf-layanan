@@ -1,6 +1,14 @@
 @extends('farmasi.layouts.app')
 @section('head')
     <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/dataTable/datatables.min.css') }}">
+    
+    <style>
+        @media only screen and (max-width: 600px) {
+            .btn-sim {
+                margin-top: 10px;
+            }
+        }
+    </style>
 @endsection
 
 @section('content')
@@ -13,11 +21,11 @@
         </div>
         <div class="row">
             <div class="col-md-12">
-                <a href="{{url('farmasi/pesanan-reset')}}"><button class="btn btn-warning btn-rounded btn-uppercase">Reset</button></a>
-                <a href="{{url('pesanan-online/online')}}"><button class="btn btn-secondary btn-rounded btn-uppercase pesan">Pesanan Online</button></a>
-                <a href="{{url('konfirm-ambil')}}"><button class="btn btn-secondary btn-rounded btn-uppercase">Konfirm Ambil</button></a>
-                <a href="{{url('konfirm-kirim')}}"><button class="btn btn-secondary btn-rounded btn-uppercase">Konfirm Kirim</button></a>
-                <a href="{{url('konfirm-selesai')}}"><button class="btn btn-secondary btn-rounded btn-uppercase">Antar Selesai</button></a>
+                <a href="{{url('farmasi/pesanan-reset')}}"><button class="btn btn-sm btn-warning btn-rounded btn-uppercase btn-sim">Reset</button></a>
+                <a href="{{url('pesanan-online/online')}}"><button class="btn btn-sm btn-secondary btn-rounded btn-uppercase pesan btn-sim">Pesanan Online</button></a>
+                <a href="{{url('konfirm-ambil')}}"><button class="btn btn-sm btn-secondary btn-rounded btn-uppercase btn-sim">Konfirm Ambil</button></a>
+                <a href="{{url('konfirm-kirim')}}"><button class="btn btn-sm btn-secondary btn-rounded btn-uppercase btn-sim">Konfirm Kirim</button></a>
+                <a href="{{url('konfirm-selesai')}}"><button class="btn btn-sm btn-secondary btn-rounded btn-uppercase btn-sim">Antar Selesai</button></a>
             </div>
         </div></br>
         <div class="row">

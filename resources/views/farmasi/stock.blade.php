@@ -9,7 +9,13 @@
             hideMethod: "slideUp",
             showDuration: 200,
             hideDuration: 200
-        };
+        }
+
+        @media only screen and (max-width: 600px) {
+            .btn-sim {
+                margin-top: 10px;
+            }
+        }
     </style>
 @endsection
 
@@ -66,8 +72,8 @@
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div style="float: right">
-                        <button class="btn btn-danger btn-rounded btn-uppercase" id="kurang">Cek Stock (Kurang)</button></a>
-                        <button class="btn btn-success btn-rounded btn-uppercase" id="ok">Cek Stock (Ok)</button></a>
+                        <button class="btn btn-danger btn-rounded btn-uppercase btn-sm btn-sim" id="kurang">Cek Stock (Kurang)</button></a>
+                        <button class="btn btn-success btn-rounded btn-uppercase btn-sm btn-sim" id="ok">Cek Stock (Ok)</button></a>
                     </div>
                 </div>
             </div>

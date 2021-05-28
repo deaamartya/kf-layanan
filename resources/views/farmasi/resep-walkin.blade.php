@@ -1,6 +1,24 @@
 @extends('farmasi.layouts.app')
 @section('head')
     <link rel="stylesheet" href="{{ asset('assets/gogi/vendors/dataTable/datatables.min.css') }}">
+
+    <style>
+        @media only screen and (min-width: 601px) {
+            .search {
+            width: 50%;
+        }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .btn-sim {
+                margin-top: 10px;
+            }
+
+            .search {
+                max-width: 95%;
+            }
+        }
+    </style>
 @endsection
 
 @section('content')
@@ -15,7 +33,7 @@
                 <div class="col-md-7 col-sm-12">
                     <div class="card">
                         <div class="card-title" style="margin-top: 15px; margin-left: 15px; margin-bottom: 0">
-                            <div class="input-group" style="width: 50%">
+                            <div class="input-group search">
                                 <input type="text" class="form-control" value="" placeholder="ID Resep" id="input">
                                 <div class="input-group-append">
                                     <button class="btn input-group-text" id="search">Search</button>
@@ -33,9 +51,9 @@
                 </div>
                 <div class="col-md-5 col-sm-12">
                     <div style="float: right">
-                        <a href="{{ url('farmasi/walkin-reset') }}"><button class="btn btn-warning btn-rounded btn-uppercase">Reset</button></a>
-                        <a href="{{ url('walkin/online') }}"><button class="btn btn-secondary btn-rounded btn-uppercase">Pesanan Online</button></a>
-                        <button class="btn btn-primary btn-rounded btn-uppercase" id="scan">Scan QRcode</button>
+                        <a href="{{ url('farmasi/walkin-reset') }}"><button class="btn btn-warning btn-rounded btn-uppercase btn-sm btn-sim">Reset</button></a>
+                        <a href="{{ url('walkin/online') }}"><button class="btn btn-secondary btn-rounded btn-uppercase btn-sm btn-sim">Pesanan Online</button></a>
+                        <button class="btn btn-primary btn-rounded btn-uppercase btn-sm btn-sim" id="scan">Scan QRcode</button>
                     </div>
                 </div>
             </div>

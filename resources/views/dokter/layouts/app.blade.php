@@ -197,7 +197,7 @@
                             </span>
                             <span>Home</span>
                         </a>
-                        <a href="#" id="periksa-pasien-menu">
+                        <a href="#" id="periksa-pasien-menu" class="d-none">
                             <span class="nav-link-icon">
                                 <i class="fas fa-clipboard-check"></i>
                             </span>

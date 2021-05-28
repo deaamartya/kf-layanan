@@ -9,6 +9,18 @@
     color: white;
 }
 
+#simulasi_perawat_btn {
+    border: 2px solid lime;
+    background-color: white;
+    color: black;
+}
+
+#simulasi_perawat_btn:hover {
+    background-color: lime;
+    color: white;
+    font-weight: bold;
+}
+
 #antrian_saat_ini {
     display: flex;
     justify-content: center;

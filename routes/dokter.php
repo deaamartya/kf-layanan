@@ -21,10 +21,10 @@ Route::post('/dokter/periksa', 'Dokter\PeriksaController@store_data');
 // Download dokumen/surat
 Route::get('/dokter/download/document/{filename}', 'Dokter\PeriksaController@download_dokumen');
 
+// Simulasi perawat
+Route::get('/dokter/simulasi-perawat', 'Dokter\MainController@simulasi_perawat');
+
 // Flush session
 Route::get('/dokter/flush-session', function(){
     Session::flush();
 });
-
-
-// Test

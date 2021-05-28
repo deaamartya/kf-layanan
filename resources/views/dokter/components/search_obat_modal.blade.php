@@ -21,21 +21,21 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn btn-sm btn-block search_obat_result_btn" data-content="lipitor 20mg">
+                                    <button type="button" onclick="pilih_obat(this)" class="btn btn-sm btn-block search_obat_result_btn" data-content="lipitor 20mg">
                                         lipitor 20mg
                                     </button>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn btn-sm btn-block search_obat_result_btn" data-content="Avesco 20mg">
+                                    <button type="button" onclick="pilih_obat(this)" class="btn btn-sm btn-block search_obat_result_btn" data-content="Avesco 20mg">
                                         Avesco 20mg
                                     </button>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn btn-sm btn-block search_obat_result_btn" data-content="Atorsan 20mg">
+                                    <button type="button" onclick="pilih_obat(this)" class="btn btn-sm btn-block search_obat_result_btn" data-content="Atorsan 20mg">
                                         Atorsan 20mg
                                     </button>
                                 </td>
@@ -54,21 +54,21 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn btn-sm btn-block search_obat_result_btn" data-content="Amcor 10mg">
+                                    <button type="button" onclick="pilih_obat(this)" class="btn btn-sm btn-block search_obat_result_btn" data-content="Amcor 10mg">
                                         Amcor 10mg
                                     </button>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn btn-sm btn-block search_obat_result_btn" data-content="Divask 10mg">
+                                    <button type="button" onclick="pilih_obat(this)" class="btn btn-sm btn-block search_obat_result_btn" data-content="Divask 10mg">
                                         Divask 10mg
                                     </button>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn btn-sm btn-block search_obat_result_btn" data-content="Norvask 10mg">
+                                    <button type="button" onclick="pilih_obat(this)" class="btn btn-sm btn-block search_obat_result_btn" data-content="Norvask 10mg">
                                         Norvask 10mg
                                     </button>
                                 </td>
@@ -87,21 +87,21 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn btn-sm btn-block search_obat_result_btn" data-content="Thiamycin 500mg">
+                                    <button type="button" onclick="pilih_obat(this)" class="btn btn-sm btn-block search_obat_result_btn" data-content="Thiamycin 500mg">
                                         Thiamycin 500mg
                                     </button>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn btn-sm btn-block search_obat_result_btn" data-content="Dionicol 500mg">
+                                    <button type="button" onclick="pilih_obat(this)" class="btn btn-sm btn-block search_obat_result_btn" data-content="Dionicol 500mg">
                                         Dionicol 500mg
                                     </button>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <button type="button" class="btn btn-sm btn-block search_obat_result_btn" data-content="Dexycol 500mg">
+                                    <button type="button" onclick="pilih_obat(this)" class="btn btn-sm btn-block search_obat_result_btn" data-content="Dexycol 500mg">
                                         Dexycol 500mg
                                     </button>
                                 </td>

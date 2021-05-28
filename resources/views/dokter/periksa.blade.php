@@ -5,9 +5,9 @@
 @endsection
 
 @section('content')
-<div class="content">
+<div class="content pb-3">
     <div class="page-header">
-        <h4>Periksa Pasien ({{ $pasien['id'] }})</h4>
+        <h4>Periksa Pasien ({{ $pasien['nama'] }})</h4>
         <hr>
     </div>
 
@@ -292,19 +292,21 @@
                         <input type="number" name="input_total_biaya" id="input_total_biaya" class="form-control-plaintext" value="0" readonly>
                     </div>
                 </div>
+
+                <div class="my-5">
+                    <hr>
+                    <div style="display: grid; place-items: center;">
+                        <button type="submit" class="btn btn-primary btn-rounded btn-uppercase text-center">
+                            <i class="mr-2 fas fa-save"></i>
+                            Simpan
+                        </button>
+                    </div>
+                </div>
+
             </div>
             {{-- end biaya --}}
         </div>
 
-        <div class="my-3">
-            <hr>
-            <div style="display: grid; place-items: center;">
-                <button type="submit" class="btn btn-primary btn-rounded btn-uppercase text-center">
-                    <i class="mr-2 fas fa-save"></i>
-                    Simpan
-                </button>
-            </div>
-        </div>
     </form>
 
 </div>

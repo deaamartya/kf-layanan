@@ -572,14 +572,6 @@
                         </a>
                     </li>
                     <li>
-                        <a @if(request()->segment(1) == 'pasien' && request()->segment(2) == 'pembayaran') class="active" @endif href="{{ url('pasien/pembayaran') }}">
-                            <span class="nav-link-icon">
-                                <i data-feather="dollar-sign"></i>
-                            </span>
-                            <span>Pembayaran</span>
-                        </a>
-                    </li>
-                    <li>
                         <a @if(request()->segment(1) == 'pasien' && request()->segment(2) == 'riwayat-layanan-dokter') class="active" @endif href="{{ url('pasien/riwayat-layanan-dokter') }}">
                             <span class="nav-link-icon">
                                 <i data-feather="list"></i>

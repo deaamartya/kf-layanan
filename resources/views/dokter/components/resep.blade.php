@@ -1,9 +1,9 @@
 <div class="button_container">
-    <button type="button" id="tambah_obat_satuan_btn" class="btn btn-sm btn-rounded btn-uppercase btn-primary mr-2">
+    <button type="button" id="tambah_obat_satuan_btn" onclick="tambah_obat_satuan()" class="btn btn-sm btn-rounded btn-uppercase btn-primary mr-2">
         <i class="fas fa-plus-circle mr-2"></i>
         Obat Satuan
     </button>
-    <button type="button" id="tambah_obat_racik_btn" class="btn btn-sm btn-rounded btn-uppercase btn-warning">
+    <button type="button" id="tambah_obat_racik_btn" onclick="tambah_obat_racik()" class="btn btn-sm btn-rounded btn-uppercase btn-warning">
         <i class="fas fa-plus-circle mr-2"></i>
         Obat Racik
     </button>

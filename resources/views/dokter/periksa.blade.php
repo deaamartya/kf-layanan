@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-<div class="content">
+<div class="content pb-3">
     <div class="page-header">
         <h4>Periksa Pasien ({{ $pasien['nama'] }})</h4>
         <hr>

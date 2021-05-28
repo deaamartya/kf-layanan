@@ -24,10 +24,17 @@
         </table>
     </div>
 
-    <a href="{{ url('/dokter/reset-session') }}" id="reset_session_btn" class="my-4 btn btn-rounded btn-uppercase">
-        <i class="ti-reload mr-2"></i>
-        Reset Session
-    </a>
+    <div class="my-4" style="display: flex; flex-direction: row;">
+        <a href="{{ url('/dokter/reset-session') }}" id="reset_session_btn" class="btn btn-sm btn-rounded btn-uppercase">
+            <i class="ti-reload mr-2"></i>
+            Reset Session
+        </a>
+        
+        <a href="{{ url('/dokter/simulasi-perawat') }}" id="simulasi_perawat_btn" class="ml-3 btn btn-sm btn-rounded btn-uppercase">
+            <i class="ti-clipboard mr-2"></i>
+            Simulasi dari perawat
+        </a>
+    </div>
 
     <div class="row">
         {{-- Left side --}}

@@ -121,6 +121,36 @@ class MainController extends Controller
         return 'success';
     }
 
+    public function simulasi_perawat()
+    {
+        // reset session
+        Session::forget('perawat_session_status');
+        Session::forget('perawat_nama_dokter');
+        Session::forget('perawat_spesialisasi_dokter');
+        Session::forget('perawat_pasien');
+        Session::forget('perawat_antrian_saat_ini');
+
+        // create new session data
+        $this->create_session_data();
+
+        // update data pasien PX0001
+        $id = 'PX0001';
+        Session::put('perawat_pasien.'.$id.'.tensi_atas', 120);
+        Session::put('perawat_pasien.'.$id.'.tensi_bawah', 80);
+        Session::put('perawat_pasien.'.$id.'.nadi', 100);
+        Session::put('perawat_pasien.'.$id.'.rr', 100);
+        Session::put('perawat_pasien.'.$id.'.suhu', 35);
+        Session::put('perawat_pasien.'.$id.'.berat', 55);
+        Session::put('perawat_pasien.'.$id.'.tinggi', 165);
+        Session::put('perawat_session_status', 'modified');
+
+        // update antrian
+        Session::put('perawat_pasien.'.$id.'.status_panggil', 1);
+        Session::put('perawat_status_antrian_saat_ini', 1);
+
+        return redirect('/dokter/periksa/PX0001');
+    }
+
     protected function create_session_data()
     {
         $perawat_nama_dokter = "dr. Dian Permata Sari, SpOG";

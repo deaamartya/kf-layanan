@@ -10,7 +10,7 @@
 @section('content')
 <div class="page-header">
     <div>
-        <h3>Riwayat Layanan Dokter</h3>
+        <h3>Riwayat Layanan</h3>
     </div>
 </div>
 <div class="row">
@@ -28,9 +28,9 @@
                                         </a>
                                     </div>
                                     <div class="col-12 col-md-9">
-                                        <h5>dr. Amelia Abdullah, Sp.OG</h5>
+                                        <h5>Kimia Farma A</h5>
                                         <h6 class="text-gray">
-                                            <i class="fa fa-stethoscope mr-2"></i>Dokter Kandungan
+                                            <i class="fa fa-stethoscope mr-2"></i>Poli Umum
                                         </h6>
                                         <h6 class="text-gray">
                                             <i class="fa fa-hospital-o mr-2"></i>Jember - Jl. Gajah Mada No. 171
@@ -48,9 +48,9 @@
                                         </a>
                                     </div>
                                     <div class="col-12 col-md-9">
-                                        <h5>dr. Masnunah, Sp.OG</h5>
+                                        <h5>Kimia Farma B</h5>
                                         <h6 class="text-gray">
-                                            <i class="fa fa-stethoscope mr-2"></i>Dokter Kandungan
+                                            <i class="fa fa-stethoscope mr-2"></i>Poli Gigi
                                         </h6>
                                         <h6 class="text-gray">
                                             <i class="fa fa-hospital-o mr-2"></i>Jember - Jl. Gajah Mada No. 171
@@ -113,7 +113,7 @@
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <h4>Dokter</h4>
+                        <h4>Klinik</h4>
                         <hr>
                         <div class="row mb-5 align-items-center">
                             <div class="col-12 col-md-3">
@@ -122,7 +122,7 @@
                                 </a>
                             </div>
                             <div class="col-12 col-md-9 align-content-center">
-                                <h5>dr. Amelia Abdullah, Sp.OG</h5>
+                                <h5>Kimia Farma A</h5>
                             </div>
                         </div>
                     </div>

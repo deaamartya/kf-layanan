@@ -24,7 +24,7 @@ Route::view('pasien/pesan-online','pasien.pesan-online');
 
 // Route Umum
 Route::view('list-spesialisasi','umum.list-spesialisasi');
-Route::view('list-dokter','umum.list-dokter');
+Route::view('list-klinik','umum.list-klinik');
 Route::view('registrasi','auth.register');
 Route::view('login','auth.login');
 

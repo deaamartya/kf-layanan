@@ -576,7 +576,7 @@
                             <span class="nav-link-icon">
                                 <i data-feather="list"></i>
                             </span>
-                            <span>Riwayat Layanan Dokter</span>
+                            <span>Riwayat Layanan</span>
                         </a>
                     </li>
                     <li>

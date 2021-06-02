@@ -46,9 +46,9 @@
                                         <p class="text-muted">QR Code untuk Farmasi Apotek Kimia Farma</p>
                                     </div>
                                     <div class="col-md-8 col-12">
-                                        <h4>Dokter</h4>
+                                        <h4>Klinik</h4>
                                         <hr>
-                                        <h5>dr. Amelia Abdullah, Sp.OG</h5>
+                                        <h5>Kimia Farma A</h5>
                                         <p>Resep ini dibuat pada 8 Mei 2021 11.31WIB</p>
                                         <a href="{{ url('pasien/pesan-online') }}">
                                             <button class="btn btn-success"><i class="fa fa-shopping-cart mr-2"></i>Pesan Online</button>
@@ -59,74 +59,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h6 class="modal-title">Informasi Layanan</h6>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <i class="ti-close"></i>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <div class="col-6">
-                        <h4>Detail Kunjungan</h4>
-                        <hr>
-                        <div class="row mb-3">
-                            <div class="col-12">
-                                <h6>
-                                    <i class="fa fa-stethoscope mr-3"></i>5 Mei 2021 15.00 WIB
-                                </h6>
-                                <h6>
-                                    <i class="fa fa-hospital-o mr-3"></i>Jember - Jl. Gajah Mada No. 171
-                                </h6>
-                                <h6>
-                                    <i class="fa fa-money mr-3"></i>Rp200.000
-                                </h6>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <h4>Dokter</h4>
-                        <hr>
-                        <div class="row mb-5 align-items-center">
-                            <div class="col-3">
-                                <a href="#" title="dokter">
-                                    <img src="{{ asset('assets/img/foto-dokter.jpg') }}" class="img-dokter rounded-circle" alt="Vase" height="80" width="80">
-                                </a>
-                            </div>
-                            <div class="col-9 align-content-center">
-                                <h5>dr. Amelia Abdullah, Sp.OG</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <h4>Resep</h4>
-                <hr>
-                <div class="row align-items-center">
-                    <div class="col-5">
-                        <img src="{{ asset('assets/img/qr-code-resep.png') }}" height="200">
-                    </div>
-                    <div class="col-7">
-                        <h6 class="text-gray">
-                            Apotek Kimia Farma Tempat Pengambilan Resep
-                        </h6>
-                        <h6>
-                            Jember - Jl. Gajah Mada No. 171
-                        </h6>
-                    </div>
-                    <div class="col-12">
-                        <a href="#">
-                            <button class="btn btn-primary">Simulasi Scan</button>
-                        </a>
-                    </div>
-                </div>
-                
             </div>
         </div>
     </div>

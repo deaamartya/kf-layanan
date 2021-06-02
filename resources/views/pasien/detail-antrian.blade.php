@@ -46,7 +46,7 @@
                     <div class="col-12 col-md-9">
                         <div class="card bg-light">
                             <div class="card-body">
-                                <h6 class="card-title">Dokter</h6>
+                                <h6 class="card-title">Klinik</h6>
                                 <div class="row align-items-center">
                                     <div class="col-12 col-md-3 text-center">
                                         <a href="#" title="dokter">
@@ -54,9 +54,9 @@
                                         </a>
                                     </div>
                                     <div class="col-12 col-md-9">
-                                        <h5>dr. Amelia Abdullah, Sp.OG</h5>
+                                        <h5>Kimia Farma A</h5>
                                         <h6 class="text-gray">
-                                            <i class="fa fa-stethoscope mr-2"></i>Dokter Kandungan
+                                            <i class="fa fa-stethoscope mr-2"></i>Poli Umum
                                         </h6>
                                         <h6 class="text-gray">
                                             <i class="fa fa-hospital-o mr-2"></i>Jember - Jl. Gajah Mada No. 171

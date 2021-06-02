@@ -69,21 +69,22 @@ class MainController extends Controller
     public function update_status_panggil(Request $request){
         $id = $request->id;
         $status_panggil = $request->status_panggil;
+        $no_antrian = $request->no_antrian;
+        Session::put('perawat_pasien.'.$id.'.status_panggil', $status_panggil);
 
-        if($status_panggil == 1){
-            Session::put('toast_msg', 'Pasien masuk');
-
-            foreach(Session::get('perawat_pasien') as $pasien){
-                if($pasien['id'] == $id){
-                    break;
+        if($status_panggil == 1){  
+            for($i = 1; $i <= 5; $i++){
+                if(Session::get('perawat_pasien')['PX000' . $i]['status_panggil'] == 1){
+                    Session::put('perawat_pasien.PX000' . $i . '.status_panggil', 3);
                 }
-
-                Session::put('perawat_pasien.'.$pasien['id'].'.status_panggil', 3);
             }
 
+            Session::put('perawat_pasien.' . $id . '.status_panggil', 1);
+            Session::put('perawat_antrian_saat_ini', (int)$no_antrian + 1);
+            Session::put('perawat_status_antrian_saat_ini', 0);
+            Session::put('toast_msg', 'Pasien masuk');
         }
 
-        Session::put('perawat_pasien.'.$id.'.status_panggil', $status_panggil);
         Session::put('perawat_session_status', 'modified');
 
         return 'success';
@@ -105,16 +106,15 @@ class MainController extends Controller
             Session::put('perawat_status_antrian_saat_ini', 0);
 
         } elseif ($button == 'masuk') {
+            for($i = 1; $i <= 5; $i++){
+                if(Session::get('perawat_pasien')['PX000' . $i]['status_panggil'] == 1){
+                    Session::put('perawat_pasien.PX000' . $i . '.status_panggil', 3);
+                }
+            }
+
             Session::put('perawat_pasien.'.$id_pasien.'.status_panggil', 1);
             Session::put('perawat_status_antrian_saat_ini', 1);
             Session::put('toast_msg', 'Pasien masuk');
-
-            if((int)$no_antrian > 1){
-                $id_pasien_sebelumnya = 'PX000' . ((int)$no_antrian - 1);
-                if(Session::get('perawat_pasien')[$id_pasien_sebelumnya]['status_panggil'] == 1){
-                    Session::put('perawat_pasien.'.$id_pasien_sebelumnya.'.status_panggil', 3);
-                }
-            }
         }
 
         Session::put('perawat_session_status', 'modified');

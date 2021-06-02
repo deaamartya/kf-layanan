@@ -41,6 +41,7 @@ $('.nama_pasien_btn').on('click', function(){
 $('#rm_masuk_btn').on('click', function(){
     let id_pasien = $('#input_id_pasien').val()
     let status_panggil = 1
+    let no_antrian = $('#input_no_antrian_saat_ini').val()
 
     $.ajax({
         type: 'POST',
@@ -51,7 +52,8 @@ $('#rm_masuk_btn').on('click', function(){
         data: {
             _method: 'put',
             id: id_pasien,
-            status_panggil: status_panggil
+            status_panggil: status_panggil,
+            no_antrian: no_antrian
         },
         success: function(data){
             location.reload()

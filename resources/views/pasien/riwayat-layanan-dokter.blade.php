@@ -28,12 +28,12 @@
                                         </a>
                                     </div>
                                     <div class="col-12 col-md-9">
-                                        <h5>Kimia Farma A</h5>
+                                        <h5>Klinik Darmo</h5>
                                         <h6 class="text-gray">
                                             <i class="fa fa-stethoscope mr-2"></i>Poli Umum
                                         </h6>
                                         <h6 class="text-gray">
-                                            <i class="fa fa-hospital-o mr-2"></i>Jember - Jl. Gajah Mada No. 171
+                                            <i class="fa fa-hospital-o mr-2"></i>Jl. Raya Darmo No 6 Surabaya
                                         </h6>
                                     </div>
                                 </div>
@@ -53,7 +53,7 @@
                                             <i class="fa fa-stethoscope mr-2"></i>Poli Gigi
                                         </h6>
                                         <h6 class="text-gray">
-                                            <i class="fa fa-hospital-o mr-2"></i>Jember - Jl. Gajah Mada No. 171
+                                            <i class="fa fa-hospital-o mr-2"></i>Jl. Raya Darmo No 6 Surabaya
                                         </h6>
                                     </div>
                                 </div>
@@ -104,7 +104,7 @@
                                     <i class="fa fa-stethoscope mr-3"></i>5 Mei 2021 15.00 WIB
                                 </h6>
                                 <h6>
-                                    <i class="fa fa-hospital-o mr-3"></i>Jember - Jl. Gajah Mada No. 171
+                                    <i class="fa fa-hospital-o mr-3"></i>Jl. Raya Darmo No 6 Surabaya
                                 </h6>
                                 <h6>
                                     <i class="fa fa-money mr-3"></i>Rp200.000
@@ -122,7 +122,7 @@
                                 </a>
                             </div>
                             <div class="col-12 col-md-9 align-content-center">
-                                <h5>Kimia Farma A</h5>
+                                <h5>Klinik Darmo</h5>
                             </div>
                         </div>
                     </div>
@@ -137,9 +137,9 @@
                         <h6 class="text-gray">
                             Tempat Pengambilan Resep
                         </h6>
-                        <h6>Apotek Kimia Farma Gajah Mada</h6>
+                        <h6>Klinik Darmo</h6>
                         <h6>
-                            Jember - Jl. Gajah Mada No. 171
+                            Jl. Raya Darmo No 6 Surabaya
                         </h6>
                     </div>
                 </div>

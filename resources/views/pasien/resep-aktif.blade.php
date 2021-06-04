@@ -48,7 +48,7 @@
                                     <div class="col-md-8 col-12">
                                         <h4>Klinik</h4>
                                         <hr>
-                                        <h5>Kimia Farma A</h5>
+                                        <h5>Klinik Darmo</h5>
                                         <p>Resep ini dibuat pada 8 Mei 2021 11.31WIB</p>
                                         <a href="{{ url('pasien/pesan-online') }}">
                                             <button class="btn btn-success"><i class="fa fa-shopping-cart mr-2"></i>Pesan Online</button>

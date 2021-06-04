@@ -54,12 +54,12 @@
                                         </a>
                                     </div>
                                     <div class="col-12 col-md-9">
-                                        <h5>Kimia Farma A</h5>
+                                        <h5>Klinik Darmo</h5>
                                         <h6 class="text-gray">
                                             <i class="fa fa-stethoscope mr-2"></i>Poli Umum
                                         </h6>
                                         <h6 class="text-gray">
-                                            <i class="fa fa-hospital-o mr-2"></i>Jember - Jl. Gajah Mada No. 171
+                                            <i class="fa fa-hospital-o mr-2"></i>Jl. Raya Darmo No 6 Surabaya
                                         </h6>
                                     </div>
                                 </div>

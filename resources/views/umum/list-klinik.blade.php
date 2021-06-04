@@ -77,7 +77,8 @@
             <div class="col-12">
                 <div class="row">
                     <div class="col-12" id="list-dokter">
-                        @php $nama_klinik = ["Kimia Farma A","Kimia Farma B","Kimia Farma C","Kimia Farma D","Kimia Farma E"];
+                        @php $nama_klinik = ["Klinik Darmo","Klinik Banyu Urip 2","Kimia Farma C","Kimia Farma D","Kimia Farma E"];
+                        $alamat_klinik = ["Jl. Raya Darmo No 6 Surabaya","Jl. Banyu Urip No 213 Surabaya","Jember - Jl. Gajah Mada No. 171","Jember - Jl. Gajah Mada No. 171","Jember - Jl. Gajah Mada No. 171"];
                         @endphp
                         @foreach ($nama_klinik as $n)
                         <div class="card border">
@@ -92,7 +93,7 @@
                                             <i class="fa fa-stethoscope mr-2"></i>Poli Umum
                                         </h6>
                                         <h6 class="text-gray">
-                                            <i class="fa fa-hospital-o mr-2"></i>Jember - Jl. Gajah Mada No. 171
+                                            <i class="fa fa-hospital-o mr-2"></i>{{ $alamat_klinik[$loop->index] }}
                                         </h6>
                                     </div>
                                     <div class="col-md-3 col-12">
@@ -210,7 +211,7 @@
                             <i class="fa fa-stethoscope mr-2"></i>Poli Umum
                         </h6>
                         <h6 class="text-gray">
-                            <i class="fa fa-hospital-o mr-2"></i>Jember - Jl. Gajah Mada No. 171
+                            <i class="fa fa-hospital-o mr-2"></i>Jl. Raya Darmo No 6 Surabaya
                         </h6>
                         <hr>
                         <h6  class="text-gray">Jam Pelayanan</h6>

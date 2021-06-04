@@ -92,9 +92,9 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td>Apotek KF Surabaya Bratang</td>
-                                                <td>Jl. Bratang Gede No. 100A</td>
-                                                <td>031 - 5016713</td>
+                                                <td>Apotek KF Darmo</td>
+                                                <td>Jl. Raya Darmo No 6 Surabaya</td>
+                                                <td>081218393955</td>
                                             </tr>
                                             <tr id="data-2" style="cursor: pointer">
                                                 <td>
@@ -105,9 +105,9 @@
                                                         </div>
                                                     </div>
                                                 </td>
-                                                <td>Apotek KF Surabaya Kendangsari</td>
-                                                <td>Jl. Raya Kendangsari Blk.J/7</td>
-                                                <td>031 - 8414215</td>
+                                                <td>Apotek KF Banyu Urip 2</td>
+                                                <td>Jl. Banyu Urip No 213 Surabaya</td>
+                                                <td>088214413783</td>
                                             </tr>
                                         </tbody>
                                     </table>
